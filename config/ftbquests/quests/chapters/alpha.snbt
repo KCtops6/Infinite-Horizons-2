@@ -493,7 +493,7 @@
 					type: "item"
 				}
 			]
-			x: 13.0d
+			x: 14.0d
 			y: 3.0d
 		}
 		{
@@ -762,7 +762,7 @@
 				item: { count: 1, id: "minecraft:anvil" }
 				type: "item"
 			}]
-			x: 13.0d
+			x: 15.0d
 			y: 1.0d
 		}
 		{
@@ -855,7 +855,7 @@
 				item: { count: 1, id: "minecraft:sea_lantern" }
 				type: "item"
 			}]
-			x: 13.0d
+			x: 14.0d
 			y: 4.0d
 		}
 		{
@@ -3110,8 +3110,22 @@
 				item: { count: 1, id: "minecraft:redstone" }
 				type: "item"
 			}]
-			x: 11.0d
+			x: 12.0d
 			y: 3.0d
+		}
+		{
+			dependencies: [
+				"3642E2D78B348AE3"
+				"750F49C9EEEFA5C4"
+			]
+			id: "21513712DF34A43B"
+			tasks: [{
+				id: "5C03DE41F14693B4"
+				item: { count: 1, id: "minecraft:piston" }
+				type: "item"
+			}]
+			x: 13.0d
+			y: 2.0d
 		}
 	]
 }
