@@ -1614,5 +1614,27 @@
 			x: 5.0d
 			y: 3.0d
 		}
+		{
+			dependencies: ["170192578F1D5CA0"]
+			id: "322A4B1F1012888A"
+			tasks: [{
+				id: "6E91D9B09202E069"
+				item: { count: 1, id: "infinite_resources:nickel_ingot" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["322A4B1F1012888A"]
+			id: "7F3C8083875AC5C9"
+			tasks: [{
+				id: "108C89AE84DC0321"
+				item: { count: 1, id: "infinite_resources:constantan_ingot" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: 5.0d
+		}
 	]
 }
