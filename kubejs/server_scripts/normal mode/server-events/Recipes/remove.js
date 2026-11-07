@@ -26,4 +26,8 @@ ServerEvents.recipes(event => {
         event.remove({ id: `createsifter:shapeless/raw_${i}_piece`});
     });
     event.remove({ id: /^createsifter:shapeless\/([\w-]+)_pebble$/ });
+    event.remove({ id: /immersiveengineering:crafting\/plate_.+_hammering/ });
+    event.remove({ id: /immersiveengineering:crafting\/hammercrushing_.+/ });
+    event.remove({ id: /immersiveengineering:crafting\/wire_.+/ });
+    event.remove({ id: /immersiveengineering:crafting\/raw_hammercrushing_.+/ });
 });
