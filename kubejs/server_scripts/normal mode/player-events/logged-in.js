@@ -8,9 +8,9 @@ PlayerEvents.loggedIn(event => {
         Text.gold('Welcome back to Infinite Horizons 2! '),
         Text.white(`The Server Time is ${formattedTime}`)
     ]);
-    event.player.tell([
-        Text.red('Note, the mod '),
-        Text.darkRed('Generators Galore').bold(),
-        Text.red(' is scheduled for removal in Version 2.0.')
-    ]);
+    // event.player.tell([
+    //     Text.red('Note, the mod '),
+    //     Text.darkRed('Generators Galore').bold(),
+    //     Text.red(' is scheduled for removal in Version 2.0.')
+    // ]);
 });
