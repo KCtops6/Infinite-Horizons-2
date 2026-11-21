@@ -122,3 +122,4 @@ config/serilum/villagernames.json
 patchouli_data.json
 config/apothic_spawners.cfg
 config/ftbxmodcompact.snbt
+config/refinedstorage*
