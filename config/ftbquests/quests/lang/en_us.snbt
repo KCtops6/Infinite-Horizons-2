@@ -9,6 +9,7 @@
 	chapter.2D351E50AC1A1839.title: "Apotheosis"
 	chapter.2F34CC58AE75DDE7.chapter_subtitle: ["Early-Game \"Non-Digital\" Storage"]
 	chapter.2F34CC58AE75DDE7.title: "Sophisticated Mods"
+	chapter.3066733C71443F94.title: "Refined Storage"
 	chapter.3F59A832DFAEE407.title: "Pam's Harvestcraft"
 	chapter.4D172D3DE635955D.title: "Ars Nouveau"
 	chapter.55AA5265FF6363C1.title: "Zeta"
@@ -66,6 +67,7 @@
 	quest.1284CA2D49C1FE72.quest_desc: [""]
 	quest.1284CA2D49C1FE72.quest_subtitle: "Smelting the Sands of the Nether"
 	quest.1284CA2D49C1FE72.title: "Charred Remnants"
+	quest.15D317C845ED4FB6.title: "Pattern Grid"
 	quest.169040E33441DBE9.quest_desc: ["The &lEnchantment Generator&r is a powerful upgrade, taking your energy generation to the next level. With a generation rate of 40 FE/t and a transfer rate of 1,024 FE/t, this generator draws its power from the very essence of enchantments. It consumes energy at a rate of 1 FE/t and offers a buffer capacity of 1,000,000 FE, making it an excellent choice for systems that require both efficiency and substantial energy reserves. Upgrade from the Obsidian Generator to the Enchantment Generator and unlock the power of enchantments as a unique fuel source."]
 	quest.169040E33441DBE9.quest_subtitle: "Harness the energy of magical forces"
 	quest.169040E33441DBE9.title: "The Power of Enchantment"
@@ -340,6 +342,8 @@
 	quest.66CC1872F77E4EE6.title: "Winds of Change"
 	quest.6B053EAB0CB56AE7.title: "Kitchen Essentials"
 	quest.6B4111F7BFF585CC.title: "Sponge"
+	quest.6C6FB49700B56E61.title: "Advanced Processor"
+	quest.70D01FC771E04935.title: "Improved Processor"
 	quest.7112ED278B1CE804.quest_desc: ["Look at JEI for all of the useful crafts with this item."]
 	quest.71B4677400CE51F3.quest_desc: ["You can find lava in a blacksmith, craft fire seeds, or mix pebbles in a create mixer."]
 	quest.720A2F80D5E73A17.quest_desc: ["The &lNetherite Generator&r is the ultimate power source, capable of generating 256 FE/t with a transfer rate of 1024 FE/t. This upgrade from the Diamond Generator provides an efficient 0.4 FE/t consumption rate and boasts a buffer capacity of 1,000,000 FE. By using solid fuels, the Netherite Generator brings a reliable, high-output energy source to your setup. Upgrade now to harness the power of Netherite and fuel your machines with the most advanced energy production available."]
@@ -369,6 +373,7 @@
 	quest.7C42B99D6CD2EB48.quest_desc: ["Your Wooden Trowel was a good start, but a &lStone Trowel&r will serve you even better. With increased durability and improved drops, you'll gather resources more efficiently. Craft one and put it to the test—you might be surprised by what you find!"]
 	quest.7C42B99D6CD2EB48.quest_subtitle: "Improved Gathering"
 	quest.7C42B99D6CD2EB48.title: "A Better Trowel"
+	quest.7C630076AE2960FF.title: "Basic Processor"
 	quest.7C7513C71C94DAE4.quest_subtitle: "Cleric Trade"
 	quest.7C7513C71C94DAE4.title: "Early Glowstone"
 	quest.7D5453D77D188888.quest_desc: ["&lFire Seeds&r produce &lFire Essence&r, a versatile material used in various recipes. Most importantly, it can be crafted into &lLava Buckets&r, providing a renewable source of lava. Whether for smelting, power generation, or obsidian production, these seeds ensure you'll never run out of molten heat!"]
@@ -521,6 +526,7 @@
 	task.681C3F6F7BBCAD30.title: "Craft a plastic block"
 	task.684423D2B76D2981.title: "Any #sophisticated:feeding_upgrades"
 	task.68703082EA0761EC.title: "Any #sophisticated:stonecutter_upgrades"
+	task.6881F07A00707F9A.title: "Any #c:silicon"
 	task.68D1A70BF2CC4024.title: "Observe a Smithing Table"
 	task.695160F6EB2C701A.title: "Kill a Skeleton"
 	task.6C11616C65D7F631.title: "Any #sophisticated:pickup_upgrades"

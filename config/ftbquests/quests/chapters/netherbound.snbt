@@ -320,5 +320,27 @@
 			x: 3.0d
 			y: 3.0d
 		}
+		{
+			dependencies: ["1C5D9691CB7290BA"]
+			id: "0EC2692D23C11A76"
+			tasks: [{
+				id: "6881F07A00707F9A"
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(c:silicon)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["5FB8A06710330761"]
+			id: "1F2A48804CDE3F23"
+			tasks: [{
+				id: "5B07F36BA905028A"
+				item: { count: 1, id: "minecraft:glowstone_dust" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.0d
+		}
 	]
 }
