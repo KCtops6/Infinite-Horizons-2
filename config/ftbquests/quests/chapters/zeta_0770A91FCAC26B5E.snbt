@@ -14,6 +14,12 @@
 	quests: [
 		{
 			dependencies: ["7AAC808AC46EDE3E"]
+			icon: {
+				components: {
+					"ftbquests:icon": "productivebees:item/honey_treat"
+				}
+				id: "ftbquests:custom_icon"
+			}
 			id: "68694C1E921D810F"
 			tasks: [{
 				id: "5632617F2A30D0B1"
@@ -975,16 +981,6 @@
 			}]
 			x: -7.0d
 			y: -2.0d
-		}
-		{
-			id: "78DDD972FFA825F1"
-			tasks: [{
-				id: "48B98DF80FA2BBA3"
-				item: { components: { "productivebees:bee_type": "productivebees:radioactive" }, count: 1, id: "productivebees:configurable_honeycomb" }
-				type: "item"
-			}]
-			x: 0.0d
-			y: 0.0d
 		}
 		{
 			dependencies: [

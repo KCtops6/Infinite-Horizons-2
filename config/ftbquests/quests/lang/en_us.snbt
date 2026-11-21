@@ -6,6 +6,7 @@
 	chapter.18ED3119D763845F.title: "Mekanism"
 	chapter.1F10B15237CFBB52.title: "Delta"
 	chapter.2A5182EC401BA623.title: "Omega"
+	chapter.2D351E50AC1A1839.title: "Apotheosis"
 	chapter.2F34CC58AE75DDE7.chapter_subtitle: ["Early-Game \"Non-Digital\" Storage"]
 	chapter.2F34CC58AE75DDE7.title: "Sophisticated Mods"
 	chapter.3F59A832DFAEE407.title: "Pam's Harvestcraft"
@@ -464,8 +465,10 @@
 	task.36C620A510598435.title: "Observe a Blast Furnace"
 	task.36F6CC0F532B7B0C.title: "Kill a Phantom"
 	task.38211EC72D1A2A4D.title: "Observe a Composter"
+	task.38322D58A8093CC0.title: "Kill a Guardian"
 	task.38E0BE74D0393D6D.title: "Observe a Smithing Table."
 	task.3B084BC5058B9747.title: "Kill a Wither"
+	task.3CA27AAAD95EA313.title: "Obtain an Apotheosis Gem"
 	task.3D87643B6DE64FF6.title: "Obtain a Water Bee"
 	task.3D94047A9C0C9797.title: "Any #c:juices"
 	task.3F38B2A629773F00.title: "Any #sophisticatedstorage:gold_upgrades"

@@ -456,6 +456,7 @@
 			y: -2.0d
 		}
 		{
+			dependencies: ["4FCC6379B624055A"]
 			id: "07B1B6C8502FD122"
 			rewards: [{
 				id: "6436050F1D34B767"
@@ -471,7 +472,7 @@
 				item: { count: 1, id: "minecraft:obsidian" }
 				type: "item"
 			}]
-			x: 21.0d
+			x: 20.0d
 			y: 0.0d
 		}
 		{
@@ -1786,6 +1787,7 @@
 			y: -3.0d
 		}
 		{
+			dependencies: ["3669B1306B9EF7D4"]
 			hide_dependency_lines: true
 			id: "31F4207EAC78EA61"
 			tasks: [{
@@ -2500,6 +2502,7 @@
 			y: -4.0d
 		}
 		{
+			dependencies: ["3669B1306B9EF7D4"]
 			hide_dependency_lines: true
 			id: "1F16859FE1A9CAE9"
 			tasks: [{
@@ -3126,6 +3129,83 @@
 			}]
 			x: 13.0d
 			y: 2.0d
+		}
+		{
+			dependencies: [
+				"07B1B6C8502FD122"
+				"20CEFFF2715407F7"
+			]
+			id: "0123814E6974B024"
+			tasks: [{
+				id: "52177622E25F410D"
+				item: { count: 1, id: "minecraft:enchanting_table" }
+				type: "item"
+			}]
+			x: 20.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["63FB7295B442F0A3"]
+			id: "5E484A23993D838B"
+			tasks: [{
+				id: "6A055A7F8C7966B4"
+				item: { count: 1, id: "minecraft:bookshelf" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6234119EB06F849A"]
+			id: "7345E7D1FECD7C92"
+			tasks: [{
+				id: "5FFAFAA0440C6AF7"
+				item: { count: 1, id: "minecraft:cobweb" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["06C11C85AE952B68"]
+			id: "6234119EB06F849A"
+			tasks: [{
+				id: "6522151844EFD287"
+				item: { count: 1, id: "minecraft:honeycomb" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"2BA2C2C96463234B"
+				"215396364C37E4C1"
+				"247655472A2FFA4B"
+			]
+			id: "393C5D8CCFDFFDEB"
+			tasks: [{
+				id: "4A337EFD942BE9ED"
+				item: { count: 1, id: "minecraft:prismarine_shard" }
+				type: "item"
+			}]
+			x: 16.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"2BA2C2C96463234B"
+				"215396364C37E4C1"
+				"247655472A2FFA4B"
+			]
+			id: "4B54E2A3425F7FA9"
+			tasks: [{
+				id: "76856AC7B38BA6FA"
+				item: { count: 1, id: "minecraft:prismarine_crystals" }
+				type: "item"
+			}]
+			x: 16.0d
+			y: -1.0d
 		}
 	]
 }

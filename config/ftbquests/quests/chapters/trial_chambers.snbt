@@ -1012,5 +1012,25 @@
 			x: 10.0d
 			y: 0.0d
 		}
+		{
+			dependencies: ["041C0F5E471298D2"]
+			hide_dependency_lines: true
+			id: "7DC6314C3C8392BF"
+			tasks: [{
+				entity: "minecraft:guardian"
+				icon: {
+					components: {
+						"!ftbquests:icon": { }
+						"ftbquests:entity_face": "minecraft:guardian"
+					}
+					id: "ftbquests:custom_icon"
+				}
+				id: "38322D58A8093CC0"
+				type: "kill"
+				value: 1L
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
 	]
 }
