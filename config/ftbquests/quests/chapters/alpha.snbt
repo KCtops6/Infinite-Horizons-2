@@ -85,26 +85,6 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["57401F4BD3952C56"]
-			id: "62DBB6855DF2639C"
-			rewards: [{
-				id: "239321A7667B6B20"
-				item: {
-					count: 1
-					id: "farmersdelight:smoked_ham"
-				}
-				random_bonus: 2
-				type: "item"
-			}]
-			tasks: [{
-				id: "5E90854D6BFDD0C0"
-				item: { count: 1, id: "minecraft:crafting_table" }
-				type: "item"
-			}]
-			x: 5.0d
-			y: 0.0d
-		}
-		{
 			dependencies: ["62DBB6855DF2639C"]
 			icon: {
 				id: "minecraft:cobblestone"
@@ -1879,20 +1859,6 @@
 			y: 2.0d
 		}
 		{
-			dependencies: [
-				"46A5E29FA510A91F"
-				"1B0B345B1B376950"
-			]
-			id: "63FB7295B442F0A3"
-			tasks: [{
-				id: "0819D9FABCDC866B"
-				item: { count: 1, id: "minecraft:book" }
-				type: "item"
-			}]
-			x: 4.0d
-			y: 3.0d
-		}
-		{
 			dependencies: ["0A32D1747C313758"]
 			icon: {
 				id: "minecraft:glowstone_dust"
@@ -3206,6 +3172,40 @@
 			}]
 			x: 16.0d
 			y: -1.0d
+		}
+		{
+			dependencies: ["57401F4BD3952C56"]
+			id: "62DBB6855DF2639C"
+			rewards: [{
+				id: "239321A7667B6B20"
+				item: {
+					count: 1
+					id: "farmersdelight:smoked_ham"
+				}
+				random_bonus: 2
+				type: "item"
+			}]
+			tasks: [{
+				id: "5E90854D6BFDD0C0"
+				item: { count: 1, id: "minecraft:crafting_table" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"46A5E29FA510A91F"
+				"1B0B345B1B376950"
+			]
+			id: "63FB7295B442F0A3"
+			tasks: [{
+				id: "0819D9FABCDC866B"
+				item: { count: 1, id: "minecraft:book" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 3.0d
 		}
 	]
 }

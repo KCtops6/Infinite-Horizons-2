@@ -1,0 +1,3135 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "forestry"
+	group: "3C16C4C95F1091C7"
+	icon: {
+		components: {
+			"ftbquests:icon": "forestry:analyzer/queen"
+		}
+		id: "ftbquests:custom_icon"
+	}
+	id: "69C4FCDC6823BBAF"
+	images: [
+		{
+			alpha: 100
+			click_action: "none:"
+			dependency: "15F1249B9F9C8271"
+			height: 5.0d
+			id: "733857DF2AB8F242"
+			image: "forestry:item/portable_analyzer"
+			rotation: 0.0d
+			width: 5.0d
+			x: 6.5d
+			y: 1.0d
+		}
+		{
+			alpha: 100
+			click_action: "none:"
+			height: 6.0d
+			id: "692B2734C1F1DA88"
+			image: "forestry:block/hive/forest_side"
+			rotation: 0.0d
+			width: 6.0d
+			x: 12.0d
+			y: 1.0d
+		}
+		{
+			alpha: 100
+			click_action: "none:"
+			dependency: "15F1249B9F9C8271"
+			height: 3.0d
+			id: "176D0322EA777E95"
+			image: "minecraft:block/jungle_sapling"
+			rotation: 0.0d
+			width: 3.0d
+			x: 8.0d
+			y: 6.0d
+		}
+		{
+			alpha: 100
+			click_action: "none:"
+			dependency: "15F1249B9F9C8271"
+			height: 3.0d
+			id: "68F62F85CFF113E7"
+			image: "minecraft:block/dead_bush"
+			rotation: 0.0d
+			width: 3.0d
+			x: 6.5d
+			y: 5.0d
+		}
+		{
+			alpha: 100
+			click_action: "none:"
+			dependency: "15F1249B9F9C8271"
+			height: 2.0d
+			id: "3896E6E15D804331"
+			image: "minecraft:item/cocoa_beans"
+			rotation: 0.0d
+			width: 2.0d
+			x: 3.0d
+			y: 4.5d
+		}
+	]
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["15F1249B9F9C8271"]
+			id: "543C86DDFDA84C53"
+			tasks: [{
+				id: "3D67B49EFD48465F"
+				item: { count: 1, id: "forestry:portable_analyzer" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["365A8978141DED30"]
+			id: "3614E3052441124D"
+			tasks: [{
+				id: "6A7FB95A91869EB8"
+				item: { count: 1, id: "forestry:carpenter" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["530D2C4BCE180B0F"]
+			id: "365A8978141DED30"
+			tasks: [{
+				id: "68BD28E09CFB55E5"
+				item: { count: 1, id: "forestry:sturdy_casing" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"57F63B13860AEABF"
+				"0B220E8B253FE116"
+				"60E7D7DC038AA803"
+				"7F755B8418EB5FA2"
+			]
+			dependency_requirement: "one_completed"
+			hide_dependency_lines: true
+			id: "5F30BB5DB0EE6D7B"
+			tasks: [{
+				id: "24C85C9675FA2249"
+				item: { count: 1, id: "forestry:honey_drop" }
+				type: "item"
+			}]
+			x: 19.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["365A8978141DED30"]
+			id: "0B88166517E34CCB"
+			tasks: [{
+				id: "0A3E3FE0CEDC44D7"
+				item: { count: 1, id: "forestry:centrifuge" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3E91614E31911448"]
+			hide_dependent_lines: true
+			id: "15F1249B9F9C8271"
+			tasks: [{
+				id: "5620229163EA03EA"
+				item: { count: 1, id: "forestry:scoop" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"4A74177B7ABA1FC6"
+				"1B0B345B1B376950"
+				"14FF82F5ED2A5948"
+				"15F1249B9F9C8271"
+			]
+			id: "76032E6106DB2B3D"
+			tasks: [{
+				id: "64244CEC587D1CC5"
+				item: { count: 1, id: "forestry:bee_smoker" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["365A8978141DED30"]
+			id: "7477E3DE7C0278BB"
+			tasks: [{
+				id: "7E87DA6B14ABD9CD"
+				item: { count: 1, id: "forestry:squeezer" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: 1.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["7477E3DE7C0278BB"]
+			id: "18B00BE76BD1FC3E"
+			repeat_cooldown: 1000
+			tasks: [{
+				fluid: {
+					amount: 1000
+					id: "forestry:seed_oil"
+				}
+				icon: {
+					components: {
+						"forestry:fluid_content": {
+							amount: 1000
+							id: "forestry:seed_oil"
+						}
+						"minecraft:damage": 0
+					}
+					id: "forestry:can"
+				}
+				id: "51537F6E5605A3C5"
+				type: "fluid"
+			}]
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"18B00BE76BD1FC3E"
+				"3614E3052441124D"
+			]
+			id: "3E91614E31911448"
+			tasks: [{
+				id: "7615D8D69197ADB0"
+				item: { count: 1, id: "forestry:escritoire" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["15F1249B9F9C8271"]
+			icon: {
+				components: {
+					"forestry:bee_generation": 0
+					"forestry:bee_pristine": 1b
+					"forestry:genome": {
+						genome: {
+							"forestry:activity": {
+								active: {
+									dominant: 1b
+									value: "forestry:activity_diurnal"
+								}
+								inactive: {
+									dominant: 1b
+									value: "forestry:activity_diurnal"
+								}
+							}
+							"forestry:bee_effect": {
+								active: {
+									dominant: 1b
+									value: "forestry:bee_effect_none"
+								}
+								inactive: {
+									dominant: 1b
+									value: "forestry:bee_effect_none"
+								}
+							}
+							"forestry:bee_species": {
+								active: {
+									dominant: 1b
+									value: "forestry:forest"
+								}
+								inactive: {
+									dominant: 1b
+									value: "forestry:forest"
+								}
+							}
+							"forestry:cave_dwelling": {
+								active: {
+									dominant: 1b
+									value: 0b
+								}
+								inactive: {
+									dominant: 1b
+									value: 0b
+								}
+							}
+							"forestry:fertility": {
+								active: {
+									value: 3
+								}
+								inactive: {
+									value: 3
+								}
+							}
+							"forestry:flower_type": {
+								active: {
+									dominant: 1b
+									value: "forestry:flower_type_vanilla"
+								}
+								inactive: {
+									dominant: 1b
+									value: "forestry:flower_type_vanilla"
+								}
+							}
+							"forestry:humidity_tolerance": {
+								active: {
+									value: "NONE"
+								}
+								inactive: {
+									value: "NONE"
+								}
+							}
+							"forestry:lifespan": {
+								active: {
+									dominant: 1b
+									value: 20
+								}
+								inactive: {
+									dominant: 1b
+									value: 20
+								}
+							}
+							"forestry:pollination": {
+								active: {
+									value: 10
+								}
+								inactive: {
+									value: 10
+								}
+							}
+							"forestry:speed": {
+								active: {
+									dominant: 1b
+									value: 0.3f
+								}
+								inactive: {
+									dominant: 1b
+									value: 0.3f
+								}
+							}
+							"forestry:temperature_tolerance": {
+								active: {
+									dominant: 1b
+									value: "DOWN_1"
+								}
+								inactive: {
+									dominant: 1b
+									value: "DOWN_1"
+								}
+							}
+							"forestry:territory": {
+								active: {
+									value: [I;
+										9
+										6
+										9
+									]
+								}
+								inactive: {
+									value: [I;
+										9
+										6
+										9
+									]
+								}
+							}
+							"forestry:tolerates_rain": {
+								active: {
+									dominant: 1b
+									value: 0b
+								}
+								inactive: {
+									dominant: 1b
+									value: 0b
+								}
+							}
+						}
+						karyotype: "forestry:bee_species"
+					}
+					"forestry:health": 20
+					"forestry:max_health": 20
+				}
+				id: "forestry:princess_bee"
+			}
+			id: "7F755B8418EB5FA2"
+			rewards: [
+				{
+					id: "1B67F23D76A3C608"
+					item: {
+						components: {
+							"forestry:bee_generation": 0
+							"forestry:bee_pristine": 1b
+							"forestry:genome": {
+								genome: {
+									"forestry:activity": {
+										active: {
+											dominant: 1b
+											value: "forestry:activity_diurnal"
+										}
+										inactive: {
+											dominant: 1b
+											value: "forestry:activity_diurnal"
+										}
+									}
+									"forestry:bee_effect": {
+										active: {
+											dominant: 1b
+											value: "forestry:bee_effect_none"
+										}
+										inactive: {
+											dominant: 1b
+											value: "forestry:bee_effect_none"
+										}
+									}
+									"forestry:bee_species": {
+										active: {
+											dominant: 1b
+											value: "forestry:forest"
+										}
+										inactive: {
+											dominant: 1b
+											value: "forestry:forest"
+										}
+									}
+									"forestry:cave_dwelling": {
+										active: {
+											dominant: 1b
+											value: 0b
+										}
+										inactive: {
+											dominant: 1b
+											value: 0b
+										}
+									}
+									"forestry:fertility": {
+										active: {
+											value: 3
+										}
+										inactive: {
+											value: 3
+										}
+									}
+									"forestry:flower_type": {
+										active: {
+											dominant: 1b
+											value: "forestry:flower_type_vanilla"
+										}
+										inactive: {
+											dominant: 1b
+											value: "forestry:flower_type_vanilla"
+										}
+									}
+									"forestry:humidity_tolerance": {
+										active: {
+											value: "NONE"
+										}
+										inactive: {
+											value: "NONE"
+										}
+									}
+									"forestry:lifespan": {
+										active: {
+											dominant: 1b
+											value: 20
+										}
+										inactive: {
+											dominant: 1b
+											value: 20
+										}
+									}
+									"forestry:pollination": {
+										active: {
+											value: 10
+										}
+										inactive: {
+											value: 10
+										}
+									}
+									"forestry:speed": {
+										active: {
+											dominant: 1b
+											value: 0.3f
+										}
+										inactive: {
+											dominant: 1b
+											value: 0.3f
+										}
+									}
+									"forestry:temperature_tolerance": {
+										active: {
+											dominant: 1b
+											value: "DOWN_1"
+										}
+										inactive: {
+											dominant: 1b
+											value: "DOWN_1"
+										}
+									}
+									"forestry:territory": {
+										active: {
+											value: [I;
+												9
+												6
+												9
+											]
+										}
+										inactive: {
+											value: [I;
+												9
+												6
+												9
+											]
+										}
+									}
+									"forestry:tolerates_rain": {
+										active: {
+											dominant: 1b
+											value: 0b
+										}
+										inactive: {
+											dominant: 1b
+											value: 0b
+										}
+									}
+								}
+								karyotype: "forestry:bee_species"
+							}
+							"forestry:health": 20
+							"forestry:max_health": 20
+						}
+						count: 1
+						id: "forestry:princess_bee"
+					}
+					random_bonus: 2
+					type: "item"
+				}
+				{
+					count: 3
+					id: "03DC20F02BA32031"
+					item: {
+						components: {
+							"forestry:bee_generation": 0
+							"forestry:bee_pristine": 1b
+							"forestry:genome": {
+								genome: {
+									"forestry:activity": {
+										active: {
+											dominant: 1b
+											value: "forestry:activity_diurnal"
+										}
+										inactive: {
+											dominant: 1b
+											value: "forestry:activity_diurnal"
+										}
+									}
+									"forestry:bee_effect": {
+										active: {
+											dominant: 1b
+											value: "forestry:bee_effect_none"
+										}
+										inactive: {
+											dominant: 1b
+											value: "forestry:bee_effect_none"
+										}
+									}
+									"forestry:bee_species": {
+										active: {
+											dominant: 1b
+											value: "forestry:forest"
+										}
+										inactive: {
+											dominant: 1b
+											value: "forestry:forest"
+										}
+									}
+									"forestry:cave_dwelling": {
+										active: {
+											dominant: 1b
+											value: 0b
+										}
+										inactive: {
+											dominant: 1b
+											value: 0b
+										}
+									}
+									"forestry:fertility": {
+										active: {
+											value: 3
+										}
+										inactive: {
+											value: 3
+										}
+									}
+									"forestry:flower_type": {
+										active: {
+											dominant: 1b
+											value: "forestry:flower_type_vanilla"
+										}
+										inactive: {
+											dominant: 1b
+											value: "forestry:flower_type_vanilla"
+										}
+									}
+									"forestry:humidity_tolerance": {
+										active: {
+											value: "NONE"
+										}
+										inactive: {
+											value: "NONE"
+										}
+									}
+									"forestry:lifespan": {
+										active: {
+											dominant: 1b
+											value: 20
+										}
+										inactive: {
+											dominant: 1b
+											value: 20
+										}
+									}
+									"forestry:pollination": {
+										active: {
+											value: 10
+										}
+										inactive: {
+											value: 10
+										}
+									}
+									"forestry:speed": {
+										active: {
+											dominant: 1b
+											value: 0.3f
+										}
+										inactive: {
+											dominant: 1b
+											value: 0.3f
+										}
+									}
+									"forestry:temperature_tolerance": {
+										active: {
+											dominant: 1b
+											value: "DOWN_1"
+										}
+										inactive: {
+											dominant: 1b
+											value: "DOWN_1"
+										}
+									}
+									"forestry:territory": {
+										active: {
+											value: [I;
+												9
+												6
+												9
+											]
+										}
+										inactive: {
+											value: [I;
+												9
+												6
+												9
+											]
+										}
+									}
+									"forestry:tolerates_rain": {
+										active: {
+											dominant: 1b
+											value: 0b
+										}
+										inactive: {
+											dominant: 1b
+											value: 0b
+										}
+									}
+								}
+								karyotype: "forestry:bee_species"
+							}
+							"forestry:health": 20
+							"forestry:max_health": 20
+						}
+						count: 1
+						id: "forestry:drone_bee"
+					}
+					random_bonus: 2
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "37D81F5A9DA9E695"
+					item: { count: 1, id: "forestry:forest_hive" }
+					type: "item"
+				}
+				{
+					id: "5C8A57D424481974"
+					item: { components: { "forestry:bee_generation": 0, "forestry:bee_pristine": 1b, "forestry:genome": { genome: { "forestry:activity": { active: { dominant: 1b, value: "forestry:activity_diurnal" }, inactive: { dominant: 1b, value: "forestry:activity_diurnal" } }, "forestry:bee_effect": { active: { dominant: 1b, value: "forestry:bee_effect_none" }, inactive: { dominant: 1b, value: "forestry:bee_effect_none" } }, "forestry:bee_species": { active: { dominant: 1b, value: "forestry:forest" }, inactive: { dominant: 1b, value: "forestry:forest" } }, "forestry:cave_dwelling": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } }, "forestry:fertility": { active: { value: 3 }, inactive: { value: 3 } }, "forestry:flower_type": { active: { dominant: 1b, value: "forestry:flower_type_vanilla" }, inactive: { dominant: 1b, value: "forestry:flower_type_vanilla" } }, "forestry:humidity_tolerance": { active: { value: "NONE" }, inactive: { value: "NONE" } }, "forestry:lifespan": { active: { dominant: 1b, value: 20 }, inactive: { dominant: 1b, value: 20 } }, "forestry:pollination": { active: { value: 10 }, inactive: { value: 10 } }, "forestry:speed": { active: { dominant: 1b, value: 0.3f }, inactive: { dominant: 1b, value: 0.3f } }, "forestry:temperature_tolerance": { active: { dominant: 1b, value: "DOWN_1" }, inactive: { dominant: 1b, value: "DOWN_1" } }, "forestry:territory": { active: { value: [I; 9, 6, 9 ] }, inactive: { value: [I; 9, 6, 9 ] } }, "forestry:tolerates_rain": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } } }, karyotype: "forestry:bee_species" }, "forestry:health": 20, "forestry:max_health": 20 }, count: 1, id: "forestry:princess_bee" }
+					type: "item"
+				}
+				{
+					id: "6D50A115D575E2F0"
+					item: { components: { "forestry:bee_generation": 0, "forestry:bee_pristine": 1b, "forestry:genome": { genome: { "forestry:activity": { active: { dominant: 1b, value: "forestry:activity_diurnal" }, inactive: { dominant: 1b, value: "forestry:activity_diurnal" } }, "forestry:bee_effect": { active: { dominant: 1b, value: "forestry:bee_effect_none" }, inactive: { dominant: 1b, value: "forestry:bee_effect_none" } }, "forestry:bee_species": { active: { dominant: 1b, value: "forestry:forest" }, inactive: { dominant: 1b, value: "forestry:forest" } }, "forestry:cave_dwelling": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } }, "forestry:fertility": { active: { value: 3 }, inactive: { value: 3 } }, "forestry:flower_type": { active: { dominant: 1b, value: "forestry:flower_type_vanilla" }, inactive: { dominant: 1b, value: "forestry:flower_type_vanilla" } }, "forestry:humidity_tolerance": { active: { value: "NONE" }, inactive: { value: "NONE" } }, "forestry:lifespan": { active: { dominant: 1b, value: 20 }, inactive: { dominant: 1b, value: 20 } }, "forestry:pollination": { active: { value: 10 }, inactive: { value: 10 } }, "forestry:speed": { active: { dominant: 1b, value: 0.3f }, inactive: { dominant: 1b, value: 0.3f } }, "forestry:temperature_tolerance": { active: { dominant: 1b, value: "DOWN_1" }, inactive: { dominant: 1b, value: "DOWN_1" } }, "forestry:territory": { active: { value: [I; 9, 6, 9 ] }, inactive: { value: [I; 9, 6, 9 ] } }, "forestry:tolerates_rain": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } } }, karyotype: "forestry:bee_species" }, "forestry:health": 20, "forestry:max_health": 20 }, count: 1, id: "forestry:drone_bee" }
+					type: "item"
+				}
+			]
+			x: 5.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["15F1249B9F9C8271"]
+			icon: {
+				components: {
+					"forestry:bee_generation": 0
+					"forestry:bee_pristine": 1b
+					"forestry:genome": {
+						genome: {
+							"forestry:activity": {
+								active: {
+									dominant: 1b
+									value: "forestry:activity_diurnal"
+								}
+								inactive: {
+									dominant: 1b
+									value: "forestry:activity_diurnal"
+								}
+							}
+							"forestry:bee_effect": {
+								active: {
+									dominant: 1b
+									value: "forestry:bee_effect_none"
+								}
+								inactive: {
+									dominant: 1b
+									value: "forestry:bee_effect_none"
+								}
+							}
+							"forestry:bee_species": {
+								active: {
+									dominant: 1b
+									value: "forestry:meadows"
+								}
+								inactive: {
+									dominant: 1b
+									value: "forestry:meadows"
+								}
+							}
+							"forestry:cave_dwelling": {
+								active: {
+									dominant: 1b
+									value: 0b
+								}
+								inactive: {
+									dominant: 1b
+									value: 0b
+								}
+							}
+							"forestry:fertility": {
+								active: {
+									dominant: 1b
+									value: 2
+								}
+								inactive: {
+									dominant: 1b
+									value: 2
+								}
+							}
+							"forestry:flower_type": {
+								active: {
+									dominant: 1b
+									value: "forestry:flower_type_vanilla"
+								}
+								inactive: {
+									dominant: 1b
+									value: "forestry:flower_type_vanilla"
+								}
+							}
+							"forestry:humidity_tolerance": {
+								active: {
+									dominant: 1b
+									value: "DOWN_1"
+								}
+								inactive: {
+									dominant: 1b
+									value: "DOWN_1"
+								}
+							}
+							"forestry:lifespan": {
+								active: {
+									dominant: 1b
+									value: 20
+								}
+								inactive: {
+									dominant: 1b
+									value: 20
+								}
+							}
+							"forestry:pollination": {
+								active: {
+									value: 10
+								}
+								inactive: {
+									value: 10
+								}
+							}
+							"forestry:speed": {
+								active: {
+									dominant: 1b
+									value: 0.3f
+								}
+								inactive: {
+									dominant: 1b
+									value: 0.3f
+								}
+							}
+							"forestry:temperature_tolerance": {
+								active: {
+									value: "NONE"
+								}
+								inactive: {
+									value: "NONE"
+								}
+							}
+							"forestry:territory": {
+								active: {
+									value: [I;
+										9
+										6
+										9
+									]
+								}
+								inactive: {
+									value: [I;
+										9
+										6
+										9
+									]
+								}
+							}
+							"forestry:tolerates_rain": {
+								active: {
+									dominant: 1b
+									value: 0b
+								}
+								inactive: {
+									dominant: 1b
+									value: 0b
+								}
+							}
+						}
+						karyotype: "forestry:bee_species"
+					}
+					"forestry:health": 20
+					"forestry:max_health": 20
+				}
+				id: "forestry:princess_bee"
+			}
+			id: "60E7D7DC038AA803"
+			rewards: [
+				{
+					id: "669BCBEEA74C2838"
+					item: {
+						components: {
+							"forestry:bee_generation": 0
+							"forestry:bee_pristine": 1b
+							"forestry:genome": {
+								genome: {
+									"forestry:activity": {
+										active: {
+											dominant: 1b
+											value: "forestry:activity_diurnal"
+										}
+										inactive: {
+											dominant: 1b
+											value: "forestry:activity_diurnal"
+										}
+									}
+									"forestry:bee_effect": {
+										active: {
+											dominant: 1b
+											value: "forestry:bee_effect_none"
+										}
+										inactive: {
+											dominant: 1b
+											value: "forestry:bee_effect_none"
+										}
+									}
+									"forestry:bee_species": {
+										active: {
+											dominant: 1b
+											value: "forestry:meadows"
+										}
+										inactive: {
+											dominant: 1b
+											value: "forestry:meadows"
+										}
+									}
+									"forestry:cave_dwelling": {
+										active: {
+											dominant: 1b
+											value: 0b
+										}
+										inactive: {
+											dominant: 1b
+											value: 0b
+										}
+									}
+									"forestry:fertility": {
+										active: {
+											dominant: 1b
+											value: 2
+										}
+										inactive: {
+											dominant: 1b
+											value: 2
+										}
+									}
+									"forestry:flower_type": {
+										active: {
+											dominant: 1b
+											value: "forestry:flower_type_vanilla"
+										}
+										inactive: {
+											dominant: 1b
+											value: "forestry:flower_type_vanilla"
+										}
+									}
+									"forestry:humidity_tolerance": {
+										active: {
+											dominant: 1b
+											value: "DOWN_1"
+										}
+										inactive: {
+											dominant: 1b
+											value: "DOWN_1"
+										}
+									}
+									"forestry:lifespan": {
+										active: {
+											dominant: 1b
+											value: 20
+										}
+										inactive: {
+											dominant: 1b
+											value: 20
+										}
+									}
+									"forestry:pollination": {
+										active: {
+											value: 10
+										}
+										inactive: {
+											value: 10
+										}
+									}
+									"forestry:speed": {
+										active: {
+											dominant: 1b
+											value: 0.3f
+										}
+										inactive: {
+											dominant: 1b
+											value: 0.3f
+										}
+									}
+									"forestry:temperature_tolerance": {
+										active: {
+											value: "NONE"
+										}
+										inactive: {
+											value: "NONE"
+										}
+									}
+									"forestry:territory": {
+										active: {
+											value: [I;
+												9
+												6
+												9
+											]
+										}
+										inactive: {
+											value: [I;
+												9
+												6
+												9
+											]
+										}
+									}
+									"forestry:tolerates_rain": {
+										active: {
+											dominant: 1b
+											value: 0b
+										}
+										inactive: {
+											dominant: 1b
+											value: 0b
+										}
+									}
+								}
+								karyotype: "forestry:bee_species"
+							}
+							"forestry:health": 20
+							"forestry:max_health": 20
+						}
+						count: 1
+						id: "forestry:princess_bee"
+					}
+					random_bonus: 2
+					type: "item"
+				}
+				{
+					count: 3
+					id: "66A341426E46D00F"
+					item: {
+						components: {
+							"forestry:bee_generation": 0
+							"forestry:bee_pristine": 1b
+							"forestry:genome": {
+								genome: {
+									"forestry:activity": {
+										active: {
+											dominant: 1b
+											value: "forestry:activity_diurnal"
+										}
+										inactive: {
+											dominant: 1b
+											value: "forestry:activity_diurnal"
+										}
+									}
+									"forestry:bee_effect": {
+										active: {
+											dominant: 1b
+											value: "forestry:bee_effect_none"
+										}
+										inactive: {
+											dominant: 1b
+											value: "forestry:bee_effect_none"
+										}
+									}
+									"forestry:bee_species": {
+										active: {
+											dominant: 1b
+											value: "forestry:meadows"
+										}
+										inactive: {
+											dominant: 1b
+											value: "forestry:meadows"
+										}
+									}
+									"forestry:cave_dwelling": {
+										active: {
+											dominant: 1b
+											value: 0b
+										}
+										inactive: {
+											dominant: 1b
+											value: 0b
+										}
+									}
+									"forestry:fertility": {
+										active: {
+											dominant: 1b
+											value: 2
+										}
+										inactive: {
+											dominant: 1b
+											value: 2
+										}
+									}
+									"forestry:flower_type": {
+										active: {
+											dominant: 1b
+											value: "forestry:flower_type_vanilla"
+										}
+										inactive: {
+											dominant: 1b
+											value: "forestry:flower_type_vanilla"
+										}
+									}
+									"forestry:humidity_tolerance": {
+										active: {
+											dominant: 1b
+											value: "DOWN_1"
+										}
+										inactive: {
+											dominant: 1b
+											value: "DOWN_1"
+										}
+									}
+									"forestry:lifespan": {
+										active: {
+											dominant: 1b
+											value: 20
+										}
+										inactive: {
+											dominant: 1b
+											value: 20
+										}
+									}
+									"forestry:pollination": {
+										active: {
+											value: 10
+										}
+										inactive: {
+											value: 10
+										}
+									}
+									"forestry:speed": {
+										active: {
+											dominant: 1b
+											value: 0.3f
+										}
+										inactive: {
+											dominant: 1b
+											value: 0.3f
+										}
+									}
+									"forestry:temperature_tolerance": {
+										active: {
+											value: "NONE"
+										}
+										inactive: {
+											value: "NONE"
+										}
+									}
+									"forestry:territory": {
+										active: {
+											value: [I;
+												9
+												6
+												9
+											]
+										}
+										inactive: {
+											value: [I;
+												9
+												6
+												9
+											]
+										}
+									}
+									"forestry:tolerates_rain": {
+										active: {
+											dominant: 1b
+											value: 0b
+										}
+										inactive: {
+											dominant: 1b
+											value: 0b
+										}
+									}
+								}
+								karyotype: "forestry:bee_species"
+							}
+							"forestry:health": 20
+							"forestry:max_health": 20
+						}
+						count: 1
+						id: "forestry:drone_bee"
+					}
+					random_bonus: 2
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "2E89F8BBC8A643F6"
+					item: { count: 1, id: "forestry:meadows_hive" }
+					type: "item"
+				}
+				{
+					id: "3070C2BE6BC913AC"
+					item: { components: { "forestry:bee_generation": 0, "forestry:bee_pristine": 1b, "forestry:genome": { genome: { "forestry:activity": { active: { dominant: 1b, value: "forestry:activity_diurnal" }, inactive: { dominant: 1b, value: "forestry:activity_diurnal" } }, "forestry:bee_effect": { active: { dominant: 1b, value: "forestry:bee_effect_none" }, inactive: { dominant: 1b, value: "forestry:bee_effect_none" } }, "forestry:bee_species": { active: { dominant: 1b, value: "forestry:meadows" }, inactive: { dominant: 1b, value: "forestry:meadows" } }, "forestry:cave_dwelling": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } }, "forestry:fertility": { active: { dominant: 1b, value: 2 }, inactive: { dominant: 1b, value: 2 } }, "forestry:flower_type": { active: { dominant: 1b, value: "forestry:flower_type_vanilla" }, inactive: { dominant: 1b, value: "forestry:flower_type_vanilla" } }, "forestry:humidity_tolerance": { active: { dominant: 1b, value: "DOWN_1" }, inactive: { dominant: 1b, value: "DOWN_1" } }, "forestry:lifespan": { active: { dominant: 1b, value: 20 }, inactive: { dominant: 1b, value: 20 } }, "forestry:pollination": { active: { value: 10 }, inactive: { value: 10 } }, "forestry:speed": { active: { dominant: 1b, value: 0.3f }, inactive: { dominant: 1b, value: 0.3f } }, "forestry:temperature_tolerance": { active: { value: "NONE" }, inactive: { value: "NONE" } }, "forestry:territory": { active: { value: [I; 9, 6, 9 ] }, inactive: { value: [I; 9, 6, 9 ] } }, "forestry:tolerates_rain": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } } }, karyotype: "forestry:bee_species" }, "forestry:health": 20, "forestry:max_health": 20 }, count: 1, id: "forestry:princess_bee" }
+					type: "item"
+				}
+				{
+					id: "78F1707B7A25394C"
+					item: { components: { "forestry:bee_generation": 0, "forestry:bee_pristine": 1b, "forestry:genome": { genome: { "forestry:activity": { active: { dominant: 1b, value: "forestry:activity_diurnal" }, inactive: { dominant: 1b, value: "forestry:activity_diurnal" } }, "forestry:bee_effect": { active: { dominant: 1b, value: "forestry:bee_effect_none" }, inactive: { dominant: 1b, value: "forestry:bee_effect_none" } }, "forestry:bee_species": { active: { dominant: 1b, value: "forestry:meadows" }, inactive: { dominant: 1b, value: "forestry:meadows" } }, "forestry:cave_dwelling": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } }, "forestry:fertility": { active: { dominant: 1b, value: 2 }, inactive: { dominant: 1b, value: 2 } }, "forestry:flower_type": { active: { dominant: 1b, value: "forestry:flower_type_vanilla" }, inactive: { dominant: 1b, value: "forestry:flower_type_vanilla" } }, "forestry:humidity_tolerance": { active: { dominant: 1b, value: "DOWN_1" }, inactive: { dominant: 1b, value: "DOWN_1" } }, "forestry:lifespan": { active: { dominant: 1b, value: 20 }, inactive: { dominant: 1b, value: 20 } }, "forestry:pollination": { active: { value: 10 }, inactive: { value: 10 } }, "forestry:speed": { active: { dominant: 1b, value: 0.3f }, inactive: { dominant: 1b, value: 0.3f } }, "forestry:temperature_tolerance": { active: { value: "NONE" }, inactive: { value: "NONE" } }, "forestry:territory": { active: { value: [I; 9, 6, 9 ] }, inactive: { value: [I; 9, 6, 9 ] } }, "forestry:tolerates_rain": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } } }, karyotype: "forestry:bee_species" }, "forestry:health": 20, "forestry:max_health": 20 }, count: 1, id: "forestry:drone_bee" }
+					type: "item"
+				}
+			]
+			x: 6.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"60E7D7DC038AA803"
+				"7F755B8418EB5FA2"
+				"57F63B13860AEABF"
+				"0B220E8B253FE116"
+				"4967E513F01552DF"
+			]
+			hide_dependency_lines: true
+			id: "3B1FA27A88CBFD3F"
+			min_required_dependencies: 2
+			tasks: [
+				{
+					id: "531E5E907FFBF928"
+					item: { components: { "forestry:bee_generation": 0, "forestry:bee_pristine": 1b, "forestry:genome": { genome: { "forestry:activity": { active: { dominant: 1b, value: "forestry:activity_diurnal" }, inactive: { dominant: 1b, value: "forestry:activity_diurnal" } }, "forestry:bee_effect": { active: { dominant: 1b, value: "forestry:bee_effect_none" }, inactive: { dominant: 1b, value: "forestry:bee_effect_none" } }, "forestry:bee_species": { active: { dominant: 1b, value: "forestry:common" }, inactive: { dominant: 1b, value: "forestry:common" } }, "forestry:cave_dwelling": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } }, "forestry:fertility": { active: { dominant: 1b, value: 2 }, inactive: { dominant: 1b, value: 2 } }, "forestry:flower_type": { active: { dominant: 1b, value: "forestry:flower_type_vanilla" }, inactive: { dominant: 1b, value: "forestry:flower_type_vanilla" } }, "forestry:humidity_tolerance": { active: { value: "NONE" }, inactive: { value: "NONE" } }, "forestry:lifespan": { active: { dominant: 1b, value: 20 }, inactive: { dominant: 1b, value: 20 } }, "forestry:pollination": { active: { dominant: 1b, value: 5 }, inactive: { dominant: 1b, value: 5 } }, "forestry:speed": { active: { dominant: 1b, value: 0.6f }, inactive: { dominant: 1b, value: 0.6f } }, "forestry:temperature_tolerance": { active: { value: "NONE" }, inactive: { value: "NONE" } }, "forestry:territory": { active: { value: [I; 9, 6, 9 ] }, inactive: { value: [I; 9, 6, 9 ] } }, "forestry:tolerates_rain": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } } }, karyotype: "forestry:bee_species" }, "forestry:health": 20, "forestry:max_health": 20 }, count: 1, id: "forestry:princess_bee" }
+					type: "item"
+				}
+				{
+					id: "1391AA1CF2527A83"
+					item: { components: { "forestry:bee_generation": 0, "forestry:bee_pristine": 1b, "forestry:genome": { genome: { "forestry:activity": { active: { dominant: 1b, value: "forestry:activity_diurnal" }, inactive: { dominant: 1b, value: "forestry:activity_diurnal" } }, "forestry:bee_effect": { active: { dominant: 1b, value: "forestry:bee_effect_none" }, inactive: { dominant: 1b, value: "forestry:bee_effect_none" } }, "forestry:bee_species": { active: { dominant: 1b, value: "forestry:common" }, inactive: { dominant: 1b, value: "forestry:common" } }, "forestry:cave_dwelling": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } }, "forestry:fertility": { active: { dominant: 1b, value: 2 }, inactive: { dominant: 1b, value: 2 } }, "forestry:flower_type": { active: { dominant: 1b, value: "forestry:flower_type_vanilla" }, inactive: { dominant: 1b, value: "forestry:flower_type_vanilla" } }, "forestry:humidity_tolerance": { active: { value: "NONE" }, inactive: { value: "NONE" } }, "forestry:lifespan": { active: { dominant: 1b, value: 20 }, inactive: { dominant: 1b, value: 20 } }, "forestry:pollination": { active: { dominant: 1b, value: 5 }, inactive: { dominant: 1b, value: 5 } }, "forestry:speed": { active: { dominant: 1b, value: 0.6f }, inactive: { dominant: 1b, value: 0.6f } }, "forestry:temperature_tolerance": { active: { value: "NONE" }, inactive: { value: "NONE" } }, "forestry:territory": { active: { value: [I; 9, 6, 9 ] }, inactive: { value: [I; 9, 6, 9 ] } }, "forestry:tolerates_rain": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } } }, karyotype: "forestry:bee_species" }, "forestry:health": 20, "forestry:max_health": 20 }, count: 1, id: "forestry:drone_bee" }
+					type: "item"
+				}
+			]
+			x: 6.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3B1FA27A88CBFD3F"]
+			hide_dependent_lines: true
+			id: "2118EEBE0EF6F4A2"
+			tasks: [
+				{
+					id: "55A1E43D5F155FBF"
+					item: { components: { "forestry:bee_generation": 0, "forestry:bee_pristine": 1b, "forestry:genome": { genome: { "forestry:activity": { active: { dominant: 1b, value: "forestry:activity_diurnal" }, inactive: { dominant: 1b, value: "forestry:activity_diurnal" } }, "forestry:bee_effect": { active: { dominant: 1b, value: "forestry:bee_effect_none" }, inactive: { dominant: 1b, value: "forestry:bee_effect_none" } }, "forestry:bee_species": { active: { dominant: 1b, value: "forestry:cultivated" }, inactive: { dominant: 1b, value: "forestry:cultivated" } }, "forestry:cave_dwelling": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } }, "forestry:fertility": { active: { dominant: 1b, value: 2 }, inactive: { dominant: 1b, value: 2 } }, "forestry:flower_type": { active: { dominant: 1b, value: "forestry:flower_type_vanilla" }, inactive: { dominant: 1b, value: "forestry:flower_type_vanilla" } }, "forestry:humidity_tolerance": { active: { value: "NONE" }, inactive: { value: "NONE" } }, "forestry:lifespan": { active: { dominant: 1b, value: 10 }, inactive: { dominant: 1b, value: 10 } }, "forestry:pollination": { active: { dominant: 1b, value: 5 }, inactive: { dominant: 1b, value: 5 } }, "forestry:speed": { active: { dominant: 1b, value: 1.2f }, inactive: { dominant: 1b, value: 1.2f } }, "forestry:temperature_tolerance": { active: { value: "NONE" }, inactive: { value: "NONE" } }, "forestry:territory": { active: { value: [I; 9, 6, 9 ] }, inactive: { value: [I; 9, 6, 9 ] } }, "forestry:tolerates_rain": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } } }, karyotype: "forestry:bee_species" }, "forestry:health": 10, "forestry:max_health": 10 }, count: 1, id: "forestry:princess_bee" }
+					type: "item"
+				}
+				{
+					id: "2C939F473AF517B1"
+					item: { components: { "forestry:bee_generation": 0, "forestry:bee_pristine": 1b, "forestry:genome": { genome: { "forestry:activity": { active: { dominant: 1b, value: "forestry:activity_diurnal" }, inactive: { dominant: 1b, value: "forestry:activity_diurnal" } }, "forestry:bee_effect": { active: { dominant: 1b, value: "forestry:bee_effect_none" }, inactive: { dominant: 1b, value: "forestry:bee_effect_none" } }, "forestry:bee_species": { active: { dominant: 1b, value: "forestry:cultivated" }, inactive: { dominant: 1b, value: "forestry:cultivated" } }, "forestry:cave_dwelling": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } }, "forestry:fertility": { active: { dominant: 1b, value: 2 }, inactive: { dominant: 1b, value: 2 } }, "forestry:flower_type": { active: { dominant: 1b, value: "forestry:flower_type_vanilla" }, inactive: { dominant: 1b, value: "forestry:flower_type_vanilla" } }, "forestry:humidity_tolerance": { active: { value: "NONE" }, inactive: { value: "NONE" } }, "forestry:lifespan": { active: { dominant: 1b, value: 10 }, inactive: { dominant: 1b, value: 10 } }, "forestry:pollination": { active: { dominant: 1b, value: 5 }, inactive: { dominant: 1b, value: 5 } }, "forestry:speed": { active: { dominant: 1b, value: 1.2f }, inactive: { dominant: 1b, value: 1.2f } }, "forestry:temperature_tolerance": { active: { value: "NONE" }, inactive: { value: "NONE" } }, "forestry:territory": { active: { value: [I; 9, 6, 9 ] }, inactive: { value: [I; 9, 6, 9 ] } }, "forestry:tolerates_rain": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } } }, karyotype: "forestry:bee_species" }, "forestry:health": 10, "forestry:max_health": 10 }, count: 1, id: "forestry:drone_bee" }
+					type: "item"
+				}
+			]
+			x: 6.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2118EEBE0EF6F4A2"]
+			id: "57F6FB303F188D69"
+			tasks: [
+				{
+					id: "681C4FBDE8294D16"
+					item: { components: { "forestry:bee_generation": 0, "forestry:bee_pristine": 1b, "forestry:genome": { genome: { "forestry:activity": { active: { dominant: 1b, value: "forestry:activity_diurnal" }, inactive: { dominant: 1b, value: "forestry:activity_diurnal" } }, "forestry:bee_effect": { active: { dominant: 1b, value: "forestry:bee_effect_none" }, inactive: { dominant: 1b, value: "forestry:bee_effect_none" } }, "forestry:bee_species": { active: { value: "forestry:diligent" }, inactive: { value: "forestry:diligent" } }, "forestry:cave_dwelling": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } }, "forestry:fertility": { active: { dominant: 1b, value: 2 }, inactive: { dominant: 1b, value: 2 } }, "forestry:flower_type": { active: { dominant: 1b, value: "forestry:flower_type_vanilla" }, inactive: { dominant: 1b, value: "forestry:flower_type_vanilla" } }, "forestry:humidity_tolerance": { active: { value: "NONE" }, inactive: { value: "NONE" } }, "forestry:lifespan": { active: { dominant: 1b, value: 30 }, inactive: { dominant: 1b, value: 30 } }, "forestry:pollination": { active: { value: 15 }, inactive: { value: 15 } }, "forestry:speed": { active: { dominant: 1b, value: 0.6f }, inactive: { dominant: 1b, value: 0.6f } }, "forestry:temperature_tolerance": { active: { value: "NONE" }, inactive: { value: "NONE" } }, "forestry:territory": { active: { value: [I; 9, 6, 9 ] }, inactive: { value: [I; 9, 6, 9 ] } }, "forestry:tolerates_rain": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } } }, karyotype: "forestry:bee_species" }, "forestry:health": 30, "forestry:max_health": 30 }, count: 1, id: "forestry:princess_bee" }
+					type: "item"
+				}
+				{
+					id: "61F0C9A545F7E996"
+					item: { components: { "forestry:bee_generation": 0, "forestry:bee_pristine": 1b, "forestry:genome": { genome: { "forestry:activity": { active: { dominant: 1b, value: "forestry:activity_diurnal" }, inactive: { dominant: 1b, value: "forestry:activity_diurnal" } }, "forestry:bee_effect": { active: { dominant: 1b, value: "forestry:bee_effect_none" }, inactive: { dominant: 1b, value: "forestry:bee_effect_none" } }, "forestry:bee_species": { active: { value: "forestry:diligent" }, inactive: { value: "forestry:diligent" } }, "forestry:cave_dwelling": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } }, "forestry:fertility": { active: { dominant: 1b, value: 2 }, inactive: { dominant: 1b, value: 2 } }, "forestry:flower_type": { active: { dominant: 1b, value: "forestry:flower_type_vanilla" }, inactive: { dominant: 1b, value: "forestry:flower_type_vanilla" } }, "forestry:humidity_tolerance": { active: { value: "NONE" }, inactive: { value: "NONE" } }, "forestry:lifespan": { active: { dominant: 1b, value: 30 }, inactive: { dominant: 1b, value: 30 } }, "forestry:pollination": { active: { value: 15 }, inactive: { value: 15 } }, "forestry:speed": { active: { dominant: 1b, value: 0.6f }, inactive: { dominant: 1b, value: 0.6f } }, "forestry:temperature_tolerance": { active: { value: "NONE" }, inactive: { value: "NONE" } }, "forestry:territory": { active: { value: [I; 9, 6, 9 ] }, inactive: { value: [I; 9, 6, 9 ] } }, "forestry:tolerates_rain": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } } }, karyotype: "forestry:bee_species" }, "forestry:health": 30, "forestry:max_health": 30 }, count: 1, id: "forestry:drone_bee" }
+					type: "item"
+				}
+			]
+			x: 5.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2118EEBE0EF6F4A2"]
+			id: "6B58F97147BA3500"
+			tasks: [
+				{
+					id: "406E1206F1F980A3"
+					item: { components: { "forestry:bee_generation": 0, "forestry:bee_pristine": 1b, "forestry:genome": { genome: { "forestry:activity": { active: { dominant: 1b, value: "forestry:activity_diurnal" }, inactive: { dominant: 1b, value: "forestry:activity_diurnal" } }, "forestry:bee_effect": { active: { dominant: 1b, value: "forestry:bee_effect_none" }, inactive: { dominant: 1b, value: "forestry:bee_effect_none" } }, "forestry:bee_species": { active: { value: "forestry:noble" }, inactive: { value: "forestry:noble" } }, "forestry:cave_dwelling": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } }, "forestry:fertility": { active: { dominant: 1b, value: 2 }, inactive: { dominant: 1b, value: 2 } }, "forestry:flower_type": { active: { dominant: 1b, value: "forestry:flower_type_vanilla" }, inactive: { dominant: 1b, value: "forestry:flower_type_vanilla" } }, "forestry:humidity_tolerance": { active: { value: "NONE" }, inactive: { value: "NONE" } }, "forestry:lifespan": { active: { dominant: 1b, value: 30 }, inactive: { dominant: 1b, value: 30 } }, "forestry:pollination": { active: { value: 15 }, inactive: { value: 15 } }, "forestry:speed": { active: { dominant: 1b, value: 0.6f }, inactive: { dominant: 1b, value: 0.6f } }, "forestry:temperature_tolerance": { active: { value: "NONE" }, inactive: { value: "NONE" } }, "forestry:territory": { active: { value: [I; 9, 6, 9 ] }, inactive: { value: [I; 9, 6, 9 ] } }, "forestry:tolerates_rain": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } } }, karyotype: "forestry:bee_species" }, "forestry:health": 30, "forestry:max_health": 30 }, count: 1, id: "forestry:princess_bee" }
+					type: "item"
+				}
+				{
+					id: "29CDF3FEC4E0F037"
+					item: { components: { "forestry:bee_generation": 0, "forestry:bee_pristine": 1b, "forestry:genome": { genome: { "forestry:activity": { active: { dominant: 1b, value: "forestry:activity_diurnal" }, inactive: { dominant: 1b, value: "forestry:activity_diurnal" } }, "forestry:bee_effect": { active: { dominant: 1b, value: "forestry:bee_effect_none" }, inactive: { dominant: 1b, value: "forestry:bee_effect_none" } }, "forestry:bee_species": { active: { value: "forestry:noble" }, inactive: { value: "forestry:noble" } }, "forestry:cave_dwelling": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } }, "forestry:fertility": { active: { dominant: 1b, value: 2 }, inactive: { dominant: 1b, value: 2 } }, "forestry:flower_type": { active: { dominant: 1b, value: "forestry:flower_type_vanilla" }, inactive: { dominant: 1b, value: "forestry:flower_type_vanilla" } }, "forestry:humidity_tolerance": { active: { value: "NONE" }, inactive: { value: "NONE" } }, "forestry:lifespan": { active: { dominant: 1b, value: 30 }, inactive: { dominant: 1b, value: 30 } }, "forestry:pollination": { active: { value: 15 }, inactive: { value: 15 } }, "forestry:speed": { active: { dominant: 1b, value: 0.6f }, inactive: { dominant: 1b, value: 0.6f } }, "forestry:temperature_tolerance": { active: { value: "NONE" }, inactive: { value: "NONE" } }, "forestry:territory": { active: { value: [I; 9, 6, 9 ] }, inactive: { value: [I; 9, 6, 9 ] } }, "forestry:tolerates_rain": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } } }, karyotype: "forestry:bee_species" }, "forestry:health": 30, "forestry:max_health": 30 }, count: 1, id: "forestry:drone_bee" }
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["57F6FB303F188D69"]
+			id: "01689B66110158DA"
+			tasks: [
+				{
+					id: "0387E6DDFCD9DFBC"
+					item: { components: { "forestry:bee_generation": 0, "forestry:bee_pristine": 1b, "forestry:genome": { genome: { "forestry:activity": { active: { dominant: 1b, value: "forestry:activity_diurnal" }, inactive: { dominant: 1b, value: "forestry:activity_diurnal" } }, "forestry:bee_effect": { active: { dominant: 1b, value: "forestry:bee_effect_none" }, inactive: { dominant: 1b, value: "forestry:bee_effect_none" } }, "forestry:bee_species": { active: { dominant: 1b, value: "forestry:unweary" }, inactive: { dominant: 1b, value: "forestry:unweary" } }, "forestry:cave_dwelling": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } }, "forestry:fertility": { active: { dominant: 1b, value: 2 }, inactive: { dominant: 1b, value: 2 } }, "forestry:flower_type": { active: { dominant: 1b, value: "forestry:flower_type_vanilla" }, inactive: { dominant: 1b, value: "forestry:flower_type_vanilla" } }, "forestry:humidity_tolerance": { active: { value: "NONE" }, inactive: { value: "NONE" } }, "forestry:lifespan": { active: { dominant: 1b, value: 35 }, inactive: { dominant: 1b, value: 35 } }, "forestry:pollination": { active: { dominant: 1b, value: 5 }, inactive: { dominant: 1b, value: 5 } }, "forestry:speed": { active: { value: 1.0f }, inactive: { value: 1.0f } }, "forestry:temperature_tolerance": { active: { value: "NONE" }, inactive: { value: "NONE" } }, "forestry:territory": { active: { value: [I; 9, 6, 9 ] }, inactive: { value: [I; 9, 6, 9 ] } }, "forestry:tolerates_rain": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } } }, karyotype: "forestry:bee_species" }, "forestry:health": 35, "forestry:max_health": 35 }, count: 1, id: "forestry:princess_bee" }
+					type: "item"
+				}
+				{
+					id: "078CCB59ACADCE96"
+					item: { components: { "forestry:bee_generation": 0, "forestry:bee_pristine": 1b, "forestry:genome": { genome: { "forestry:activity": { active: { dominant: 1b, value: "forestry:activity_diurnal" }, inactive: { dominant: 1b, value: "forestry:activity_diurnal" } }, "forestry:bee_effect": { active: { dominant: 1b, value: "forestry:bee_effect_none" }, inactive: { dominant: 1b, value: "forestry:bee_effect_none" } }, "forestry:bee_species": { active: { dominant: 1b, value: "forestry:unweary" }, inactive: { dominant: 1b, value: "forestry:unweary" } }, "forestry:cave_dwelling": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } }, "forestry:fertility": { active: { dominant: 1b, value: 2 }, inactive: { dominant: 1b, value: 2 } }, "forestry:flower_type": { active: { dominant: 1b, value: "forestry:flower_type_vanilla" }, inactive: { dominant: 1b, value: "forestry:flower_type_vanilla" } }, "forestry:humidity_tolerance": { active: { value: "NONE" }, inactive: { value: "NONE" } }, "forestry:lifespan": { active: { dominant: 1b, value: 35 }, inactive: { dominant: 1b, value: 35 } }, "forestry:pollination": { active: { dominant: 1b, value: 5 }, inactive: { dominant: 1b, value: 5 } }, "forestry:speed": { active: { value: 1.0f }, inactive: { value: 1.0f } }, "forestry:temperature_tolerance": { active: { value: "NONE" }, inactive: { value: "NONE" } }, "forestry:territory": { active: { value: [I; 9, 6, 9 ] }, inactive: { value: [I; 9, 6, 9 ] } }, "forestry:tolerates_rain": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } } }, karyotype: "forestry:bee_species" }, "forestry:health": 35, "forestry:max_health": 35 }, count: 1, id: "forestry:drone_bee" }
+					type: "item"
+				}
+			]
+			x: 5.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["01689B66110158DA"]
+			id: "3B5B117BF591A459"
+			tasks: [
+				{
+					id: "5C7B286BA14A8747"
+					item: { components: { "forestry:bee_generation": 0, "forestry:bee_pristine": 1b, "forestry:genome": { genome: { "forestry:activity": { active: { dominant: 1b, value: "forestry:activity_diurnal" }, inactive: { dominant: 1b, value: "forestry:activity_diurnal" } }, "forestry:bee_effect": { active: { dominant: 1b, value: "forestry:bee_effect_none" }, inactive: { dominant: 1b, value: "forestry:bee_effect_none" } }, "forestry:bee_species": { active: { value: "forestry:industrious" }, inactive: { value: "forestry:industrious" } }, "forestry:cave_dwelling": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } }, "forestry:fertility": { active: { dominant: 1b, value: 2 }, inactive: { dominant: 1b, value: 2 } }, "forestry:flower_type": { active: { dominant: 1b, value: "forestry:flower_type_vanilla" }, inactive: { dominant: 1b, value: "forestry:flower_type_vanilla" } }, "forestry:humidity_tolerance": { active: { value: "NONE" }, inactive: { value: "NONE" } }, "forestry:lifespan": { active: { value: 40 }, inactive: { value: 40 } }, "forestry:pollination": { active: { value: 25 }, inactive: { value: 25 } }, "forestry:speed": { active: { dominant: 1b, value: 0.6f }, inactive: { dominant: 1b, value: 0.6f } }, "forestry:temperature_tolerance": { active: { value: "NONE" }, inactive: { value: "NONE" } }, "forestry:territory": { active: { value: [I; 9, 6, 9 ] }, inactive: { value: [I; 9, 6, 9 ] } }, "forestry:tolerates_rain": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } } }, karyotype: "forestry:bee_species" }, "forestry:health": 40, "forestry:max_health": 40 }, count: 1, id: "forestry:princess_bee" }
+					type: "item"
+				}
+				{
+					id: "4BFDC686EA2601DB"
+					item: { components: { "forestry:bee_generation": 0, "forestry:bee_pristine": 1b, "forestry:genome": { genome: { "forestry:activity": { active: { dominant: 1b, value: "forestry:activity_diurnal" }, inactive: { dominant: 1b, value: "forestry:activity_diurnal" } }, "forestry:bee_effect": { active: { dominant: 1b, value: "forestry:bee_effect_none" }, inactive: { dominant: 1b, value: "forestry:bee_effect_none" } }, "forestry:bee_species": { active: { value: "forestry:industrious" }, inactive: { value: "forestry:industrious" } }, "forestry:cave_dwelling": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } }, "forestry:fertility": { active: { dominant: 1b, value: 2 }, inactive: { dominant: 1b, value: 2 } }, "forestry:flower_type": { active: { dominant: 1b, value: "forestry:flower_type_vanilla" }, inactive: { dominant: 1b, value: "forestry:flower_type_vanilla" } }, "forestry:humidity_tolerance": { active: { value: "NONE" }, inactive: { value: "NONE" } }, "forestry:lifespan": { active: { value: 40 }, inactive: { value: 40 } }, "forestry:pollination": { active: { value: 25 }, inactive: { value: 25 } }, "forestry:speed": { active: { dominant: 1b, value: 0.6f }, inactive: { dominant: 1b, value: 0.6f } }, "forestry:temperature_tolerance": { active: { value: "NONE" }, inactive: { value: "NONE" } }, "forestry:territory": { active: { value: [I; 9, 6, 9 ] }, inactive: { value: [I; 9, 6, 9 ] } }, "forestry:tolerates_rain": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } } }, karyotype: "forestry:bee_species" }, "forestry:health": 40, "forestry:max_health": 40 }, count: 1, id: "forestry:drone_bee" }
+					type: "item"
+				}
+			]
+			x: 5.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["6B58F97147BA3500"]
+			id: "584692BF1BDC8A2F"
+			tasks: [
+				{
+					id: "70276EFE6EB5C257"
+					item: { components: { "forestry:bee_generation": 0, "forestry:bee_pristine": 1b, "forestry:genome": { genome: { "forestry:activity": { active: { dominant: 1b, value: "forestry:activity_diurnal" }, inactive: { dominant: 1b, value: "forestry:activity_diurnal" } }, "forestry:bee_effect": { active: { dominant: 1b, value: "forestry:bee_effect_none" }, inactive: { dominant: 1b, value: "forestry:bee_effect_none" } }, "forestry:bee_species": { active: { dominant: 1b, value: "forestry:majestic" }, inactive: { dominant: 1b, value: "forestry:majestic" } }, "forestry:cave_dwelling": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } }, "forestry:fertility": { active: { value: 4 }, inactive: { value: 4 } }, "forestry:flower_type": { active: { dominant: 1b, value: "forestry:flower_type_vanilla" }, inactive: { dominant: 1b, value: "forestry:flower_type_vanilla" } }, "forestry:humidity_tolerance": { active: { value: "NONE" }, inactive: { value: "NONE" } }, "forestry:lifespan": { active: { dominant: 1b, value: 35 }, inactive: { dominant: 1b, value: 35 } }, "forestry:pollination": { active: { dominant: 1b, value: 5 }, inactive: { dominant: 1b, value: 5 } }, "forestry:speed": { active: { value: 1.0f }, inactive: { value: 1.0f } }, "forestry:temperature_tolerance": { active: { value: "NONE" }, inactive: { value: "NONE" } }, "forestry:territory": { active: { value: [I; 9, 6, 9 ] }, inactive: { value: [I; 9, 6, 9 ] } }, "forestry:tolerates_rain": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } } }, karyotype: "forestry:bee_species" }, "forestry:health": 35, "forestry:max_health": 35 }, count: 1, id: "forestry:princess_bee" }
+					type: "item"
+				}
+				{
+					id: "439797DB582DA67A"
+					item: { components: { "forestry:bee_generation": 0, "forestry:bee_pristine": 1b, "forestry:genome": { genome: { "forestry:activity": { active: { dominant: 1b, value: "forestry:activity_diurnal" }, inactive: { dominant: 1b, value: "forestry:activity_diurnal" } }, "forestry:bee_effect": { active: { dominant: 1b, value: "forestry:bee_effect_none" }, inactive: { dominant: 1b, value: "forestry:bee_effect_none" } }, "forestry:bee_species": { active: { dominant: 1b, value: "forestry:majestic" }, inactive: { dominant: 1b, value: "forestry:majestic" } }, "forestry:cave_dwelling": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } }, "forestry:fertility": { active: { value: 4 }, inactive: { value: 4 } }, "forestry:flower_type": { active: { dominant: 1b, value: "forestry:flower_type_vanilla" }, inactive: { dominant: 1b, value: "forestry:flower_type_vanilla" } }, "forestry:humidity_tolerance": { active: { value: "NONE" }, inactive: { value: "NONE" } }, "forestry:lifespan": { active: { dominant: 1b, value: 35 }, inactive: { dominant: 1b, value: 35 } }, "forestry:pollination": { active: { dominant: 1b, value: 5 }, inactive: { dominant: 1b, value: 5 } }, "forestry:speed": { active: { value: 1.0f }, inactive: { value: 1.0f } }, "forestry:temperature_tolerance": { active: { value: "NONE" }, inactive: { value: "NONE" } }, "forestry:territory": { active: { value: [I; 9, 6, 9 ] }, inactive: { value: [I; 9, 6, 9 ] } }, "forestry:tolerates_rain": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } } }, karyotype: "forestry:bee_species" }, "forestry:health": 35, "forestry:max_health": 35 }, count: 1, id: "forestry:drone_bee" }
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["584692BF1BDC8A2F"]
+			id: "6EA8BE5834ED46B6"
+			tasks: [
+				{
+					id: "5B0C09550D5E2D6E"
+					item: { components: { "forestry:bee_generation": 0, "forestry:bee_pristine": 1b, "forestry:genome": { genome: { "forestry:activity": { active: { dominant: 1b, value: "forestry:activity_diurnal" }, inactive: { dominant: 1b, value: "forestry:activity_diurnal" } }, "forestry:bee_effect": { active: { value: "forestry:bee_effect_beatific" }, inactive: { value: "forestry:bee_effect_beatific" } }, "forestry:bee_species": { active: { value: "forestry:imperial" }, inactive: { value: "forestry:imperial" } }, "forestry:cave_dwelling": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } }, "forestry:fertility": { active: { dominant: 1b, value: 2 }, inactive: { dominant: 1b, value: 2 } }, "forestry:flower_type": { active: { dominant: 1b, value: "forestry:flower_type_vanilla" }, inactive: { dominant: 1b, value: "forestry:flower_type_vanilla" } }, "forestry:humidity_tolerance": { active: { value: "NONE" }, inactive: { value: "NONE" } }, "forestry:lifespan": { active: { value: 40 }, inactive: { value: 40 } }, "forestry:pollination": { active: { dominant: 1b, value: 5 }, inactive: { dominant: 1b, value: 5 } }, "forestry:speed": { active: { dominant: 1b, value: 0.6f }, inactive: { dominant: 1b, value: 0.6f } }, "forestry:temperature_tolerance": { active: { value: "NONE" }, inactive: { value: "NONE" } }, "forestry:territory": { active: { value: [I; 9, 6, 9 ] }, inactive: { value: [I; 9, 6, 9 ] } }, "forestry:tolerates_rain": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } } }, karyotype: "forestry:bee_species" }, "forestry:health": 40, "forestry:max_health": 40 }, count: 1, id: "forestry:princess_bee" }
+					type: "item"
+				}
+				{
+					id: "07F5F76DAAB5E650"
+					item: { components: { "forestry:bee_generation": 0, "forestry:bee_pristine": 1b, "forestry:genome": { genome: { "forestry:activity": { active: { dominant: 1b, value: "forestry:activity_diurnal" }, inactive: { dominant: 1b, value: "forestry:activity_diurnal" } }, "forestry:bee_effect": { active: { value: "forestry:bee_effect_beatific" }, inactive: { value: "forestry:bee_effect_beatific" } }, "forestry:bee_species": { active: { value: "forestry:imperial" }, inactive: { value: "forestry:imperial" } }, "forestry:cave_dwelling": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } }, "forestry:fertility": { active: { dominant: 1b, value: 2 }, inactive: { dominant: 1b, value: 2 } }, "forestry:flower_type": { active: { dominant: 1b, value: "forestry:flower_type_vanilla" }, inactive: { dominant: 1b, value: "forestry:flower_type_vanilla" } }, "forestry:humidity_tolerance": { active: { value: "NONE" }, inactive: { value: "NONE" } }, "forestry:lifespan": { active: { value: 40 }, inactive: { value: 40 } }, "forestry:pollination": { active: { dominant: 1b, value: 5 }, inactive: { dominant: 1b, value: 5 } }, "forestry:speed": { active: { dominant: 1b, value: 0.6f }, inactive: { dominant: 1b, value: 0.6f } }, "forestry:temperature_tolerance": { active: { value: "NONE" }, inactive: { value: "NONE" } }, "forestry:territory": { active: { value: [I; 9, 6, 9 ] }, inactive: { value: [I; 9, 6, 9 ] } }, "forestry:tolerates_rain": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } } }, karyotype: "forestry:bee_species" }, "forestry:health": 40, "forestry:max_health": 40 }, count: 1, id: "forestry:drone_bee" }
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["15F1249B9F9C8271"]
+			icon: {
+				components: {
+					"forestry:bee_generation": 0
+					"forestry:bee_pristine": 1b
+					"forestry:genome": {
+						genome: {
+							"forestry:activity": {
+								active: {
+									dominant: 1b
+									value: "forestry:activity_nocturnal"
+								}
+								inactive: {
+									dominant: 1b
+									value: "forestry:activity_nocturnal"
+								}
+							}
+							"forestry:bee_effect": {
+								active: {
+									dominant: 1b
+									value: "forestry:bee_effect_none"
+								}
+								inactive: {
+									dominant: 1b
+									value: "forestry:bee_effect_none"
+								}
+							}
+							"forestry:bee_species": {
+								active: {
+									value: "forestry:modest"
+								}
+								inactive: {
+									value: "forestry:modest"
+								}
+							}
+							"forestry:cave_dwelling": {
+								active: {
+									dominant: 1b
+									value: 0b
+								}
+								inactive: {
+									dominant: 1b
+									value: 0b
+								}
+							}
+							"forestry:fertility": {
+								active: {
+									dominant: 1b
+									value: 2
+								}
+								inactive: {
+									dominant: 1b
+									value: 2
+								}
+							}
+							"forestry:flower_type": {
+								active: {
+									value: "forestry:flower_type_cacti"
+								}
+								inactive: {
+									value: "forestry:flower_type_cacti"
+								}
+							}
+							"forestry:humidity_tolerance": {
+								active: {
+									dominant: 1b
+									value: "DOWN_1"
+								}
+								inactive: {
+									dominant: 1b
+									value: "DOWN_1"
+								}
+							}
+							"forestry:lifespan": {
+								active: {
+									dominant: 1b
+									value: 30
+								}
+								inactive: {
+									dominant: 1b
+									value: 30
+								}
+							}
+							"forestry:pollination": {
+								active: {
+									dominant: 1b
+									value: 5
+								}
+								inactive: {
+									dominant: 1b
+									value: 5
+								}
+							}
+							"forestry:speed": {
+								active: {
+									dominant: 1b
+									value: 0.6f
+								}
+								inactive: {
+									dominant: 1b
+									value: 0.6f
+								}
+							}
+							"forestry:temperature_tolerance": {
+								active: {
+									dominant: 1b
+									value: "BOTH_1"
+								}
+								inactive: {
+									dominant: 1b
+									value: "BOTH_1"
+								}
+							}
+							"forestry:territory": {
+								active: {
+									value: [I;
+										9
+										6
+										9
+									]
+								}
+								inactive: {
+									value: [I;
+										9
+										6
+										9
+									]
+								}
+							}
+							"forestry:tolerates_rain": {
+								active: {
+									dominant: 1b
+									value: 0b
+								}
+								inactive: {
+									dominant: 1b
+									value: 0b
+								}
+							}
+						}
+						karyotype: "forestry:bee_species"
+					}
+					"forestry:health": 30
+					"forestry:max_health": 30
+				}
+				id: "forestry:princess_bee"
+			}
+			id: "57F63B13860AEABF"
+			tasks: [
+				{
+					id: "746A11CC2E3478F4"
+					item: { count: 1, id: "forestry:modest_hive" }
+					type: "item"
+				}
+				{
+					id: "777245229C6DDAF0"
+					item: { components: { "forestry:bee_generation": 0, "forestry:bee_pristine": 1b, "forestry:genome": { genome: { "forestry:activity": { active: { dominant: 1b, value: "forestry:activity_nocturnal" }, inactive: { dominant: 1b, value: "forestry:activity_nocturnal" } }, "forestry:bee_effect": { active: { dominant: 1b, value: "forestry:bee_effect_none" }, inactive: { dominant: 1b, value: "forestry:bee_effect_none" } }, "forestry:bee_species": { active: { value: "forestry:modest" }, inactive: { value: "forestry:modest" } }, "forestry:cave_dwelling": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } }, "forestry:fertility": { active: { dominant: 1b, value: 2 }, inactive: { dominant: 1b, value: 2 } }, "forestry:flower_type": { active: { value: "forestry:flower_type_cacti" }, inactive: { value: "forestry:flower_type_cacti" } }, "forestry:humidity_tolerance": { active: { dominant: 1b, value: "DOWN_1" }, inactive: { dominant: 1b, value: "DOWN_1" } }, "forestry:lifespan": { active: { dominant: 1b, value: 30 }, inactive: { dominant: 1b, value: 30 } }, "forestry:pollination": { active: { dominant: 1b, value: 5 }, inactive: { dominant: 1b, value: 5 } }, "forestry:speed": { active: { dominant: 1b, value: 0.6f }, inactive: { dominant: 1b, value: 0.6f } }, "forestry:temperature_tolerance": { active: { dominant: 1b, value: "BOTH_1" }, inactive: { dominant: 1b, value: "BOTH_1" } }, "forestry:territory": { active: { value: [I; 9, 6, 9 ] }, inactive: { value: [I; 9, 6, 9 ] } }, "forestry:tolerates_rain": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } } }, karyotype: "forestry:bee_species" }, "forestry:health": 30, "forestry:max_health": 30 }, count: 1, id: "forestry:princess_bee" }
+					type: "item"
+				}
+				{
+					id: "731E6810AD6B905B"
+					item: { components: { "forestry:bee_generation": 0, "forestry:bee_pristine": 1b, "forestry:genome": { genome: { "forestry:activity": { active: { dominant: 1b, value: "forestry:activity_nocturnal" }, inactive: { dominant: 1b, value: "forestry:activity_nocturnal" } }, "forestry:bee_effect": { active: { dominant: 1b, value: "forestry:bee_effect_none" }, inactive: { dominant: 1b, value: "forestry:bee_effect_none" } }, "forestry:bee_species": { active: { value: "forestry:modest" }, inactive: { value: "forestry:modest" } }, "forestry:cave_dwelling": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } }, "forestry:fertility": { active: { dominant: 1b, value: 2 }, inactive: { dominant: 1b, value: 2 } }, "forestry:flower_type": { active: { value: "forestry:flower_type_cacti" }, inactive: { value: "forestry:flower_type_cacti" } }, "forestry:humidity_tolerance": { active: { dominant: 1b, value: "DOWN_1" }, inactive: { dominant: 1b, value: "DOWN_1" } }, "forestry:lifespan": { active: { dominant: 1b, value: 30 }, inactive: { dominant: 1b, value: 30 } }, "forestry:pollination": { active: { dominant: 1b, value: 5 }, inactive: { dominant: 1b, value: 5 } }, "forestry:speed": { active: { dominant: 1b, value: 0.6f }, inactive: { dominant: 1b, value: 0.6f } }, "forestry:temperature_tolerance": { active: { dominant: 1b, value: "BOTH_1" }, inactive: { dominant: 1b, value: "BOTH_1" } }, "forestry:territory": { active: { value: [I; 9, 6, 9 ] }, inactive: { value: [I; 9, 6, 9 ] } }, "forestry:tolerates_rain": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } } }, karyotype: "forestry:bee_species" }, "forestry:health": 30, "forestry:max_health": 30 }, count: 1, id: "forestry:drone_bee" }
+					type: "item"
+				}
+			]
+			x: 6.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["15F1249B9F9C8271"]
+			icon: {
+				components: {
+					"forestry:bee_generation": 0
+					"forestry:bee_pristine": 1b
+					"forestry:genome": {
+						genome: {
+							"forestry:activity": {
+								active: {
+									value: "forestry:activity_cathemeral"
+								}
+								inactive: {
+									value: "forestry:activity_cathemeral"
+								}
+							}
+							"forestry:bee_effect": {
+								active: {
+									dominant: 1b
+									value: "forestry:bee_effect_aggressive"
+								}
+								inactive: {
+									dominant: 1b
+									value: "forestry:bee_effect_aggressive"
+								}
+							}
+							"forestry:bee_species": {
+								active: {
+									dominant: 1b
+									value: "forestry:embittered"
+								}
+								inactive: {
+									dominant: 1b
+									value: "forestry:embittered"
+								}
+							}
+							"forestry:cave_dwelling": {
+								active: {
+									dominant: 1b
+									value: 1b
+								}
+								inactive: {
+									dominant: 1b
+									value: 1b
+								}
+							}
+							"forestry:fertility": {
+								active: {
+									value: 4
+								}
+								inactive: {
+									value: 4
+								}
+							}
+							"forestry:flower_type": {
+								active: {
+									value: "forestry:flower_type_nether"
+								}
+								inactive: {
+									value: "forestry:flower_type_nether"
+								}
+							}
+							"forestry:humidity_tolerance": {
+								active: {
+									value: "NONE"
+								}
+								inactive: {
+									value: "NONE"
+								}
+							}
+							"forestry:lifespan": {
+								active: {
+									dominant: 1b
+									value: 35
+								}
+								inactive: {
+									dominant: 1b
+									value: 35
+								}
+							}
+							"forestry:pollination": {
+								active: {
+									dominant: 1b
+									value: 5
+								}
+								inactive: {
+									dominant: 1b
+									value: 5
+								}
+							}
+							"forestry:speed": {
+								active: {
+									value: 1.0f
+								}
+								inactive: {
+									value: 1.0f
+								}
+							}
+							"forestry:temperature_tolerance": {
+								active: {
+									value: "NONE"
+								}
+								inactive: {
+									value: "NONE"
+								}
+							}
+							"forestry:territory": {
+								active: {
+									value: [I;
+										9
+										6
+										9
+									]
+								}
+								inactive: {
+									value: [I;
+										9
+										6
+										9
+									]
+								}
+							}
+							"forestry:tolerates_rain": {
+								active: {
+									dominant: 1b
+									value: 0b
+								}
+								inactive: {
+									dominant: 1b
+									value: 0b
+								}
+							}
+						}
+						karyotype: "forestry:bee_species"
+					}
+					"forestry:health": 35
+					"forestry:max_health": 35
+				}
+				id: "forestry:princess_bee"
+			}
+			id: "5A508FDF3D2758E2"
+			tasks: [
+				{
+					id: "4754DB228311D9FF"
+					item: { count: 1, id: "forestry:nether_hive" }
+					type: "item"
+				}
+				{
+					id: "5FE20D40E2F42886"
+					item: { components: { "forestry:bee_generation": 0, "forestry:bee_pristine": 1b, "forestry:genome": { genome: { "forestry:activity": { active: { value: "forestry:activity_cathemeral" }, inactive: { value: "forestry:activity_cathemeral" } }, "forestry:bee_effect": { active: { dominant: 1b, value: "forestry:bee_effect_aggressive" }, inactive: { dominant: 1b, value: "forestry:bee_effect_aggressive" } }, "forestry:bee_species": { active: { dominant: 1b, value: "forestry:embittered" }, inactive: { dominant: 1b, value: "forestry:embittered" } }, "forestry:cave_dwelling": { active: { dominant: 1b, value: 1b }, inactive: { dominant: 1b, value: 1b } }, "forestry:fertility": { active: { value: 4 }, inactive: { value: 4 } }, "forestry:flower_type": { active: { value: "forestry:flower_type_nether" }, inactive: { value: "forestry:flower_type_nether" } }, "forestry:humidity_tolerance": { active: { value: "NONE" }, inactive: { value: "NONE" } }, "forestry:lifespan": { active: { dominant: 1b, value: 35 }, inactive: { dominant: 1b, value: 35 } }, "forestry:pollination": { active: { dominant: 1b, value: 5 }, inactive: { dominant: 1b, value: 5 } }, "forestry:speed": { active: { value: 1.0f }, inactive: { value: 1.0f } }, "forestry:temperature_tolerance": { active: { value: "NONE" }, inactive: { value: "NONE" } }, "forestry:territory": { active: { value: [I; 9, 6, 9 ] }, inactive: { value: [I; 9, 6, 9 ] } }, "forestry:tolerates_rain": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } } }, karyotype: "forestry:bee_species" }, "forestry:health": 35, "forestry:max_health": 35 }, count: 1, id: "forestry:princess_bee" }
+					type: "item"
+				}
+				{
+					id: "304E6ECF8C11AFE9"
+					item: { components: { "forestry:bee_generation": 0, "forestry:bee_pristine": 1b, "forestry:genome": { genome: { "forestry:activity": { active: { value: "forestry:activity_cathemeral" }, inactive: { value: "forestry:activity_cathemeral" } }, "forestry:bee_effect": { active: { dominant: 1b, value: "forestry:bee_effect_aggressive" }, inactive: { dominant: 1b, value: "forestry:bee_effect_aggressive" } }, "forestry:bee_species": { active: { dominant: 1b, value: "forestry:embittered" }, inactive: { dominant: 1b, value: "forestry:embittered" } }, "forestry:cave_dwelling": { active: { dominant: 1b, value: 1b }, inactive: { dominant: 1b, value: 1b } }, "forestry:fertility": { active: { value: 4 }, inactive: { value: 4 } }, "forestry:flower_type": { active: { value: "forestry:flower_type_nether" }, inactive: { value: "forestry:flower_type_nether" } }, "forestry:humidity_tolerance": { active: { value: "NONE" }, inactive: { value: "NONE" } }, "forestry:lifespan": { active: { dominant: 1b, value: 35 }, inactive: { dominant: 1b, value: 35 } }, "forestry:pollination": { active: { dominant: 1b, value: 5 }, inactive: { dominant: 1b, value: 5 } }, "forestry:speed": { active: { value: 1.0f }, inactive: { value: 1.0f } }, "forestry:temperature_tolerance": { active: { value: "NONE" }, inactive: { value: "NONE" } }, "forestry:territory": { active: { value: [I; 9, 6, 9 ] }, inactive: { value: [I; 9, 6, 9 ] } }, "forestry:tolerates_rain": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } } }, karyotype: "forestry:bee_species" }, "forestry:health": 35, "forestry:max_health": 35 }, count: 1, id: "forestry:drone_bee" }
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["15F1249B9F9C8271"]
+			icon: {
+				components: {
+					"forestry:bee_generation": 0
+					"forestry:bee_pristine": 1b
+					"forestry:genome": {
+						genome: {
+							"forestry:activity": {
+								active: {
+									dominant: 1b
+									value: "forestry:activity_nocturnal"
+								}
+								inactive: {
+									dominant: 1b
+									value: "forestry:activity_nocturnal"
+								}
+							}
+							"forestry:bee_effect": {
+								active: {
+									dominant: 1b
+									value: "forestry:bee_effect_misanthrope"
+								}
+								inactive: {
+									dominant: 1b
+									value: "forestry:bee_effect_misanthrope"
+								}
+							}
+							"forestry:bee_species": {
+								active: {
+									value: "forestry:ended"
+								}
+								inactive: {
+									value: "forestry:ended"
+								}
+							}
+							"forestry:cave_dwelling": {
+								active: {
+									dominant: 1b
+									value: 0b
+								}
+								inactive: {
+									dominant: 1b
+									value: 0b
+								}
+							}
+							"forestry:fertility": {
+								active: {
+									dominant: 1b
+									value: 1
+								}
+								inactive: {
+									dominant: 1b
+									value: 1
+								}
+							}
+							"forestry:flower_type": {
+								active: {
+									value: "forestry:flower_type_end"
+								}
+								inactive: {
+									value: "forestry:flower_type_end"
+								}
+							}
+							"forestry:humidity_tolerance": {
+								active: {
+									dominant: 1b
+									value: "BOTH_1"
+								}
+								inactive: {
+									dominant: 1b
+									value: "BOTH_1"
+								}
+							}
+							"forestry:lifespan": {
+								active: {
+									value: 60
+								}
+								inactive: {
+									value: 60
+								}
+							}
+							"forestry:pollination": {
+								active: {
+									dominant: 1b
+									value: 5
+								}
+								inactive: {
+									dominant: 1b
+									value: 5
+								}
+							}
+							"forestry:speed": {
+								active: {
+									dominant: 1b
+									value: 0.6f
+								}
+								inactive: {
+									dominant: 1b
+									value: 0.6f
+								}
+							}
+							"forestry:temperature_tolerance": {
+								active: {
+									dominant: 1b
+									value: "UP_1"
+								}
+								inactive: {
+									dominant: 1b
+									value: "UP_1"
+								}
+							}
+							"forestry:territory": {
+								active: {
+									value: [I;
+										11
+										8
+										11
+									]
+								}
+								inactive: {
+									value: [I;
+										11
+										8
+										11
+									]
+								}
+							}
+							"forestry:tolerates_rain": {
+								active: {
+									dominant: 1b
+									value: 0b
+								}
+								inactive: {
+									dominant: 1b
+									value: 0b
+								}
+							}
+						}
+						karyotype: "forestry:bee_species"
+					}
+					"forestry:health": 60
+					"forestry:max_health": 60
+				}
+				id: "forestry:princess_bee"
+			}
+			id: "62DB7C7EDCFAB402"
+			tasks: [
+				{
+					id: "3153D1C4072665D2"
+					item: { count: 1, id: "forestry:ender_hive" }
+					type: "item"
+				}
+				{
+					id: "4AA2FB3839730C26"
+					item: { components: { "forestry:bee_generation": 0, "forestry:bee_pristine": 1b, "forestry:genome": { genome: { "forestry:activity": { active: { dominant: 1b, value: "forestry:activity_nocturnal" }, inactive: { dominant: 1b, value: "forestry:activity_nocturnal" } }, "forestry:bee_effect": { active: { dominant: 1b, value: "forestry:bee_effect_misanthrope" }, inactive: { dominant: 1b, value: "forestry:bee_effect_misanthrope" } }, "forestry:bee_species": { active: { value: "forestry:ended" }, inactive: { value: "forestry:ended" } }, "forestry:cave_dwelling": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } }, "forestry:fertility": { active: { dominant: 1b, value: 1 }, inactive: { dominant: 1b, value: 1 } }, "forestry:flower_type": { active: { value: "forestry:flower_type_end" }, inactive: { value: "forestry:flower_type_end" } }, "forestry:humidity_tolerance": { active: { dominant: 1b, value: "BOTH_1" }, inactive: { dominant: 1b, value: "BOTH_1" } }, "forestry:lifespan": { active: { value: 60 }, inactive: { value: 60 } }, "forestry:pollination": { active: { dominant: 1b, value: 5 }, inactive: { dominant: 1b, value: 5 } }, "forestry:speed": { active: { dominant: 1b, value: 0.6f }, inactive: { dominant: 1b, value: 0.6f } }, "forestry:temperature_tolerance": { active: { dominant: 1b, value: "UP_1" }, inactive: { dominant: 1b, value: "UP_1" } }, "forestry:territory": { active: { value: [I; 11, 8, 11 ] }, inactive: { value: [I; 11, 8, 11 ] } }, "forestry:tolerates_rain": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } } }, karyotype: "forestry:bee_species" }, "forestry:health": 60, "forestry:max_health": 60 }, count: 1, id: "forestry:princess_bee" }
+					type: "item"
+				}
+				{
+					id: "7E2C7B40FC47D58E"
+					item: { components: { "forestry:bee_generation": 0, "forestry:bee_pristine": 1b, "forestry:genome": { genome: { "forestry:activity": { active: { dominant: 1b, value: "forestry:activity_nocturnal" }, inactive: { dominant: 1b, value: "forestry:activity_nocturnal" } }, "forestry:bee_effect": { active: { dominant: 1b, value: "forestry:bee_effect_misanthrope" }, inactive: { dominant: 1b, value: "forestry:bee_effect_misanthrope" } }, "forestry:bee_species": { active: { value: "forestry:ended" }, inactive: { value: "forestry:ended" } }, "forestry:cave_dwelling": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } }, "forestry:fertility": { active: { dominant: 1b, value: 1 }, inactive: { dominant: 1b, value: 1 } }, "forestry:flower_type": { active: { value: "forestry:flower_type_end" }, inactive: { value: "forestry:flower_type_end" } }, "forestry:humidity_tolerance": { active: { dominant: 1b, value: "BOTH_1" }, inactive: { dominant: 1b, value: "BOTH_1" } }, "forestry:lifespan": { active: { value: 60 }, inactive: { value: 60 } }, "forestry:pollination": { active: { dominant: 1b, value: 5 }, inactive: { dominant: 1b, value: 5 } }, "forestry:speed": { active: { dominant: 1b, value: 0.6f }, inactive: { dominant: 1b, value: 0.6f } }, "forestry:temperature_tolerance": { active: { dominant: 1b, value: "UP_1" }, inactive: { dominant: 1b, value: "UP_1" } }, "forestry:territory": { active: { value: [I; 11, 8, 11 ] }, inactive: { value: [I; 11, 8, 11 ] } }, "forestry:tolerates_rain": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } } }, karyotype: "forestry:bee_species" }, "forestry:health": 60, "forestry:max_health": 60 }, count: 1, id: "forestry:drone_bee" }
+					type: "item"
+				}
+			]
+			x: 10.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["15F1249B9F9C8271"]
+			id: "4CF2850974AE1E02"
+			tasks: [{
+				id: "068F967D8869A24D"
+				item: { components: { "forestry:genome": { genome: { "forestry:fireproof": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } }, "forestry:fruits": { active: { value: "forestry:fruit_apple" }, inactive: { value: "forestry:fruit_apple" } }, "forestry:girth": { active: { value: 1 }, inactive: { value: 1 } }, "forestry:height": { active: { value: 0.75f }, inactive: { value: 0.75f } }, "forestry:maturation": { active: { value: 2 }, inactive: { value: 2 } }, "forestry:saplings": { active: { dominant: 1b, value: 0.05f }, inactive: { dominant: 1b, value: 0.05f } }, "forestry:sappiness": { active: { dominant: 1b, value: 0.1f }, inactive: { dominant: 1b, value: 0.1f } }, "forestry:tree_effect": { active: { value: "forestry:tree_effect_none" }, inactive: { value: "forestry:tree_effect_none" } }, "forestry:tree_species": { active: { value: "forestry:oak" }, inactive: { value: "forestry:oak" } }, "forestry:yield": { active: { dominant: 1b, value: 0.025f }, inactive: { dominant: 1b, value: 0.025f } } }, karyotype: "forestry:tree_species" } }, count: 1, id: "forestry:tree_sapling" }
+				type: "item"
+			}]
+			x: 23.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["15F1249B9F9C8271"]
+			id: "1EEC5C16BADAF9F0"
+			tasks: [{
+				id: "29FEAE5D029B20AE"
+				item: { components: { "forestry:genome": { genome: { "forestry:fireproof": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } }, "forestry:fruits": { active: { value: "forestry:fruit_none" }, inactive: { value: "forestry:fruit_none" } }, "forestry:girth": { active: { value: 1 }, inactive: { value: 1 } }, "forestry:height": { active: { value: 0.75f }, inactive: { value: 0.75f } }, "forestry:maturation": { active: { value: 2 }, inactive: { value: 2 } }, "forestry:saplings": { active: { dominant: 1b, value: 0.05f }, inactive: { dominant: 1b, value: 0.05f } }, "forestry:sappiness": { active: { dominant: 1b, value: 0.1f }, inactive: { dominant: 1b, value: 0.1f } }, "forestry:tree_effect": { active: { value: "forestry:tree_effect_none" }, inactive: { value: "forestry:tree_effect_none" } }, "forestry:tree_species": { active: { value: "forestry:birch" }, inactive: { value: "forestry:birch" } }, "forestry:yield": { active: { dominant: 1b, value: 0.025f }, inactive: { dominant: 1b, value: 0.025f } } }, karyotype: "forestry:tree_species" } }, count: 1, id: "forestry:tree_sapling" }
+				type: "item"
+			}]
+			x: 23.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["15F1249B9F9C8271"]
+			id: "6D4358783932EEF3"
+			tasks: [{
+				id: "7B9F20F87C9EC0AF"
+				item: { components: { "forestry:genome": { genome: { "forestry:fireproof": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } }, "forestry:fruits": { active: { value: "forestry:fruit_none" }, inactive: { value: "forestry:fruit_none" } }, "forestry:girth": { active: { value: 1 }, inactive: { value: 1 } }, "forestry:height": { active: { value: 1.0f }, inactive: { value: 1.0f } }, "forestry:maturation": { active: { value: 2 }, inactive: { value: 2 } }, "forestry:saplings": { active: { dominant: 1b, value: 0.05f }, inactive: { dominant: 1b, value: 0.05f } }, "forestry:sappiness": { active: { dominant: 1b, value: 0.1f }, inactive: { dominant: 1b, value: 0.1f } }, "forestry:tree_effect": { active: { value: "forestry:tree_effect_none" }, inactive: { value: "forestry:tree_effect_none" } }, "forestry:tree_species": { active: { value: "forestry:spruce" }, inactive: { value: "forestry:spruce" } }, "forestry:yield": { active: { dominant: 1b, value: 0.025f }, inactive: { dominant: 1b, value: 0.025f } } }, karyotype: "forestry:tree_species" } }, count: 1, id: "forestry:tree_sapling" }
+				type: "item"
+			}]
+			x: 23.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["15F1249B9F9C8271"]
+			id: "18C2E301673B16FC"
+			tasks: [{
+				id: "31EF78EE20143BEE"
+				item: { components: { "forestry:genome": { genome: { "forestry:fireproof": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } }, "forestry:fruits": { active: { value: "forestry:fruit_cocoa" }, inactive: { value: "forestry:fruit_cocoa" } }, "forestry:girth": { active: { value: 1 }, inactive: { value: 1 } }, "forestry:height": { active: { value: 1.5f }, inactive: { value: 1.5f } }, "forestry:maturation": { active: { value: 3 }, inactive: { value: 3 } }, "forestry:saplings": { active: { dominant: 1b, value: 0.025f }, inactive: { dominant: 1b, value: 0.025f } }, "forestry:sappiness": { active: { dominant: 1b, value: 0.1f }, inactive: { dominant: 1b, value: 0.1f } }, "forestry:tree_effect": { active: { value: "forestry:tree_effect_none" }, inactive: { value: "forestry:tree_effect_none" } }, "forestry:tree_species": { active: { value: "forestry:jungle" }, inactive: { value: "forestry:jungle" } }, "forestry:yield": { active: { dominant: 1b, value: 0.025f }, inactive: { dominant: 1b, value: 0.025f } } }, karyotype: "forestry:tree_species" } }, count: 1, id: "forestry:tree_sapling" }
+				type: "item"
+			}]
+			x: 28.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["15F1249B9F9C8271"]
+			id: "2D13F68202C839BB"
+			tasks: [{
+				id: "6F50C52F1D8F5A47"
+				item: { count: 1, id: "minecraft:acacia_sapling" }
+				type: "item"
+			}]
+			x: 29.0d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"4CF2850974AE1E02"
+				"6D4358783932EEF3"
+			]
+			id: "20BA95189FEF098D"
+			tasks: [{
+				id: "4760D22B04614CD6"
+				item: { components: { "forestry:genome": { genome: { "forestry:fireproof": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } }, "forestry:fruits": { active: { value: "forestry:fruit_none" }, inactive: { value: "forestry:fruit_none" } }, "forestry:girth": { active: { value: 1 }, inactive: { value: 1 } }, "forestry:height": { active: { value: 1.0f }, inactive: { value: 1.0f } }, "forestry:maturation": { active: { value: 4 }, inactive: { value: 4 } }, "forestry:saplings": { active: { dominant: 1b, value: 0.035f }, inactive: { dominant: 1b, value: 0.035f } }, "forestry:sappiness": { active: { dominant: 1b, value: 0.2f }, inactive: { dominant: 1b, value: 0.2f } }, "forestry:tree_effect": { active: { value: "forestry:tree_effect_none" }, inactive: { value: "forestry:tree_effect_none" } }, "forestry:tree_species": { active: { dominant: 1b, value: "forestry:larch" }, inactive: { dominant: 1b, value: "forestry:larch" } }, "forestry:yield": { active: { dominant: 1b, value: 0.025f }, inactive: { dominant: 1b, value: 0.025f } } }, karyotype: "forestry:tree_species" } }, count: 1, id: "forestry:tree_sapling" }
+				type: "item"
+			}]
+			x: 24.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["20BA95189FEF098D"]
+			id: "39E3FFB8CF45FADD"
+			tasks: [{
+				id: "7437476A50E8CCA7"
+				item: { components: { "forestry:genome": { genome: { "forestry:fireproof": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } }, "forestry:fruits": { active: { value: "forestry:fruit_none" }, inactive: { value: "forestry:fruit_none" } }, "forestry:girth": { active: { value: 1 }, inactive: { value: 1 } }, "forestry:height": { active: { value: 1.25f }, inactive: { value: 1.25f } }, "forestry:maturation": { active: { value: 4 }, inactive: { value: 4 } }, "forestry:saplings": { active: { dominant: 1b, value: 0.025f }, inactive: { dominant: 1b, value: 0.025f } }, "forestry:sappiness": { active: { dominant: 1b, value: 0.6f }, inactive: { dominant: 1b, value: 0.6f } }, "forestry:tree_effect": { active: { value: "forestry:tree_effect_none" }, inactive: { value: "forestry:tree_effect_none" } }, "forestry:tree_species": { active: { dominant: 1b, value: "forestry:fir" }, inactive: { dominant: 1b, value: "forestry:fir" } }, "forestry:yield": { active: { dominant: 1b, value: 0.025f }, inactive: { dominant: 1b, value: 0.025f } } }, karyotype: "forestry:tree_species" } }, count: 1, id: "forestry:tree_sapling" }
+				type: "item"
+			}]
+			x: 24.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["20BA95189FEF098D"]
+			id: "006C483BD74CA204"
+			tasks: [{
+				id: "31FA321950EDA3B7"
+				item: { components: { "forestry:genome": { genome: { "forestry:fireproof": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } }, "forestry:fruits": { active: { value: "forestry:fruit_none" }, inactive: { value: "forestry:fruit_none" } }, "forestry:girth": { active: { value: 1 }, inactive: { value: 1 } }, "forestry:height": { active: { value: 1.25f }, inactive: { value: 1.25f } }, "forestry:maturation": { active: { value: 4 }, inactive: { value: 4 } }, "forestry:saplings": { active: { dominant: 1b, value: 0.035f }, inactive: { dominant: 1b, value: 0.035f } }, "forestry:sappiness": { active: { dominant: 1b, value: 0.2f }, inactive: { dominant: 1b, value: 0.2f } }, "forestry:tree_effect": { active: { value: "forestry:tree_effect_none" }, inactive: { value: "forestry:tree_effect_none" } }, "forestry:tree_species": { active: { dominant: 1b, value: "forestry:pine" }, inactive: { dominant: 1b, value: "forestry:pine" } }, "forestry:yield": { active: { dominant: 1b, value: 0.025f }, inactive: { dominant: 1b, value: 0.025f } } }, karyotype: "forestry:tree_species" } }, count: 1, id: "forestry:tree_sapling" }
+				type: "item"
+			}]
+			x: 25.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"39E3FFB8CF45FADD"
+				"006C483BD74CA204"
+			]
+			id: "392CEC965E07A0AD"
+			tasks: [{
+				id: "0197170EBB40AE1A"
+				item: { components: { "forestry:genome": { genome: { "forestry:fireproof": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } }, "forestry:fruits": { active: { value: "forestry:fruit_none" }, inactive: { value: "forestry:fruit_none" } }, "forestry:girth": { active: { value: 2 }, inactive: { value: 2 } }, "forestry:height": { active: { value: 1.25f }, inactive: { value: 1.25f } }, "forestry:maturation": { active: { dominant: 1b, value: 5 }, inactive: { dominant: 1b, value: 5 } }, "forestry:saplings": { active: { dominant: 1b, value: 0.035f }, inactive: { dominant: 1b, value: 0.035f } }, "forestry:sappiness": { active: { dominant: 1b, value: 0.4f }, inactive: { dominant: 1b, value: 0.4f } }, "forestry:tree_effect": { active: { value: "forestry:tree_effect_none" }, inactive: { value: "forestry:tree_effect_none" } }, "forestry:tree_species": { active: { dominant: 1b, value: "forestry:macrocarpa" }, inactive: { dominant: 1b, value: "forestry:macrocarpa" } }, "forestry:yield": { active: { dominant: 1b, value: 0.025f }, inactive: { dominant: 1b, value: 0.025f } } }, karyotype: "forestry:tree_species" } }, count: 1, id: "forestry:tree_sapling" }
+				type: "item"
+			}]
+			x: 25.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["392CEC965E07A0AD"]
+			id: "4796BEBE1C1FCEF5"
+			tasks: [{
+				id: "2C01AC77E1B7ED38"
+				item: { components: { "forestry:genome": { genome: { "forestry:fireproof": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } }, "forestry:fruits": { active: { value: "forestry:fruit_none" }, inactive: { value: "forestry:fruit_none" } }, "forestry:girth": { active: { value: 1 }, inactive: { value: 1 } }, "forestry:height": { active: { value: 1.5f }, inactive: { value: 1.5f } }, "forestry:maturation": { active: { value: 7 }, inactive: { value: 7 } }, "forestry:saplings": { active: { dominant: 1b, value: 0.025f }, inactive: { dominant: 1b, value: 0.025f } }, "forestry:sappiness": { active: { dominant: 1b, value: 0.6f }, inactive: { dominant: 1b, value: 0.6f } }, "forestry:tree_effect": { active: { value: "forestry:tree_effect_none" }, inactive: { value: "forestry:tree_effect_none" } }, "forestry:tree_species": { active: { dominant: 1b, value: "forestry:pewen" }, inactive: { dominant: 1b, value: "forestry:pewen" } }, "forestry:yield": { active: { dominant: 1b, value: 0.025f }, inactive: { dominant: 1b, value: 0.025f } } }, karyotype: "forestry:tree_species" } }, count: 1, id: "forestry:tree_sapling" }
+				type: "item"
+			}]
+			x: 24.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["392CEC965E07A0AD"]
+			id: "42B132463B4A9BA4"
+			tasks: [{
+				id: "068A033488DC12C7"
+				item: { components: { "forestry:genome": { genome: { "forestry:fireproof": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } }, "forestry:fruits": { active: { value: "forestry:fruit_none" }, inactive: { value: "forestry:fruit_none" } }, "forestry:girth": { active: { value: 3 }, inactive: { value: 3 } }, "forestry:height": { active: { value: 1.75f }, inactive: { value: 1.75f } }, "forestry:maturation": { active: { dominant: 1b, value: 10 }, inactive: { dominant: 1b, value: 10 } }, "forestry:saplings": { active: { dominant: 1b, value: 0.01f }, inactive: { dominant: 1b, value: 0.01f } }, "forestry:sappiness": { active: { dominant: 1b, value: 0.6f }, inactive: { dominant: 1b, value: 0.6f } }, "forestry:tree_effect": { active: { value: "forestry:tree_effect_none" }, inactive: { value: "forestry:tree_effect_none" } }, "forestry:tree_species": { active: { dominant: 1b, value: "forestry:kauri" }, inactive: { dominant: 1b, value: "forestry:kauri" } }, "forestry:yield": { active: { dominant: 1b, value: 0.025f }, inactive: { dominant: 1b, value: 0.025f } } }, karyotype: "forestry:tree_species" } }, count: 1, id: "forestry:tree_sapling" }
+				type: "item"
+			}]
+			x: 25.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["006C483BD74CA204"]
+			id: "7BD76A865B810957"
+			tasks: [{
+				id: "50422CACE2AFD7BA"
+				item: { components: { "forestry:genome": { genome: { "forestry:fireproof": { active: { dominant: 1b, value: 1b }, inactive: { dominant: 1b, value: 1b } }, "forestry:fruits": { active: { value: "forestry:fruit_none" }, inactive: { value: "forestry:fruit_none" } }, "forestry:girth": { active: { value: 3 }, inactive: { value: 3 } }, "forestry:height": { active: { value: 1.75f }, inactive: { value: 1.75f } }, "forestry:maturation": { active: { value: 7 }, inactive: { value: 7 } }, "forestry:saplings": { active: { dominant: 1b, value: 0.025f }, inactive: { dominant: 1b, value: 0.025f } }, "forestry:sappiness": { active: { dominant: 1b, value: 0.2f }, inactive: { dominant: 1b, value: 0.2f } }, "forestry:tree_effect": { active: { value: "forestry:tree_effect_none" }, inactive: { value: "forestry:tree_effect_none" } }, "forestry:tree_species": { active: { dominant: 1b, value: "forestry:sequoia" }, inactive: { dominant: 1b, value: "forestry:sequoia" } }, "forestry:yield": { active: { dominant: 1b, value: 0.025f }, inactive: { dominant: 1b, value: 0.025f } } }, karyotype: "forestry:tree_species" } }, count: 1, id: "forestry:tree_sapling" }
+				type: "item"
+			}]
+			x: 26.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"1EEC5C16BADAF9F0"
+				"4CF2850974AE1E02"
+			]
+			id: "4C305C075D489FBD"
+			tasks: [{
+				id: "0E26C255A2F2ABD3"
+				item: { components: { "forestry:genome": { genome: { "forestry:fireproof": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } }, "forestry:fruits": { active: { value: "forestry:fruit_none" }, inactive: { value: "forestry:fruit_none" } }, "forestry:girth": { active: { value: 1 }, inactive: { value: 1 } }, "forestry:height": { active: { value: 0.75f }, inactive: { value: 0.75f } }, "forestry:maturation": { active: { value: 4 }, inactive: { value: 4 } }, "forestry:saplings": { active: { dominant: 1b, value: 0.035f }, inactive: { dominant: 1b, value: 0.035f } }, "forestry:sappiness": { active: { dominant: 1b, value: 0.2f }, inactive: { dominant: 1b, value: 0.2f } }, "forestry:tree_effect": { active: { value: "forestry:tree_effect_none" }, inactive: { value: "forestry:tree_effect_none" } }, "forestry:tree_species": { active: { dominant: 1b, value: "forestry:lime" }, inactive: { dominant: 1b, value: "forestry:lime" } }, "forestry:yield": { active: { dominant: 1b, value: 0.05f }, inactive: { dominant: 1b, value: 0.05f } } }, karyotype: "forestry:tree_species" } }, count: 1, id: "forestry:tree_sapling" }
+				type: "item"
+			}]
+			x: 24.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["4C305C075D489FBD"]
+			id: "724FDFA0EF100688"
+			tasks: [{
+				id: "506FDA7EB185A033"
+				item: { components: { "forestry:genome": { genome: { "forestry:fireproof": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } }, "forestry:fruits": { active: { dominant: 1b, value: "forestry:fruit_cherry" }, inactive: { dominant: 1b, value: "forestry:fruit_cherry" } }, "forestry:girth": { active: { value: 1 }, inactive: { value: 1 } }, "forestry:height": { active: { value: 0.5f }, inactive: { value: 0.5f } }, "forestry:maturation": { active: { value: 3 }, inactive: { value: 3 } }, "forestry:saplings": { active: { dominant: 1b, value: 0.035f }, inactive: { dominant: 1b, value: 0.035f } }, "forestry:sappiness": { active: { dominant: 1b, value: 0.3f }, inactive: { dominant: 1b, value: 0.3f } }, "forestry:tree_effect": { active: { value: "forestry:tree_effect_none" }, inactive: { value: "forestry:tree_effect_none" } }, "forestry:tree_species": { active: { dominant: 1b, value: "forestry:sour_cherry" }, inactive: { dominant: 1b, value: "forestry:sour_cherry" } }, "forestry:yield": { active: { dominant: 1b, value: 0.2f }, inactive: { dominant: 1b, value: 0.2f } } }, karyotype: "forestry:tree_species" } }, count: 1, id: "forestry:tree_sapling" }
+				type: "item"
+			}]
+			x: 24.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4C305C075D489FBD"]
+			id: "3853B87D1C44EC06"
+			tasks: [{
+				id: "336DEC47E299C68D"
+				item: { components: { "forestry:genome": { genome: { "forestry:fireproof": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } }, "forestry:fruits": { active: { value: "forestry:fruit_none" }, inactive: { value: "forestry:fruit_none" } }, "forestry:girth": { active: { value: 1 }, inactive: { value: 1 } }, "forestry:height": { active: { value: 1.0f }, inactive: { value: 1.0f } }, "forestry:maturation": { active: { value: 4 }, inactive: { value: 4 } }, "forestry:saplings": { active: { dominant: 1b, value: 0.025f }, inactive: { dominant: 1b, value: 0.025f } }, "forestry:sappiness": { active: { dominant: 1b, value: 0.3f }, inactive: { dominant: 1b, value: 0.3f } }, "forestry:tree_effect": { active: { value: "forestry:tree_effect_none" }, inactive: { value: "forestry:tree_effect_none" } }, "forestry:tree_species": { active: { dominant: 1b, value: "forestry:elm" }, inactive: { dominant: 1b, value: "forestry:elm" } }, "forestry:yield": { active: { dominant: 1b, value: 0.025f }, inactive: { dominant: 1b, value: 0.025f } } }, karyotype: "forestry:tree_species" } }, count: 1, id: "forestry:tree_sapling" }
+				type: "item"
+			}]
+			x: 25.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3853B87D1C44EC06"]
+			id: "12403ED0DC06C5A1"
+			tasks: [{
+				id: "0545C29B35ADD0AD"
+				item: { components: { "forestry:genome": { genome: { "forestry:fireproof": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } }, "forestry:fruits": { active: { value: "forestry:fruit_none" }, inactive: { value: "forestry:fruit_none" } }, "forestry:girth": { active: { value: 1 }, inactive: { value: 1 } }, "forestry:height": { active: { value: 1.0f }, inactive: { value: 1.0f } }, "forestry:maturation": { active: { value: 4 }, inactive: { value: 4 } }, "forestry:saplings": { active: { dominant: 1b, value: 0.035f }, inactive: { dominant: 1b, value: 0.035f } }, "forestry:sappiness": { active: { dominant: 1b, value: 0.2f }, inactive: { dominant: 1b, value: 0.2f } }, "forestry:tree_effect": { active: { value: "forestry:tree_effect_none" }, inactive: { value: "forestry:tree_effect_none" } }, "forestry:tree_species": { active: { dominant: 1b, value: "forestry:maple" }, inactive: { dominant: 1b, value: "forestry:maple" } }, "forestry:yield": { active: { dominant: 1b, value: 0.025f }, inactive: { dominant: 1b, value: 0.025f } } }, karyotype: "forestry:tree_species" } }, count: 1, id: "forestry:tree_sapling" }
+				type: "item"
+			}]
+			x: 25.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["3853B87D1C44EC06"]
+			id: "451DF71D35AB05D9"
+			tasks: [{
+				id: "17CA49BB96D325F2"
+				item: { components: { "forestry:genome": { genome: { "forestry:fireproof": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } }, "forestry:fruits": { active: { value: "forestry:fruit_none" }, inactive: { value: "forestry:fruit_none" } }, "forestry:girth": { active: { value: 1 }, inactive: { value: 1 } }, "forestry:height": { active: { value: 0.75f }, inactive: { value: 0.75f } }, "forestry:maturation": { active: { value: 7 }, inactive: { value: 7 } }, "forestry:saplings": { active: { dominant: 1b, value: 0.025f }, inactive: { dominant: 1b, value: 0.025f } }, "forestry:sappiness": { active: { dominant: 1b, value: 0.3f }, inactive: { dominant: 1b, value: 0.3f } }, "forestry:tree_effect": { active: { value: "forestry:tree_effect_none" }, inactive: { value: "forestry:tree_effect_none" } }, "forestry:tree_species": { active: { dominant: 1b, value: "forestry:poplar" }, inactive: { dominant: 1b, value: "forestry:poplar" } }, "forestry:yield": { active: { dominant: 1b, value: 0.025f }, inactive: { dominant: 1b, value: 0.025f } } }, karyotype: "forestry:tree_species" } }, count: 1, id: "forestry:tree_sapling" }
+				type: "item"
+			}]
+			x: 26.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"451DF71D35AB05D9"
+				"6173BE468296FC5F"
+			]
+			id: "54B08225B14A988D"
+			tasks: [{
+				id: "48800F1094AE4EC5"
+				item: { components: { "forestry:genome": { genome: { "forestry:fireproof": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } }, "forestry:fruits": { active: { value: "forestry:fruit_none" }, inactive: { value: "forestry:fruit_none" } }, "forestry:girth": { active: { value: 1 }, inactive: { value: 1 } }, "forestry:height": { active: { value: 1.0f }, inactive: { value: 1.0f } }, "forestry:maturation": { active: { value: 2 }, inactive: { value: 2 } }, "forestry:saplings": { active: { dominant: 1b, value: 0.025f }, inactive: { dominant: 1b, value: 0.025f } }, "forestry:sappiness": { active: { dominant: 1b, value: 0.3f }, inactive: { dominant: 1b, value: 0.3f } }, "forestry:tree_effect": { active: { value: "forestry:tree_effect_none" }, inactive: { value: "forestry:tree_effect_none" } }, "forestry:tree_species": { active: { dominant: 1b, value: "forestry:willow" }, inactive: { dominant: 1b, value: "forestry:willow" } }, "forestry:yield": { active: { dominant: 1b, value: 0.025f }, inactive: { dominant: 1b, value: 0.025f } } }, karyotype: "forestry:tree_species" } }, count: 1, id: "forestry:tree_sapling" }
+				type: "item"
+			}]
+			x: 27.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["15F1249B9F9C8271"]
+			id: "6173BE468296FC5F"
+			tasks: [{
+				id: "587B93C0F50D8C2A"
+				item: { components: { "forestry:genome": { genome: { "forestry:fireproof": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } }, "forestry:fruits": { active: { value: "forestry:fruit_none" }, inactive: { value: "forestry:fruit_none" } }, "forestry:girth": { active: { value: 2 }, inactive: { value: 2 } }, "forestry:height": { active: { value: 0.75f }, inactive: { value: 0.75f } }, "forestry:maturation": { active: { value: 2 }, inactive: { value: 2 } }, "forestry:saplings": { active: { dominant: 1b, value: 0.05f }, inactive: { dominant: 1b, value: 0.05f } }, "forestry:sappiness": { active: { dominant: 1b, value: 0.1f }, inactive: { dominant: 1b, value: 0.1f } }, "forestry:tree_effect": { active: { value: "forestry:tree_effect_none" }, inactive: { value: "forestry:tree_effect_none" } }, "forestry:tree_species": { active: { value: "forestry:dark_oak" }, inactive: { value: "forestry:dark_oak" } }, "forestry:yield": { active: { dominant: 1b, value: 0.025f }, inactive: { dominant: 1b, value: 0.025f } } }, karyotype: "forestry:tree_species" } }, count: 1, id: "forestry:tree_sapling" }
+				type: "item"
+			}]
+			x: 28.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"18C2E301673B16FC"
+				"6173BE468296FC5F"
+			]
+			id: "21B4CFD4E48EBA2D"
+			tasks: [{
+				id: "2029534FF007AA86"
+				item: { components: { "forestry:genome": { genome: { "forestry:fireproof": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } }, "forestry:fruits": { active: { value: "forestry:fruit_none" }, inactive: { value: "forestry:fruit_none" } }, "forestry:girth": { active: { value: 1 }, inactive: { value: 1 } }, "forestry:height": { active: { value: 1.25f }, inactive: { value: 1.25f } }, "forestry:maturation": { active: { value: 4 }, inactive: { value: 4 } }, "forestry:saplings": { active: { dominant: 1b, value: 0.025f }, inactive: { dominant: 1b, value: 0.025f } }, "forestry:sappiness": { active: { dominant: 1b, value: 0.2f }, inactive: { dominant: 1b, value: 0.2f } }, "forestry:tree_effect": { active: { value: "forestry:tree_effect_none" }, inactive: { value: "forestry:tree_effect_none" } }, "forestry:tree_species": { active: { dominant: 1b, value: "forestry:teak" }, inactive: { dominant: 1b, value: "forestry:teak" } }, "forestry:yield": { active: { dominant: 1b, value: 0.025f }, inactive: { dominant: 1b, value: 0.025f } } }, karyotype: "forestry:tree_species" } }, count: 1, id: "forestry:tree_sapling" }
+				type: "item"
+			}]
+			x: 29.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["21B4CFD4E48EBA2D"]
+			id: "2BC9A33FCE9CF40B"
+			tasks: [{
+				id: "3127F7845DFE7D18"
+				item: { components: { "forestry:genome": { genome: { "forestry:fireproof": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } }, "forestry:fruits": { active: { value: "forestry:fruit_none" }, inactive: { value: "forestry:fruit_none" } }, "forestry:girth": { active: { value: 1 }, inactive: { value: 1 } }, "forestry:height": { active: { value: 1.25f }, inactive: { value: 1.25f } }, "forestry:maturation": { active: { dominant: 1b, value: 5 }, inactive: { dominant: 1b, value: 5 } }, "forestry:saplings": { active: { dominant: 1b, value: 0.025f }, inactive: { dominant: 1b, value: 0.025f } }, "forestry:sappiness": { active: { dominant: 1b, value: 0.3f }, inactive: { dominant: 1b, value: 0.3f } }, "forestry:tree_effect": { active: { value: "forestry:tree_effect_none" }, inactive: { value: "forestry:tree_effect_none" } }, "forestry:tree_species": { active: { dominant: 1b, value: "forestry:kapok" }, inactive: { dominant: 1b, value: "forestry:kapok" } }, "forestry:yield": { active: { dominant: 1b, value: 0.025f }, inactive: { dominant: 1b, value: 0.025f } } }, karyotype: "forestry:tree_species" } }, count: 1, id: "forestry:tree_sapling" }
+				type: "item"
+			}]
+			x: 30.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2BC9A33FCE9CF40B"]
+			id: "52B2ACC0E079E4D6"
+			tasks: [{
+				id: "24C9CB67C2DA1832"
+				item: { components: { "forestry:genome": { genome: { "forestry:fireproof": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } }, "forestry:fruits": { active: { value: "forestry:fruit_none" }, inactive: { value: "forestry:fruit_none" } }, "forestry:girth": { active: { value: 1 }, inactive: { value: 1 } }, "forestry:height": { active: { value: 1.25f }, inactive: { value: 1.25f } }, "forestry:maturation": { active: { dominant: 1b, value: 5 }, inactive: { dominant: 1b, value: 5 } }, "forestry:saplings": { active: { dominant: 1b, value: 0.025f }, inactive: { dominant: 1b, value: 0.025f } }, "forestry:sappiness": { active: { dominant: 1b, value: 0.3f }, inactive: { dominant: 1b, value: 0.3f } }, "forestry:tree_effect": { active: { value: "forestry:tree_effect_none" }, inactive: { value: "forestry:tree_effect_none" } }, "forestry:tree_species": { active: { dominant: 1b, value: "forestry:greenheart" }, inactive: { dominant: 1b, value: "forestry:greenheart" } }, "forestry:yield": { active: { dominant: 1b, value: 0.025f }, inactive: { dominant: 1b, value: 0.025f } } }, karyotype: "forestry:tree_species" } }, count: 1, id: "forestry:tree_sapling" }
+				type: "item"
+			}]
+			x: 31.0d
+			y: 1.0d
+		}
+		{
+			id: "3361EF808F8F856C"
+			tasks: [{
+				id: "5A0BFE99D1C67B6C"
+				item: { components: { "forestry:genome": { genome: { "forestry:fireproof": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } }, "forestry:fruits": { active: { dominant: 1b, value: "forestry:fruit_lemon" }, inactive: { dominant: 1b, value: "forestry:fruit_lemon" } }, "forestry:girth": { active: { value: 1 }, inactive: { value: 1 } }, "forestry:height": { active: { value: 0.25f }, inactive: { value: 0.25f } }, "forestry:maturation": { active: { value: 4 }, inactive: { value: 4 } }, "forestry:saplings": { active: { dominant: 1b, value: 0.025f }, inactive: { dominant: 1b, value: 0.025f } }, "forestry:sappiness": { active: { dominant: 1b, value: 0.3f }, inactive: { dominant: 1b, value: 0.3f } }, "forestry:tree_effect": { active: { value: "forestry:tree_effect_none" }, inactive: { value: "forestry:tree_effect_none" } }, "forestry:tree_species": { active: { dominant: 1b, value: "forestry:lemon" }, inactive: { dominant: 1b, value: "forestry:lemon" } }, "forestry:yield": { active: { value: 0.3f }, inactive: { value: 0.3f } } }, karyotype: "forestry:tree_species" } }, count: 1, id: "forestry:tree_sapling" }
+				type: "item"
+			}]
+			x: 29.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["15F1249B9F9C8271"]
+			hide_dependent_lines: true
+			icon: {
+				components: {
+					"forestry:bee_generation": 0
+					"forestry:bee_pristine": 1b
+					"forestry:genome": {
+						genome: {
+							"forestry:activity": {
+								active: {
+									dominant: 1b
+									value: "forestry:activity_diurnal"
+								}
+								inactive: {
+									dominant: 1b
+									value: "forestry:activity_diurnal"
+								}
+							}
+							"forestry:bee_effect": {
+								active: {
+									value: "forestry:bee_effect_miasmic"
+								}
+								inactive: {
+									value: "forestry:bee_effect_miasmic"
+								}
+							}
+							"forestry:bee_species": {
+								active: {
+									value: "forestry:tropical"
+								}
+								inactive: {
+									value: "forestry:tropical"
+								}
+							}
+							"forestry:cave_dwelling": {
+								active: {
+									dominant: 1b
+									value: 0b
+								}
+								inactive: {
+									dominant: 1b
+									value: 0b
+								}
+							}
+							"forestry:fertility": {
+								active: {
+									dominant: 1b
+									value: 2
+								}
+								inactive: {
+									dominant: 1b
+									value: 2
+								}
+							}
+							"forestry:flower_type": {
+								active: {
+									value: "forestry:flower_type_jungle"
+								}
+								inactive: {
+									value: "forestry:flower_type_jungle"
+								}
+							}
+							"forestry:humidity_tolerance": {
+								active: {
+									dominant: 1b
+									value: "UP_1"
+								}
+								inactive: {
+									dominant: 1b
+									value: "UP_1"
+								}
+							}
+							"forestry:lifespan": {
+								active: {
+									dominant: 1b
+									value: 30
+								}
+								inactive: {
+									dominant: 1b
+									value: 30
+								}
+							}
+							"forestry:pollination": {
+								active: {
+									dominant: 1b
+									value: 5
+								}
+								inactive: {
+									dominant: 1b
+									value: 5
+								}
+							}
+							"forestry:speed": {
+								active: {
+									dominant: 1b
+									value: 0.6f
+								}
+								inactive: {
+									dominant: 1b
+									value: 0.6f
+								}
+							}
+							"forestry:temperature_tolerance": {
+								active: {
+									dominant: 1b
+									value: "UP_1"
+								}
+								inactive: {
+									dominant: 1b
+									value: "UP_1"
+								}
+							}
+							"forestry:territory": {
+								active: {
+									value: [I;
+										9
+										6
+										9
+									]
+								}
+								inactive: {
+									value: [I;
+										9
+										6
+										9
+									]
+								}
+							}
+							"forestry:tolerates_rain": {
+								active: {
+									dominant: 1b
+									value: 1b
+								}
+								inactive: {
+									dominant: 1b
+									value: 1b
+								}
+							}
+						}
+						karyotype: "forestry:bee_species"
+					}
+					"forestry:health": 30
+					"forestry:max_health": 30
+				}
+				id: "forestry:princess_bee"
+			}
+			id: "0B220E8B253FE116"
+			tasks: [
+				{
+					id: "2ECE0CC8CBD477CB"
+					item: { count: 1, id: "forestry:tropical_hive" }
+					type: "item"
+				}
+				{
+					id: "50E242A0B50BF871"
+					item: { components: { "forestry:bee_generation": 0, "forestry:bee_pristine": 1b, "forestry:genome": { genome: { "forestry:activity": { active: { dominant: 1b, value: "forestry:activity_diurnal" }, inactive: { dominant: 1b, value: "forestry:activity_diurnal" } }, "forestry:bee_effect": { active: { value: "forestry:bee_effect_miasmic" }, inactive: { value: "forestry:bee_effect_miasmic" } }, "forestry:bee_species": { active: { value: "forestry:tropical" }, inactive: { value: "forestry:tropical" } }, "forestry:cave_dwelling": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } }, "forestry:fertility": { active: { dominant: 1b, value: 2 }, inactive: { dominant: 1b, value: 2 } }, "forestry:flower_type": { active: { value: "forestry:flower_type_jungle" }, inactive: { value: "forestry:flower_type_jungle" } }, "forestry:humidity_tolerance": { active: { dominant: 1b, value: "UP_1" }, inactive: { dominant: 1b, value: "UP_1" } }, "forestry:lifespan": { active: { dominant: 1b, value: 30 }, inactive: { dominant: 1b, value: 30 } }, "forestry:pollination": { active: { dominant: 1b, value: 5 }, inactive: { dominant: 1b, value: 5 } }, "forestry:speed": { active: { dominant: 1b, value: 0.6f }, inactive: { dominant: 1b, value: 0.6f } }, "forestry:temperature_tolerance": { active: { dominant: 1b, value: "UP_1" }, inactive: { dominant: 1b, value: "UP_1" } }, "forestry:territory": { active: { value: [I; 9, 6, 9 ] }, inactive: { value: [I; 9, 6, 9 ] } }, "forestry:tolerates_rain": { active: { dominant: 1b, value: 1b }, inactive: { dominant: 1b, value: 1b } } }, karyotype: "forestry:bee_species" }, "forestry:health": 30, "forestry:max_health": 30 }, count: 1, id: "forestry:princess_bee" }
+					type: "item"
+				}
+				{
+					id: "1E4CC4078A0DA67F"
+					item: { components: { "forestry:bee_generation": 0, "forestry:bee_pristine": 1b, "forestry:genome": { genome: { "forestry:activity": { active: { dominant: 1b, value: "forestry:activity_diurnal" }, inactive: { dominant: 1b, value: "forestry:activity_diurnal" } }, "forestry:bee_effect": { active: { value: "forestry:bee_effect_miasmic" }, inactive: { value: "forestry:bee_effect_miasmic" } }, "forestry:bee_species": { active: { value: "forestry:tropical" }, inactive: { value: "forestry:tropical" } }, "forestry:cave_dwelling": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } }, "forestry:fertility": { active: { dominant: 1b, value: 2 }, inactive: { dominant: 1b, value: 2 } }, "forestry:flower_type": { active: { value: "forestry:flower_type_jungle" }, inactive: { value: "forestry:flower_type_jungle" } }, "forestry:humidity_tolerance": { active: { dominant: 1b, value: "UP_1" }, inactive: { dominant: 1b, value: "UP_1" } }, "forestry:lifespan": { active: { dominant: 1b, value: 30 }, inactive: { dominant: 1b, value: 30 } }, "forestry:pollination": { active: { dominant: 1b, value: 5 }, inactive: { dominant: 1b, value: 5 } }, "forestry:speed": { active: { dominant: 1b, value: 0.6f }, inactive: { dominant: 1b, value: 0.6f } }, "forestry:temperature_tolerance": { active: { dominant: 1b, value: "UP_1" }, inactive: { dominant: 1b, value: "UP_1" } }, "forestry:territory": { active: { value: [I; 9, 6, 9 ] }, inactive: { value: [I; 9, 6, 9 ] } }, "forestry:tolerates_rain": { active: { dominant: 1b, value: 1b }, inactive: { dominant: 1b, value: 1b } } }, karyotype: "forestry:bee_species" }, "forestry:health": 30, "forestry:max_health": 30 }, count: 1, id: "forestry:drone_bee" }
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["0B220E8B253FE116"]
+			icon: {
+				id: "forestry:woven_silk"
+			}
+			id: "107B165A075230DF"
+			tasks: [
+				{
+					id: "6431D83DD3761E04"
+					item: { count: 1, id: "forestry:silky_comb" }
+					type: "item"
+				}
+				{
+					id: "74BFEF230B8B4B7B"
+					item: { count: 1, id: "forestry:silky_propolis" }
+					type: "item"
+				}
+				{
+					id: "27040AFE483E88D8"
+					item: { count: 1, id: "forestry:silk_wisp" }
+					type: "item"
+				}
+				{
+					id: "6F77272F37BF8387"
+					item: { count: 1, id: "forestry:woven_silk" }
+					type: "item"
+				}
+			]
+			x: -0.5d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"62DBB6855DF2639C"
+				"63FB7295B442F0A3"
+			]
+			id: "45CE97C345D408B1"
+			tasks: [{
+				id: "355DF6A276CAAFC9"
+				item: { count: 1, id: "forestry:worktable" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["15F1249B9F9C8271"]
+			hide_dependent_lines: true
+			icon: {
+				components: {
+					"forestry:bee_generation": 0
+					"forestry:bee_pristine": 1b
+					"forestry:genome": {
+						genome: {
+							"forestry:activity": {
+								active: {
+									dominant: 1b
+									value: "forestry:activity_crepuscular"
+								}
+								inactive: {
+									dominant: 1b
+									value: "forestry:activity_crepuscular"
+								}
+							}
+							"forestry:bee_effect": {
+								active: {
+									dominant: 1b
+									value: "forestry:bee_effect_none"
+								}
+								inactive: {
+									dominant: 1b
+									value: "forestry:bee_effect_none"
+								}
+							}
+							"forestry:bee_species": {
+								active: {
+									dominant: 1b
+									value: "forestry:savanna"
+								}
+								inactive: {
+									dominant: 1b
+									value: "forestry:savanna"
+								}
+							}
+							"forestry:cave_dwelling": {
+								active: {
+									dominant: 1b
+									value: 0b
+								}
+								inactive: {
+									dominant: 1b
+									value: 0b
+								}
+							}
+							"forestry:fertility": {
+								active: {
+									dominant: 1b
+									value: 2
+								}
+								inactive: {
+									dominant: 1b
+									value: 2
+								}
+							}
+							"forestry:flower_type": {
+								active: {
+									dominant: 1b
+									value: "forestry:flower_type_gourd"
+								}
+								inactive: {
+									dominant: 1b
+									value: "forestry:flower_type_gourd"
+								}
+							}
+							"forestry:humidity_tolerance": {
+								active: {
+									dominant: 1b
+									value: "UP_1"
+								}
+								inactive: {
+									dominant: 1b
+									value: "UP_1"
+								}
+							}
+							"forestry:lifespan": {
+								active: {
+									dominant: 1b
+									value: 30
+								}
+								inactive: {
+									dominant: 1b
+									value: 30
+								}
+							}
+							"forestry:pollination": {
+								active: {
+									dominant: 1b
+									value: 5
+								}
+								inactive: {
+									dominant: 1b
+									value: 5
+								}
+							}
+							"forestry:speed": {
+								active: {
+									dominant: 1b
+									value: 0.6f
+								}
+								inactive: {
+									dominant: 1b
+									value: 0.6f
+								}
+							}
+							"forestry:temperature_tolerance": {
+								active: {
+									dominant: 1b
+									value: "UP_1"
+								}
+								inactive: {
+									dominant: 1b
+									value: "UP_1"
+								}
+							}
+							"forestry:territory": {
+								active: {
+									value: [I;
+										11
+										8
+										11
+									]
+								}
+								inactive: {
+									value: [I;
+										11
+										8
+										11
+									]
+								}
+							}
+							"forestry:tolerates_rain": {
+								active: {
+									dominant: 1b
+									value: 0b
+								}
+								inactive: {
+									dominant: 1b
+									value: 0b
+								}
+							}
+						}
+						karyotype: "forestry:bee_species"
+					}
+					"forestry:health": 30
+					"forestry:max_health": 30
+				}
+				id: "forestry:princess_bee"
+			}
+			id: "626BDDF5FA1B74AC"
+			tasks: [
+				{
+					id: "5775CB351A200581"
+					item: { count: 1, id: "forestry:savanna_hive" }
+					type: "item"
+				}
+				{
+					id: "02733F8DA2C45F25"
+					item: { components: { "forestry:bee_generation": 0, "forestry:bee_pristine": 1b, "forestry:genome": { genome: { "forestry:activity": { active: { dominant: 1b, value: "forestry:activity_crepuscular" }, inactive: { dominant: 1b, value: "forestry:activity_crepuscular" } }, "forestry:bee_effect": { active: { dominant: 1b, value: "forestry:bee_effect_none" }, inactive: { dominant: 1b, value: "forestry:bee_effect_none" } }, "forestry:bee_species": { active: { dominant: 1b, value: "forestry:savanna" }, inactive: { dominant: 1b, value: "forestry:savanna" } }, "forestry:cave_dwelling": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } }, "forestry:fertility": { active: { dominant: 1b, value: 2 }, inactive: { dominant: 1b, value: 2 } }, "forestry:flower_type": { active: { dominant: 1b, value: "forestry:flower_type_gourd" }, inactive: { dominant: 1b, value: "forestry:flower_type_gourd" } }, "forestry:humidity_tolerance": { active: { dominant: 1b, value: "UP_1" }, inactive: { dominant: 1b, value: "UP_1" } }, "forestry:lifespan": { active: { dominant: 1b, value: 30 }, inactive: { dominant: 1b, value: 30 } }, "forestry:pollination": { active: { dominant: 1b, value: 5 }, inactive: { dominant: 1b, value: 5 } }, "forestry:speed": { active: { dominant: 1b, value: 0.6f }, inactive: { dominant: 1b, value: 0.6f } }, "forestry:temperature_tolerance": { active: { dominant: 1b, value: "UP_1" }, inactive: { dominant: 1b, value: "UP_1" } }, "forestry:territory": { active: { value: [I; 11, 8, 11 ] }, inactive: { value: [I; 11, 8, 11 ] } }, "forestry:tolerates_rain": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } } }, karyotype: "forestry:bee_species" }, "forestry:health": 30, "forestry:max_health": 30 }, count: 1, id: "forestry:princess_bee" }
+					type: "item"
+				}
+				{
+					id: "489796362CAE6751"
+					item: { components: { "forestry:bee_generation": 0, "forestry:bee_pristine": 1b, "forestry:genome": { genome: { "forestry:activity": { active: { dominant: 1b, value: "forestry:activity_crepuscular" }, inactive: { dominant: 1b, value: "forestry:activity_crepuscular" } }, "forestry:bee_effect": { active: { dominant: 1b, value: "forestry:bee_effect_none" }, inactive: { dominant: 1b, value: "forestry:bee_effect_none" } }, "forestry:bee_species": { active: { dominant: 1b, value: "forestry:savanna" }, inactive: { dominant: 1b, value: "forestry:savanna" } }, "forestry:cave_dwelling": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } }, "forestry:fertility": { active: { dominant: 1b, value: 2 }, inactive: { dominant: 1b, value: 2 } }, "forestry:flower_type": { active: { dominant: 1b, value: "forestry:flower_type_gourd" }, inactive: { dominant: 1b, value: "forestry:flower_type_gourd" } }, "forestry:humidity_tolerance": { active: { dominant: 1b, value: "UP_1" }, inactive: { dominant: 1b, value: "UP_1" } }, "forestry:lifespan": { active: { dominant: 1b, value: 30 }, inactive: { dominant: 1b, value: 30 } }, "forestry:pollination": { active: { dominant: 1b, value: 5 }, inactive: { dominant: 1b, value: 5 } }, "forestry:speed": { active: { dominant: 1b, value: 0.6f }, inactive: { dominant: 1b, value: 0.6f } }, "forestry:temperature_tolerance": { active: { dominant: 1b, value: "UP_1" }, inactive: { dominant: 1b, value: "UP_1" } }, "forestry:territory": { active: { value: [I; 11, 8, 11 ] }, inactive: { value: [I; 11, 8, 11 ] } }, "forestry:tolerates_rain": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } } }, karyotype: "forestry:bee_species" }, "forestry:health": 30, "forestry:max_health": 30 }, count: 1, id: "forestry:drone_bee" }
+					type: "item"
+				}
+			]
+			x: 5.5d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"3B1FA27A88CBFD3F"
+				"626BDDF5FA1B74AC"
+			]
+			hide_dependency_lines: true
+			id: "40EBCD60F109316A"
+			tasks: [
+				{
+					id: "66850EACAE2536AE"
+					item: { components: { "forestry:bee_generation": 0, "forestry:bee_pristine": 1b, "forestry:genome": { genome: { "forestry:activity": { active: { dominant: 1b, value: "forestry:activity_diurnal" }, inactive: { dominant: 1b, value: "forestry:activity_diurnal" } }, "forestry:bee_effect": { active: { dominant: 1b, value: "forestry:bee_effect_aggressive" }, inactive: { dominant: 1b, value: "forestry:bee_effect_aggressive" } }, "forestry:bee_species": { active: { dominant: 1b, value: "forestry:vindictive" }, inactive: { dominant: 1b, value: "forestry:vindictive" } }, "forestry:cave_dwelling": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } }, "forestry:fertility": { active: { dominant: 1b, value: 2 }, inactive: { dominant: 1b, value: 2 } }, "forestry:flower_type": { active: { dominant: 1b, value: "forestry:flower_type_vanilla" }, inactive: { dominant: 1b, value: "forestry:flower_type_vanilla" } }, "forestry:humidity_tolerance": { active: { dominant: 1b, value: "BOTH_1" }, inactive: { dominant: 1b, value: "BOTH_1" } }, "forestry:lifespan": { active: { value: 40 }, inactive: { value: 40 } }, "forestry:pollination": { active: { dominant: 1b, value: 5 }, inactive: { dominant: 1b, value: 5 } }, "forestry:speed": { active: { dominant: 1b, value: 0.6f }, inactive: { dominant: 1b, value: 0.6f } }, "forestry:temperature_tolerance": { active: { dominant: 1b, value: "BOTH_1" }, inactive: { dominant: 1b, value: "BOTH_1" } }, "forestry:territory": { active: { value: [I; 15, 13, 15 ] }, inactive: { value: [I; 15, 13, 15 ] } }, "forestry:tolerates_rain": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } } }, karyotype: "forestry:bee_species" }, "forestry:health": 40, "forestry:max_health": 40 }, count: 1, id: "forestry:princess_bee" }
+					type: "item"
+				}
+				{
+					id: "4F5009F5F0EBAB53"
+					item: { components: { "forestry:bee_generation": 0, "forestry:bee_pristine": 1b, "forestry:genome": { genome: { "forestry:activity": { active: { dominant: 1b, value: "forestry:activity_diurnal" }, inactive: { dominant: 1b, value: "forestry:activity_diurnal" } }, "forestry:bee_effect": { active: { dominant: 1b, value: "forestry:bee_effect_aggressive" }, inactive: { dominant: 1b, value: "forestry:bee_effect_aggressive" } }, "forestry:bee_species": { active: { dominant: 1b, value: "forestry:vindictive" }, inactive: { dominant: 1b, value: "forestry:vindictive" } }, "forestry:cave_dwelling": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } }, "forestry:fertility": { active: { dominant: 1b, value: 2 }, inactive: { dominant: 1b, value: 2 } }, "forestry:flower_type": { active: { dominant: 1b, value: "forestry:flower_type_vanilla" }, inactive: { dominant: 1b, value: "forestry:flower_type_vanilla" } }, "forestry:humidity_tolerance": { active: { dominant: 1b, value: "BOTH_1" }, inactive: { dominant: 1b, value: "BOTH_1" } }, "forestry:lifespan": { active: { value: 40 }, inactive: { value: 40 } }, "forestry:pollination": { active: { dominant: 1b, value: 5 }, inactive: { dominant: 1b, value: 5 } }, "forestry:speed": { active: { dominant: 1b, value: 0.6f }, inactive: { dominant: 1b, value: 0.6f } }, "forestry:temperature_tolerance": { active: { dominant: 1b, value: "BOTH_1" }, inactive: { dominant: 1b, value: "BOTH_1" } }, "forestry:territory": { active: { value: [I; 15, 13, 15 ] }, inactive: { value: [I; 15, 13, 15 ] } }, "forestry:tolerates_rain": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } } }, karyotype: "forestry:bee_species" }, "forestry:health": 40, "forestry:max_health": 40 }, count: 1, id: "forestry:drone_bee" }
+					type: "item"
+				}
+			]
+			x: 12.0d
+			y: -8.5d
+		}
+		{
+			dependencies: [
+				"2118EEBE0EF6F4A2"
+				"40EBCD60F109316A"
+			]
+			id: "4C1970BAEB7B3650"
+			tasks: [
+				{
+					id: "0E9FA8FC48750610"
+					item: { components: { "forestry:bee_generation": 0, "forestry:bee_pristine": 1b, "forestry:genome": { genome: { "forestry:activity": { active: { dominant: 1b, value: "forestry:activity_diurnal" }, inactive: { dominant: 1b, value: "forestry:activity_diurnal" } }, "forestry:bee_effect": { active: { dominant: 1b, value: "forestry:bee_effect_aggressive" }, inactive: { dominant: 1b, value: "forestry:bee_effect_aggressive" } }, "forestry:bee_species": { active: { dominant: 1b, value: "forestry:vengeful" }, inactive: { dominant: 1b, value: "forestry:vengeful" } }, "forestry:cave_dwelling": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } }, "forestry:fertility": { active: { dominant: 1b, value: 2 }, inactive: { dominant: 1b, value: 2 } }, "forestry:flower_type": { active: { dominant: 1b, value: "forestry:flower_type_vanilla" }, inactive: { dominant: 1b, value: "forestry:flower_type_vanilla" } }, "forestry:humidity_tolerance": { active: { dominant: 1b, value: "BOTH_1" }, inactive: { dominant: 1b, value: "BOTH_1" } }, "forestry:lifespan": { active: { value: 60 }, inactive: { value: 60 } }, "forestry:pollination": { active: { dominant: 1b, value: 5 }, inactive: { dominant: 1b, value: 5 } }, "forestry:speed": { active: { value: 1.0f }, inactive: { value: 1.0f } }, "forestry:temperature_tolerance": { active: { dominant: 1b, value: "BOTH_1" }, inactive: { dominant: 1b, value: "BOTH_1" } }, "forestry:territory": { active: { value: [I; 15, 13, 15 ] }, inactive: { value: [I; 15, 13, 15 ] } }, "forestry:tolerates_rain": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } } }, karyotype: "forestry:bee_species" }, "forestry:health": 60, "forestry:max_health": 60 }, count: 1, id: "forestry:princess_bee" }
+					type: "item"
+				}
+				{
+					id: "2B3F392D6F5255D2"
+					item: { components: { "forestry:bee_generation": 0, "forestry:bee_pristine": 1b, "forestry:genome": { genome: { "forestry:activity": { active: { dominant: 1b, value: "forestry:activity_diurnal" }, inactive: { dominant: 1b, value: "forestry:activity_diurnal" } }, "forestry:bee_effect": { active: { dominant: 1b, value: "forestry:bee_effect_aggressive" }, inactive: { dominant: 1b, value: "forestry:bee_effect_aggressive" } }, "forestry:bee_species": { active: { dominant: 1b, value: "forestry:vengeful" }, inactive: { dominant: 1b, value: "forestry:vengeful" } }, "forestry:cave_dwelling": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } }, "forestry:fertility": { active: { dominant: 1b, value: 2 }, inactive: { dominant: 1b, value: 2 } }, "forestry:flower_type": { active: { dominant: 1b, value: "forestry:flower_type_vanilla" }, inactive: { dominant: 1b, value: "forestry:flower_type_vanilla" } }, "forestry:humidity_tolerance": { active: { dominant: 1b, value: "BOTH_1" }, inactive: { dominant: 1b, value: "BOTH_1" } }, "forestry:lifespan": { active: { value: 60 }, inactive: { value: 60 } }, "forestry:pollination": { active: { dominant: 1b, value: 5 }, inactive: { dominant: 1b, value: 5 } }, "forestry:speed": { active: { value: 1.0f }, inactive: { value: 1.0f } }, "forestry:temperature_tolerance": { active: { dominant: 1b, value: "BOTH_1" }, inactive: { dominant: 1b, value: "BOTH_1" } }, "forestry:territory": { active: { value: [I; 15, 13, 15 ] }, inactive: { value: [I; 15, 13, 15 ] } }, "forestry:tolerates_rain": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } } }, karyotype: "forestry:bee_species" }, "forestry:health": 60, "forestry:max_health": 60 }, count: 1, id: "forestry:drone_bee" }
+					type: "item"
+				}
+			]
+			x: 11.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["4C1970BAEB7B3650"]
+			id: "05C657A8C4CEB3EF"
+			tasks: [
+				{
+					id: "1E668456452BA0F7"
+					item: { components: { "forestry:bee_generation": 0, "forestry:bee_pristine": 1b, "forestry:genome": { genome: { "forestry:activity": { active: { dominant: 1b, value: "forestry:activity_diurnal" }, inactive: { dominant: 1b, value: "forestry:activity_diurnal" } }, "forestry:bee_effect": { active: { dominant: 1b, value: "forestry:bee_effect_radioactive" }, inactive: { dominant: 1b, value: "forestry:bee_effect_radioactive" } }, "forestry:bee_species": { active: { dominant: 1b, value: "forestry:avenging" }, inactive: { dominant: 1b, value: "forestry:avenging" } }, "forestry:cave_dwelling": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } }, "forestry:fertility": { active: { dominant: 1b, value: 2 }, inactive: { dominant: 1b, value: 2 } }, "forestry:flower_type": { active: { dominant: 1b, value: "forestry:flower_type_vanilla" }, inactive: { dominant: 1b, value: "forestry:flower_type_vanilla" } }, "forestry:humidity_tolerance": { active: { dominant: 1b, value: "BOTH_1" }, inactive: { dominant: 1b, value: "BOTH_1" } }, "forestry:lifespan": { active: { value: 70 }, inactive: { value: 70 } }, "forestry:pollination": { active: { dominant: 1b, value: 5 }, inactive: { dominant: 1b, value: 5 } }, "forestry:speed": { active: { dominant: 1b, value: 0.3f }, inactive: { dominant: 1b, value: 0.3f } }, "forestry:temperature_tolerance": { active: { dominant: 1b, value: "BOTH_1" }, inactive: { dominant: 1b, value: "BOTH_1" } }, "forestry:territory": { active: { value: [I; 15, 13, 15 ] }, inactive: { value: [I; 15, 13, 15 ] } }, "forestry:tolerates_rain": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } } }, karyotype: "forestry:bee_species" }, "forestry:health": 70, "forestry:max_health": 70 }, count: 1, id: "forestry:princess_bee" }
+					type: "item"
+				}
+				{
+					id: "6F03002406047783"
+					item: { components: { "forestry:bee_generation": 0, "forestry:bee_pristine": 1b, "forestry:genome": { genome: { "forestry:activity": { active: { dominant: 1b, value: "forestry:activity_diurnal" }, inactive: { dominant: 1b, value: "forestry:activity_diurnal" } }, "forestry:bee_effect": { active: { dominant: 1b, value: "forestry:bee_effect_radioactive" }, inactive: { dominant: 1b, value: "forestry:bee_effect_radioactive" } }, "forestry:bee_species": { active: { dominant: 1b, value: "forestry:avenging" }, inactive: { dominant: 1b, value: "forestry:avenging" } }, "forestry:cave_dwelling": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } }, "forestry:fertility": { active: { dominant: 1b, value: 2 }, inactive: { dominant: 1b, value: 2 } }, "forestry:flower_type": { active: { dominant: 1b, value: "forestry:flower_type_vanilla" }, inactive: { dominant: 1b, value: "forestry:flower_type_vanilla" } }, "forestry:humidity_tolerance": { active: { dominant: 1b, value: "BOTH_1" }, inactive: { dominant: 1b, value: "BOTH_1" } }, "forestry:lifespan": { active: { value: 70 }, inactive: { value: 70 } }, "forestry:pollination": { active: { dominant: 1b, value: 5 }, inactive: { dominant: 1b, value: 5 } }, "forestry:speed": { active: { dominant: 1b, value: 0.3f }, inactive: { dominant: 1b, value: 0.3f } }, "forestry:temperature_tolerance": { active: { dominant: 1b, value: "BOTH_1" }, inactive: { dominant: 1b, value: "BOTH_1" } }, "forestry:territory": { active: { value: [I; 15, 13, 15 ] }, inactive: { value: [I; 15, 13, 15 ] } }, "forestry:tolerates_rain": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } } }, karyotype: "forestry:bee_species" }, "forestry:health": 70, "forestry:max_health": 70 }, count: 1, id: "forestry:drone_bee" }
+					type: "item"
+				}
+			]
+			x: 10.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["15F1249B9F9C8271"]
+			icon: {
+				components: {
+					"forestry:bee_generation": 0
+					"forestry:bee_pristine": 1b
+					"forestry:genome": {
+						genome: {
+							"forestry:activity": {
+								active: {
+									dominant: 1b
+									value: "forestry:activity_crepuscular"
+								}
+								inactive: {
+									dominant: 1b
+									value: "forestry:activity_crepuscular"
+								}
+							}
+							"forestry:bee_effect": {
+								active: {
+									value: "forestry:bee_effect_miasmic"
+								}
+								inactive: {
+									value: "forestry:bee_effect_miasmic"
+								}
+							}
+							"forestry:bee_species": {
+								active: {
+									dominant: 1b
+									value: "forestry:aquatic"
+								}
+								inactive: {
+									dominant: 1b
+									value: "forestry:aquatic"
+								}
+							}
+							"forestry:cave_dwelling": {
+								active: {
+									dominant: 1b
+									value: 0b
+								}
+								inactive: {
+									dominant: 1b
+									value: 0b
+								}
+							}
+							"forestry:fertility": {
+								active: {
+									value: 4
+								}
+								inactive: {
+									value: 4
+								}
+							}
+							"forestry:flower_type": {
+								active: {
+									value: "forestry:flower_type_coral"
+								}
+								inactive: {
+									value: "forestry:flower_type_coral"
+								}
+							}
+							"forestry:humidity_tolerance": {
+								active: {
+									value: "NONE"
+								}
+								inactive: {
+									value: "NONE"
+								}
+							}
+							"forestry:lifespan": {
+								active: {
+									dominant: 1b
+									value: 10
+								}
+								inactive: {
+									dominant: 1b
+									value: 10
+								}
+							}
+							"forestry:pollination": {
+								active: {
+									dominant: 1b
+									value: 5
+								}
+								inactive: {
+									dominant: 1b
+									value: 5
+								}
+							}
+							"forestry:speed": {
+								active: {
+									dominant: 1b
+									value: 0.8f
+								}
+								inactive: {
+									dominant: 1b
+									value: 0.8f
+								}
+							}
+							"forestry:temperature_tolerance": {
+								active: {
+									value: "NONE"
+								}
+								inactive: {
+									value: "NONE"
+								}
+							}
+							"forestry:territory": {
+								active: {
+									value: [I;
+										15
+										13
+										15
+									]
+								}
+								inactive: {
+									value: [I;
+										15
+										13
+										15
+									]
+								}
+							}
+							"forestry:tolerates_rain": {
+								active: {
+									dominant: 1b
+									value: 1b
+								}
+								inactive: {
+									dominant: 1b
+									value: 1b
+								}
+							}
+						}
+						karyotype: "forestry:bee_species"
+					}
+					"forestry:health": 10
+					"forestry:max_health": 10
+				}
+				id: "forestry:princess_bee"
+			}
+			id: "6182EADF39AAC767"
+			tasks: [
+				{
+					id: "394A5247C9BF7B08"
+					item: { count: 1, id: "forestry:aquatic_hive" }
+					type: "item"
+				}
+				{
+					id: "696C9928672B101E"
+					item: { components: { "forestry:bee_generation": 0, "forestry:bee_pristine": 1b, "forestry:genome": { genome: { "forestry:activity": { active: { dominant: 1b, value: "forestry:activity_crepuscular" }, inactive: { dominant: 1b, value: "forestry:activity_crepuscular" } }, "forestry:bee_effect": { active: { value: "forestry:bee_effect_miasmic" }, inactive: { value: "forestry:bee_effect_miasmic" } }, "forestry:bee_species": { active: { dominant: 1b, value: "forestry:aquatic" }, inactive: { dominant: 1b, value: "forestry:aquatic" } }, "forestry:cave_dwelling": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } }, "forestry:fertility": { active: { value: 4 }, inactive: { value: 4 } }, "forestry:flower_type": { active: { value: "forestry:flower_type_coral" }, inactive: { value: "forestry:flower_type_coral" } }, "forestry:humidity_tolerance": { active: { value: "NONE" }, inactive: { value: "NONE" } }, "forestry:lifespan": { active: { dominant: 1b, value: 10 }, inactive: { dominant: 1b, value: 10 } }, "forestry:pollination": { active: { dominant: 1b, value: 5 }, inactive: { dominant: 1b, value: 5 } }, "forestry:speed": { active: { dominant: 1b, value: 0.8f }, inactive: { dominant: 1b, value: 0.8f } }, "forestry:temperature_tolerance": { active: { value: "NONE" }, inactive: { value: "NONE" } }, "forestry:territory": { active: { value: [I; 15, 13, 15 ] }, inactive: { value: [I; 15, 13, 15 ] } }, "forestry:tolerates_rain": { active: { dominant: 1b, value: 1b }, inactive: { dominant: 1b, value: 1b } } }, karyotype: "forestry:bee_species" }, "forestry:health": 10, "forestry:max_health": 10 }, count: 1, id: "forestry:princess_bee" }
+					type: "item"
+				}
+				{
+					id: "7C9B592C3E3EBA93"
+					item: { components: { "forestry:bee_generation": 0, "forestry:bee_pristine": 1b, "forestry:genome": { genome: { "forestry:activity": { active: { dominant: 1b, value: "forestry:activity_crepuscular" }, inactive: { dominant: 1b, value: "forestry:activity_crepuscular" } }, "forestry:bee_effect": { active: { value: "forestry:bee_effect_miasmic" }, inactive: { value: "forestry:bee_effect_miasmic" } }, "forestry:bee_species": { active: { dominant: 1b, value: "forestry:aquatic" }, inactive: { dominant: 1b, value: "forestry:aquatic" } }, "forestry:cave_dwelling": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } }, "forestry:fertility": { active: { value: 4 }, inactive: { value: 4 } }, "forestry:flower_type": { active: { value: "forestry:flower_type_coral" }, inactive: { value: "forestry:flower_type_coral" } }, "forestry:humidity_tolerance": { active: { value: "NONE" }, inactive: { value: "NONE" } }, "forestry:lifespan": { active: { dominant: 1b, value: 10 }, inactive: { dominant: 1b, value: 10 } }, "forestry:pollination": { active: { dominant: 1b, value: 5 }, inactive: { dominant: 1b, value: 5 } }, "forestry:speed": { active: { dominant: 1b, value: 0.8f }, inactive: { dominant: 1b, value: 0.8f } }, "forestry:temperature_tolerance": { active: { value: "NONE" }, inactive: { value: "NONE" } }, "forestry:territory": { active: { value: [I; 15, 13, 15 ] }, inactive: { value: [I; 15, 13, 15 ] } }, "forestry:tolerates_rain": { active: { dominant: 1b, value: 1b }, inactive: { dominant: 1b, value: 1b } } }, karyotype: "forestry:bee_species" }, "forestry:health": 10, "forestry:max_health": 10 }, count: 1, id: "forestry:drone_bee" }
+					type: "item"
+				}
+			]
+			x: 6.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"6182EADF39AAC767"
+				"62DB7C7EDCFAB402"
+			]
+			hide_dependency_lines: true
+			id: "071336F4C828CFC6"
+			tasks: [
+				{
+					id: "4343E05B677EB60C"
+					item: { components: { "forestry:bee_generation": 0, "forestry:bee_pristine": 1b, "forestry:genome": { genome: { "forestry:activity": { active: { dominant: 1b, value: "forestry:activity_nocturnal" }, inactive: { dominant: 1b, value: "forestry:activity_nocturnal" } }, "forestry:bee_effect": { active: { value: "forestry:bee_effect_darkness" }, inactive: { value: "forestry:bee_effect_darkness" } }, "forestry:bee_species": { active: { value: "forestry:abyssal" }, inactive: { value: "forestry:abyssal" } }, "forestry:cave_dwelling": { active: { dominant: 1b, value: 1b }, inactive: { dominant: 1b, value: 1b } }, "forestry:fertility": { active: { dominant: 1b, value: 1 }, inactive: { dominant: 1b, value: 1 } }, "forestry:flower_type": { active: { value: "forestry:flower_type_sea" }, inactive: { value: "forestry:flower_type_sea" } }, "forestry:humidity_tolerance": { active: { value: "NONE" }, inactive: { value: "NONE" } }, "forestry:lifespan": { active: { value: 60 }, inactive: { value: 60 } }, "forestry:pollination": { active: { dominant: 1b, value: 5 }, inactive: { dominant: 1b, value: 5 } }, "forestry:speed": { active: { dominant: 1b, value: 0.3f }, inactive: { dominant: 1b, value: 0.3f } }, "forestry:temperature_tolerance": { active: { value: "NONE" }, inactive: { value: "NONE" } }, "forestry:territory": { active: { value: [I; 15, 13, 15 ] }, inactive: { value: [I; 15, 13, 15 ] } }, "forestry:tolerates_rain": { active: { dominant: 1b, value: 1b }, inactive: { dominant: 1b, value: 1b } } }, karyotype: "forestry:bee_species" }, "forestry:health": 60, "forestry:max_health": 60 }, count: 1, id: "forestry:princess_bee" }
+					type: "item"
+				}
+				{
+					id: "08A5451E54268E5B"
+					item: { components: { "forestry:bee_generation": 0, "forestry:bee_pristine": 1b, "forestry:genome": { genome: { "forestry:activity": { active: { dominant: 1b, value: "forestry:activity_nocturnal" }, inactive: { dominant: 1b, value: "forestry:activity_nocturnal" } }, "forestry:bee_effect": { active: { value: "forestry:bee_effect_darkness" }, inactive: { value: "forestry:bee_effect_darkness" } }, "forestry:bee_species": { active: { value: "forestry:abyssal" }, inactive: { value: "forestry:abyssal" } }, "forestry:cave_dwelling": { active: { dominant: 1b, value: 1b }, inactive: { dominant: 1b, value: 1b } }, "forestry:fertility": { active: { dominant: 1b, value: 1 }, inactive: { dominant: 1b, value: 1 } }, "forestry:flower_type": { active: { value: "forestry:flower_type_sea" }, inactive: { value: "forestry:flower_type_sea" } }, "forestry:humidity_tolerance": { active: { value: "NONE" }, inactive: { value: "NONE" } }, "forestry:lifespan": { active: { value: 60 }, inactive: { value: 60 } }, "forestry:pollination": { active: { dominant: 1b, value: 5 }, inactive: { dominant: 1b, value: 5 } }, "forestry:speed": { active: { dominant: 1b, value: 0.3f }, inactive: { dominant: 1b, value: 0.3f } }, "forestry:temperature_tolerance": { active: { value: "NONE" }, inactive: { value: "NONE" } }, "forestry:territory": { active: { value: [I; 15, 13, 15 ] }, inactive: { value: [I; 15, 13, 15 ] } }, "forestry:tolerates_rain": { active: { dominant: 1b, value: 1b }, inactive: { dominant: 1b, value: 1b } } }, karyotype: "forestry:bee_species" }, "forestry:health": 60, "forestry:max_health": 60 }, count: 1, id: "forestry:drone_bee" }
+					type: "item"
+				}
+			]
+			x: 5.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["3E91614E31911448"]
+			hide_dependency_lines: true
+			id: "2DC3D74E10EE6224"
+			tasks: [{
+				id: "22CEB7642015C970"
+				item: { components: { "forestry:bee_generation": 0, "forestry:bee_pristine": 1b, "forestry:genome": { genome: { "forestry:activity": { active: { dominant: 1b, value: "forestry:activity_diurnal" }, inactive: { dominant: 1b, value: "forestry:activity_diurnal" } }, "forestry:bee_effect": { active: { dominant: 1b, value: "forestry:bee_effect_none" }, inactive: { dominant: 1b, value: "forestry:bee_effect_none" } }, "forestry:bee_species": { active: { value: "forestry:monastic" }, inactive: { value: "forestry:monastic" } }, "forestry:cave_dwelling": { active: { dominant: 1b, value: 1b }, inactive: { dominant: 1b, value: 1b } }, "forestry:fertility": { active: { dominant: 1b, value: 1 }, inactive: { dominant: 1b, value: 1 } }, "forestry:flower_type": { active: { dominant: 1b, value: "forestry:flower_type_wheat" }, inactive: { dominant: 1b, value: "forestry:flower_type_wheat" } }, "forestry:humidity_tolerance": { active: { dominant: 1b, value: "BOTH_1" }, inactive: { dominant: 1b, value: "BOTH_1" } }, "forestry:lifespan": { active: { value: 50 }, inactive: { value: 50 } }, "forestry:pollination": { active: { value: 30 }, inactive: { value: 30 } }, "forestry:speed": { active: { dominant: 1b, value: 0.6f }, inactive: { dominant: 1b, value: 0.6f } }, "forestry:temperature_tolerance": { active: { dominant: 1b, value: "BOTH_1" }, inactive: { dominant: 1b, value: "BOTH_1" } }, "forestry:territory": { active: { value: [I; 9, 6, 9 ] }, inactive: { value: [I; 9, 6, 9 ] } }, "forestry:tolerates_rain": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } } }, karyotype: "forestry:bee_species" }, "forestry:health": 50, "forestry:max_health": 50 }, count: 1, id: "forestry:drone_bee" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"60E7D7DC038AA803"
+				"7F755B8418EB5FA2"
+			]
+			hide_dependency_lines: true
+			id: "6D2E32E6944A4136"
+			tasks: [{
+				id: "299E4CA44650F6E5"
+				item: { count: 1, id: "forestry:honey_comb" }
+				type: "item"
+			}]
+			x: 11.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"6977BEF39C5604B7"
+				"4967E513F01552DF"
+			]
+			hide_dependency_lines: true
+			id: "58489CA637B53D4B"
+			tasks: [{
+				id: "0298631D42BE69B1"
+				item: { count: 1, id: "forestry:cocoa_comb" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: -1.0d
+		}
+		{
+			id: "0F6190F64FBB2963"
+			tasks: [{
+				id: "37A5E8DA8FA7B228"
+				item: { count: 1, id: "forestry:simmering_comb" }
+				type: "item"
+			}]
+			x: 13.0d
+			y: -1.0d
+		}
+		{
+			id: "15EA8BBC6B8A3DEB"
+			tasks: [{
+				id: "3EF89F7402818BB8"
+				item: { count: 1, id: "forestry:stringy_comb" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: 0.0d
+		}
+		{
+			id: "454A3053223793CD"
+			tasks: [{
+				id: "4366335AD02C6CF8"
+				item: { count: 1, id: "forestry:frozen_comb" }
+				type: "item"
+			}]
+			x: 11.5d
+			y: 0.0d
+		}
+		{
+			id: "0F5A7FA96D4D878E"
+			tasks: [{
+				id: "3AA56A0ED74C6CDF"
+				item: { count: 1, id: "forestry:dripping_comb" }
+				type: "item"
+			}]
+			x: 12.5d
+			y: 0.0d
+		}
+		{
+			id: "294D26000BEBBEF0"
+			tasks: [{
+				id: "2618C7E9936EDEC9"
+				item: { count: 1, id: "forestry:silky_comb" }
+				type: "item"
+			}]
+			x: 13.5d
+			y: 0.0d
+		}
+		{
+			id: "64678841362177F0"
+			tasks: [{
+				id: "16941F03C05EEC1B"
+				item: { count: 1, id: "forestry:parched_comb" }
+				type: "item"
+			}]
+			x: 11.0d
+			y: 1.0d
+		}
+		{
+			id: "118284A43AB6BC61"
+			tasks: [{
+				id: "25F125172CCB9707"
+				item: { count: 1, id: "forestry:mysterious_comb" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 1.0d
+		}
+		{
+			id: "1BF6951BB8B20921"
+			tasks: [{
+				id: "4804A839A0EACA11"
+				item: { count: 1, id: "forestry:powdery_comb" }
+				type: "item"
+			}]
+			x: 13.0d
+			y: 1.0d
+		}
+		{
+			id: "3F499646D656D7E1"
+			tasks: [{
+				id: "28D07B566390516A"
+				item: { count: 1, id: "forestry:wheaten_comb" }
+				type: "item"
+			}]
+			x: 10.5d
+			y: 2.0d
+		}
+		{
+			id: "3779C0C199A7E0A4"
+			tasks: [{
+				id: "5CA0C92C0D6CD716"
+				item: { count: 1, id: "forestry:mossy_comb" }
+				type: "item"
+			}]
+			x: 11.5d
+			y: 2.0d
+		}
+		{
+			id: "48637AFA8D3D0313"
+			tasks: [{
+				id: "5E809808D57D729C"
+				item: { count: 1, id: "forestry:mellow_comb" }
+				type: "item"
+			}]
+			x: 12.5d
+			y: 2.0d
+		}
+		{
+			id: "21AEDC6B5C3103E8"
+			tasks: [{
+				id: "14B2FBAA28A8078C"
+				item: { count: 1, id: "forestry:kaolin_comb" }
+				type: "item"
+			}]
+			x: 13.5d
+			y: 2.0d
+		}
+		{
+			id: "074DDACC7FB26FE9"
+			tasks: [{
+				id: "3D94DCAC1590BF55"
+				item: { count: 1, id: "forestry:vintage_comb" }
+				type: "item"
+			}]
+			x: 11.0d
+			y: 3.0d
+		}
+		{
+			id: "7DA88ABAC99C5BB4"
+			tasks: [{
+				id: "08FF336A9F4B79D9"
+				item: { count: 1, id: "forestry:spongy_comb" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 3.0d
+		}
+		{
+			id: "14F3D90CD7788E52"
+			tasks: [{
+				id: "4EBA165FB12CB562"
+				item: { count: 1, id: "forestry:sculken_comb" }
+				type: "item"
+			}]
+			x: 13.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"2DC3D74E10EE6224"
+				"2DBC565007912E1D"
+			]
+			id: "25FD1FE159663314"
+			tasks: [{
+				id: "5550FDAFD3DFDC63"
+				item: { components: { "forestry:bee_generation": 0, "forestry:bee_pristine": 1b, "forestry:genome": { genome: { "forestry:activity": { active: { dominant: 1b, value: "forestry:activity_diurnal" }, inactive: { dominant: 1b, value: "forestry:activity_diurnal" } }, "forestry:bee_effect": { active: { dominant: 1b, value: "forestry:bee_effect_none" }, inactive: { dominant: 1b, value: "forestry:bee_effect_none" } }, "forestry:bee_species": { active: { dominant: 1b, value: "forestry:secluded" }, inactive: { dominant: 1b, value: "forestry:secluded" } }, "forestry:cave_dwelling": { active: { dominant: 1b, value: 1b }, inactive: { dominant: 1b, value: 1b } }, "forestry:fertility": { active: { dominant: 1b, value: 1 }, inactive: { dominant: 1b, value: 1 } }, "forestry:flower_type": { active: { dominant: 1b, value: "forestry:flower_type_wheat" }, inactive: { dominant: 1b, value: "forestry:flower_type_wheat" } }, "forestry:humidity_tolerance": { active: { dominant: 1b, value: "BOTH_1" }, inactive: { dominant: 1b, value: "BOTH_1" } }, "forestry:lifespan": { active: { value: 50 }, inactive: { value: 50 } }, "forestry:pollination": { active: { value: 35 }, inactive: { value: 35 } }, "forestry:speed": { active: { dominant: 1b, value: 0.6f }, inactive: { dominant: 1b, value: 0.6f } }, "forestry:temperature_tolerance": { active: { dominant: 1b, value: "BOTH_1" }, inactive: { dominant: 1b, value: "BOTH_1" } }, "forestry:territory": { active: { value: [I; 9, 6, 9 ] }, inactive: { value: [I; 9, 6, 9 ] } }, "forestry:tolerates_rain": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } } }, karyotype: "forestry:bee_species" }, "forestry:health": 50, "forestry:max_health": 50 }, count: 1, id: "forestry:princess_bee" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["2118EEBE0EF6F4A2"]
+			id: "5C5E8EEAC925EBB1"
+			tasks: [
+				{
+					id: "35590E51B8CBB488"
+					item: { components: { "forestry:bee_generation": 0, "forestry:bee_pristine": 1b, "forestry:genome": { genome: { "forestry:activity": { active: { dominant: 1b, value: "forestry:activity_metaturnal" }, inactive: { dominant: 1b, value: "forestry:activity_metaturnal" } }, "forestry:bee_effect": { active: { dominant: 1b, value: "forestry:bee_effect_aggressive" }, inactive: { dominant: 1b, value: "forestry:bee_effect_aggressive" } }, "forestry:bee_species": { active: { value: "forestry:sinister" }, inactive: { value: "forestry:sinister" } }, "forestry:cave_dwelling": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } }, "forestry:fertility": { active: { dominant: 1b, value: 2 }, inactive: { dominant: 1b, value: 2 } }, "forestry:flower_type": { active: { value: "forestry:flower_type_nether" }, inactive: { value: "forestry:flower_type_nether" } }, "forestry:humidity_tolerance": { active: { value: "NONE" }, inactive: { value: "NONE" } }, "forestry:lifespan": { active: { value: 40 }, inactive: { value: 40 } }, "forestry:pollination": { active: { value: 20 }, inactive: { value: 20 } }, "forestry:speed": { active: { dominant: 1b, value: 0.6f }, inactive: { dominant: 1b, value: 0.6f } }, "forestry:temperature_tolerance": { active: { value: "DOWN_2" }, inactive: { value: "DOWN_2" } }, "forestry:territory": { active: { value: [I; 9, 6, 9 ] }, inactive: { value: [I; 9, 6, 9 ] } }, "forestry:tolerates_rain": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } } }, karyotype: "forestry:bee_species" }, "forestry:health": 40, "forestry:max_health": 40 }, count: 1, id: "forestry:princess_bee" }
+					type: "item"
+				}
+				{
+					id: "68BBCE71C4066462"
+					item: { components: { "forestry:bee_generation": 0, "forestry:bee_pristine": 1b, "forestry:genome": { genome: { "forestry:activity": { active: { dominant: 1b, value: "forestry:activity_metaturnal" }, inactive: { dominant: 1b, value: "forestry:activity_metaturnal" } }, "forestry:bee_effect": { active: { dominant: 1b, value: "forestry:bee_effect_aggressive" }, inactive: { dominant: 1b, value: "forestry:bee_effect_aggressive" } }, "forestry:bee_species": { active: { value: "forestry:sinister" }, inactive: { value: "forestry:sinister" } }, "forestry:cave_dwelling": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } }, "forestry:fertility": { active: { dominant: 1b, value: 2 }, inactive: { dominant: 1b, value: 2 } }, "forestry:flower_type": { active: { value: "forestry:flower_type_nether" }, inactive: { value: "forestry:flower_type_nether" } }, "forestry:humidity_tolerance": { active: { value: "NONE" }, inactive: { value: "NONE" } }, "forestry:lifespan": { active: { value: 40 }, inactive: { value: 40 } }, "forestry:pollination": { active: { value: 20 }, inactive: { value: 20 } }, "forestry:speed": { active: { dominant: 1b, value: 0.6f }, inactive: { dominant: 1b, value: 0.6f } }, "forestry:temperature_tolerance": { active: { value: "DOWN_2" }, inactive: { value: "DOWN_2" } }, "forestry:territory": { active: { value: [I; 9, 6, 9 ] }, inactive: { value: [I; 9, 6, 9 ] } }, "forestry:tolerates_rain": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } } }, karyotype: "forestry:bee_species" }, "forestry:health": 40, "forestry:max_health": 40 }, count: 1, id: "forestry:drone_bee" }
+					type: "item"
+				}
+			]
+			x: 9.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["5C5E8EEAC925EBB1"]
+			id: "7C5E58B9448B9F62"
+			tasks: [
+				{
+					id: "2D6AAE10E190257C"
+					item: { components: { "forestry:bee_generation": 0, "forestry:bee_pristine": 1b, "forestry:genome": { genome: { "forestry:activity": { active: { dominant: 1b, value: "forestry:activity_metaturnal" }, inactive: { dominant: 1b, value: "forestry:activity_metaturnal" } }, "forestry:bee_effect": { active: { dominant: 1b, value: "forestry:bee_effect_aggressive" }, inactive: { dominant: 1b, value: "forestry:bee_effect_aggressive" } }, "forestry:bee_species": { active: { dominant: 1b, value: "forestry:fiendish" }, inactive: { dominant: 1b, value: "forestry:fiendish" } }, "forestry:cave_dwelling": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } }, "forestry:fertility": { active: { dominant: 1b, value: 2 }, inactive: { dominant: 1b, value: 2 } }, "forestry:flower_type": { active: { value: "forestry:flower_type_nether" }, inactive: { value: "forestry:flower_type_nether" } }, "forestry:humidity_tolerance": { active: { value: "NONE" }, inactive: { value: "NONE" } }, "forestry:lifespan": { active: { value: 50 }, inactive: { value: 50 } }, "forestry:pollination": { active: { value: 20 }, inactive: { value: 20 } }, "forestry:speed": { active: { value: 1.0f }, inactive: { value: 1.0f } }, "forestry:temperature_tolerance": { active: { value: "DOWN_2" }, inactive: { value: "DOWN_2" } }, "forestry:territory": { active: { value: [I; 9, 6, 9 ] }, inactive: { value: [I; 9, 6, 9 ] } }, "forestry:tolerates_rain": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } } }, karyotype: "forestry:bee_species" }, "forestry:health": 50, "forestry:max_health": 50 }, count: 1, id: "forestry:princess_bee" }
+					type: "item"
+				}
+				{
+					id: "0A27BE79DAA45E3B"
+					item: { components: { "forestry:bee_generation": 0, "forestry:bee_pristine": 1b, "forestry:genome": { genome: { "forestry:activity": { active: { dominant: 1b, value: "forestry:activity_metaturnal" }, inactive: { dominant: 1b, value: "forestry:activity_metaturnal" } }, "forestry:bee_effect": { active: { dominant: 1b, value: "forestry:bee_effect_aggressive" }, inactive: { dominant: 1b, value: "forestry:bee_effect_aggressive" } }, "forestry:bee_species": { active: { dominant: 1b, value: "forestry:fiendish" }, inactive: { dominant: 1b, value: "forestry:fiendish" } }, "forestry:cave_dwelling": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } }, "forestry:fertility": { active: { dominant: 1b, value: 2 }, inactive: { dominant: 1b, value: 2 } }, "forestry:flower_type": { active: { value: "forestry:flower_type_nether" }, inactive: { value: "forestry:flower_type_nether" } }, "forestry:humidity_tolerance": { active: { value: "NONE" }, inactive: { value: "NONE" } }, "forestry:lifespan": { active: { value: 50 }, inactive: { value: 50 } }, "forestry:pollination": { active: { value: 20 }, inactive: { value: 20 } }, "forestry:speed": { active: { value: 1.0f }, inactive: { value: 1.0f } }, "forestry:temperature_tolerance": { active: { value: "DOWN_2" }, inactive: { value: "DOWN_2" } }, "forestry:territory": { active: { value: [I; 9, 6, 9 ] }, inactive: { value: [I; 9, 6, 9 ] } }, "forestry:tolerates_rain": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } } }, karyotype: "forestry:bee_species" }, "forestry:health": 50, "forestry:max_health": 50 }, count: 1, id: "forestry:drone_bee" }
+					type: "item"
+				}
+			]
+			x: 9.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["7C5E58B9448B9F62"]
+			id: "359B495183527ECC"
+			tasks: [
+				{
+					id: "4854C27C88C5CB73"
+					item: { components: { "forestry:bee_generation": 0, "forestry:bee_pristine": 1b, "forestry:genome": { genome: { "forestry:activity": { active: { dominant: 1b, value: "forestry:activity_metaturnal" }, inactive: { dominant: 1b, value: "forestry:activity_metaturnal" } }, "forestry:bee_effect": { active: { value: "forestry:bee_effect_ignition" }, inactive: { value: "forestry:bee_effect_ignition" } }, "forestry:bee_species": { active: { value: "forestry:demonic" }, inactive: { value: "forestry:demonic" } }, "forestry:cave_dwelling": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } }, "forestry:fertility": { active: { dominant: 1b, value: 2 }, inactive: { dominant: 1b, value: 2 } }, "forestry:flower_type": { active: { value: "forestry:flower_type_nether" }, inactive: { value: "forestry:flower_type_nether" } }, "forestry:humidity_tolerance": { active: { value: "NONE" }, inactive: { value: "NONE" } }, "forestry:lifespan": { active: { value: 60 }, inactive: { value: 60 } }, "forestry:pollination": { active: { value: 20 }, inactive: { value: 20 } }, "forestry:speed": { active: { dominant: 1b, value: 0.6f }, inactive: { dominant: 1b, value: 0.6f } }, "forestry:temperature_tolerance": { active: { value: "DOWN_2" }, inactive: { value: "DOWN_2" } }, "forestry:territory": { active: { value: [I; 9, 6, 9 ] }, inactive: { value: [I; 9, 6, 9 ] } }, "forestry:tolerates_rain": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } } }, karyotype: "forestry:bee_species" }, "forestry:health": 60, "forestry:max_health": 60 }, count: 1, id: "forestry:princess_bee" }
+					type: "item"
+				}
+				{
+					id: "396FC2F0DEDCF039"
+					item: { components: { "forestry:bee_generation": 0, "forestry:bee_pristine": 1b, "forestry:genome": { genome: { "forestry:activity": { active: { dominant: 1b, value: "forestry:activity_metaturnal" }, inactive: { dominant: 1b, value: "forestry:activity_metaturnal" } }, "forestry:bee_effect": { active: { value: "forestry:bee_effect_ignition" }, inactive: { value: "forestry:bee_effect_ignition" } }, "forestry:bee_species": { active: { value: "forestry:demonic" }, inactive: { value: "forestry:demonic" } }, "forestry:cave_dwelling": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } }, "forestry:fertility": { active: { dominant: 1b, value: 2 }, inactive: { dominant: 1b, value: 2 } }, "forestry:flower_type": { active: { value: "forestry:flower_type_nether" }, inactive: { value: "forestry:flower_type_nether" } }, "forestry:humidity_tolerance": { active: { value: "NONE" }, inactive: { value: "NONE" } }, "forestry:lifespan": { active: { value: 60 }, inactive: { value: 60 } }, "forestry:pollination": { active: { value: 20 }, inactive: { value: 20 } }, "forestry:speed": { active: { dominant: 1b, value: 0.6f }, inactive: { dominant: 1b, value: 0.6f } }, "forestry:temperature_tolerance": { active: { value: "DOWN_2" }, inactive: { value: "DOWN_2" } }, "forestry:territory": { active: { value: [I; 9, 6, 9 ] }, inactive: { value: [I; 9, 6, 9 ] } }, "forestry:tolerates_rain": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } } }, karyotype: "forestry:bee_species" }, "forestry:health": 60, "forestry:max_health": 60 }, count: 1, id: "forestry:drone_bee" }
+					type: "item"
+				}
+			]
+			x: 9.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["0B220E8B253FE116"]
+			id: "598F2401728A013E"
+			tasks: [
+				{
+					id: "174623FF3C310410"
+					item: { components: { "forestry:bee_generation": 0, "forestry:bee_pristine": 1b, "forestry:genome": { genome: { "forestry:activity": { active: { dominant: 1b, value: "forestry:activity_diurnal" }, inactive: { dominant: 1b, value: "forestry:activity_diurnal" } }, "forestry:bee_effect": { active: { value: "forestry:bee_effect_miasmic" }, inactive: { value: "forestry:bee_effect_miasmic" } }, "forestry:bee_species": { active: { dominant: 1b, value: "forestry:exotic" }, inactive: { dominant: 1b, value: "forestry:exotic" } }, "forestry:cave_dwelling": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } }, "forestry:fertility": { active: { dominant: 1b, value: 2 }, inactive: { dominant: 1b, value: 2 } }, "forestry:flower_type": { active: { value: "forestry:flower_type_jungle" }, inactive: { value: "forestry:flower_type_jungle" } }, "forestry:humidity_tolerance": { active: { dominant: 1b, value: "UP_1" }, inactive: { dominant: 1b, value: "UP_1" } }, "forestry:lifespan": { active: { value: 50 }, inactive: { value: 50 } }, "forestry:pollination": { active: { dominant: 1b, value: 5 }, inactive: { dominant: 1b, value: 5 } }, "forestry:speed": { active: { value: 1.0f }, inactive: { value: 1.0f } }, "forestry:temperature_tolerance": { active: { dominant: 1b, value: "UP_1" }, inactive: { dominant: 1b, value: "UP_1" } }, "forestry:territory": { active: { value: [I; 9, 6, 9 ] }, inactive: { value: [I; 9, 6, 9 ] } }, "forestry:tolerates_rain": { active: { dominant: 1b, value: 1b }, inactive: { dominant: 1b, value: 1b } } }, karyotype: "forestry:bee_species" }, "forestry:health": 50, "forestry:max_health": 50 }, count: 1, id: "forestry:princess_bee" }
+					type: "item"
+				}
+				{
+					id: "781418E1D35DD86E"
+					item: { components: { "forestry:bee_generation": 0, "forestry:bee_pristine": 1b, "forestry:genome": { genome: { "forestry:activity": { active: { dominant: 1b, value: "forestry:activity_diurnal" }, inactive: { dominant: 1b, value: "forestry:activity_diurnal" } }, "forestry:bee_effect": { active: { value: "forestry:bee_effect_miasmic" }, inactive: { value: "forestry:bee_effect_miasmic" } }, "forestry:bee_species": { active: { dominant: 1b, value: "forestry:exotic" }, inactive: { dominant: 1b, value: "forestry:exotic" } }, "forestry:cave_dwelling": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } }, "forestry:fertility": { active: { dominant: 1b, value: 2 }, inactive: { dominant: 1b, value: 2 } }, "forestry:flower_type": { active: { value: "forestry:flower_type_jungle" }, inactive: { value: "forestry:flower_type_jungle" } }, "forestry:humidity_tolerance": { active: { dominant: 1b, value: "UP_1" }, inactive: { dominant: 1b, value: "UP_1" } }, "forestry:lifespan": { active: { value: 50 }, inactive: { value: 50 } }, "forestry:pollination": { active: { dominant: 1b, value: 5 }, inactive: { dominant: 1b, value: 5 } }, "forestry:speed": { active: { value: 1.0f }, inactive: { value: 1.0f } }, "forestry:temperature_tolerance": { active: { dominant: 1b, value: "UP_1" }, inactive: { dominant: 1b, value: "UP_1" } }, "forestry:territory": { active: { value: [I; 9, 6, 9 ] }, inactive: { value: [I; 9, 6, 9 ] } }, "forestry:tolerates_rain": { active: { dominant: 1b, value: 1b }, inactive: { dominant: 1b, value: 1b } } }, karyotype: "forestry:bee_species" }, "forestry:health": 50, "forestry:max_health": 50 }, count: 1, id: "forestry:drone_bee" }
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["598F2401728A013E"]
+			id: "474927194A2D1230"
+			tasks: [
+				{
+					id: "1CBC9DB206614C2C"
+					item: { components: { "forestry:bee_generation": 0, "forestry:bee_pristine": 1b, "forestry:genome": { genome: { "forestry:activity": { active: { dominant: 1b, value: "forestry:activity_diurnal" }, inactive: { dominant: 1b, value: "forestry:activity_diurnal" } }, "forestry:bee_effect": { active: { value: "forestry:bee_effect_exploration" }, inactive: { value: "forestry:bee_effect_exploration" } }, "forestry:bee_species": { active: { value: "forestry:edenic" }, inactive: { value: "forestry:edenic" } }, "forestry:cave_dwelling": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } }, "forestry:fertility": { active: { dominant: 1b, value: 2 }, inactive: { dominant: 1b, value: 2 } }, "forestry:flower_type": { active: { value: "forestry:flower_type_jungle" }, inactive: { value: "forestry:flower_type_jungle" } }, "forestry:humidity_tolerance": { active: { dominant: 1b, value: "UP_1" }, inactive: { dominant: 1b, value: "UP_1" } }, "forestry:lifespan": { active: { value: 60 }, inactive: { value: 60 } }, "forestry:pollination": { active: { dominant: 1b, value: 5 }, inactive: { dominant: 1b, value: 5 } }, "forestry:speed": { active: { dominant: 1b, value: 0.3f }, inactive: { dominant: 1b, value: 0.3f } }, "forestry:temperature_tolerance": { active: { value: "BOTH_2" }, inactive: { value: "BOTH_2" } }, "forestry:territory": { active: { value: [I; 9, 6, 9 ] }, inactive: { value: [I; 9, 6, 9 ] } }, "forestry:tolerates_rain": { active: { dominant: 1b, value: 1b }, inactive: { dominant: 1b, value: 1b } } }, karyotype: "forestry:bee_species" }, "forestry:health": 60, "forestry:max_health": 60 }, count: 1, id: "forestry:princess_bee" }
+					type: "item"
+				}
+				{
+					id: "0252E55CF0683256"
+					item: { components: { "forestry:bee_generation": 0, "forestry:bee_pristine": 1b, "forestry:genome": { genome: { "forestry:activity": { active: { dominant: 1b, value: "forestry:activity_diurnal" }, inactive: { dominant: 1b, value: "forestry:activity_diurnal" } }, "forestry:bee_effect": { active: { value: "forestry:bee_effect_exploration" }, inactive: { value: "forestry:bee_effect_exploration" } }, "forestry:bee_species": { active: { value: "forestry:edenic" }, inactive: { value: "forestry:edenic" } }, "forestry:cave_dwelling": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } }, "forestry:fertility": { active: { dominant: 1b, value: 2 }, inactive: { dominant: 1b, value: 2 } }, "forestry:flower_type": { active: { value: "forestry:flower_type_jungle" }, inactive: { value: "forestry:flower_type_jungle" } }, "forestry:humidity_tolerance": { active: { dominant: 1b, value: "UP_1" }, inactive: { dominant: 1b, value: "UP_1" } }, "forestry:lifespan": { active: { value: 60 }, inactive: { value: 60 } }, "forestry:pollination": { active: { dominant: 1b, value: 5 }, inactive: { dominant: 1b, value: 5 } }, "forestry:speed": { active: { dominant: 1b, value: 0.3f }, inactive: { dominant: 1b, value: 0.3f } }, "forestry:temperature_tolerance": { active: { value: "BOTH_2" }, inactive: { value: "BOTH_2" } }, "forestry:territory": { active: { value: [I; 9, 6, 9 ] }, inactive: { value: [I; 9, 6, 9 ] } }, "forestry:tolerates_rain": { active: { dominant: 1b, value: 1b }, inactive: { dominant: 1b, value: 1b } } }, karyotype: "forestry:bee_species" }, "forestry:health": 60, "forestry:max_health": 60 }, count: 1, id: "forestry:drone_bee" }
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["15F1249B9F9C8271"]
+			id: "4967E513F01552DF"
+			tasks: [
+				{
+					id: "045945D30645820F"
+					item: { components: { "forestry:bee_generation": 0, "forestry:bee_pristine": 1b, "forestry:genome": { genome: { "forestry:activity": { active: { value: "forestry:activity_cathemeral" }, inactive: { value: "forestry:activity_cathemeral" } }, "forestry:bee_effect": { active: { dominant: 1b, value: "forestry:bee_effect_none" }, inactive: { dominant: 1b, value: "forestry:bee_effect_none" } }, "forestry:bee_species": { active: { dominant: 1b, value: "forestry:valiant" }, inactive: { dominant: 1b, value: "forestry:valiant" } }, "forestry:cave_dwelling": { active: { dominant: 1b, value: 1b }, inactive: { dominant: 1b, value: 1b } }, "forestry:fertility": { active: { dominant: 1b, value: 2 }, inactive: { dominant: 1b, value: 2 } }, "forestry:flower_type": { active: { dominant: 1b, value: "forestry:flower_type_vanilla" }, inactive: { dominant: 1b, value: "forestry:flower_type_vanilla" } }, "forestry:humidity_tolerance": { active: { dominant: 1b, value: "BOTH_1" }, inactive: { dominant: 1b, value: "BOTH_1" } }, "forestry:lifespan": { active: { value: 50 }, inactive: { value: 50 } }, "forestry:pollination": { active: { dominant: 1b, value: 5 }, inactive: { dominant: 1b, value: 5 } }, "forestry:speed": { active: { dominant: 1b, value: 0.8f }, inactive: { dominant: 1b, value: 0.8f } }, "forestry:temperature_tolerance": { active: { dominant: 1b, value: "BOTH_1" }, inactive: { dominant: 1b, value: "BOTH_1" } }, "forestry:territory": { active: { value: [I; 9, 6, 9 ] }, inactive: { value: [I; 9, 6, 9 ] } }, "forestry:tolerates_rain": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } } }, karyotype: "forestry:bee_species" }, "forestry:health": 50, "forestry:max_health": 50 }, count: 1, id: "forestry:princess_bee" }
+					type: "item"
+				}
+				{
+					id: "7B0C895625884D99"
+					item: { components: { "forestry:bee_generation": 0, "forestry:bee_pristine": 1b, "forestry:genome": { genome: { "forestry:activity": { active: { value: "forestry:activity_cathemeral" }, inactive: { value: "forestry:activity_cathemeral" } }, "forestry:bee_effect": { active: { dominant: 1b, value: "forestry:bee_effect_none" }, inactive: { dominant: 1b, value: "forestry:bee_effect_none" } }, "forestry:bee_species": { active: { dominant: 1b, value: "forestry:valiant" }, inactive: { dominant: 1b, value: "forestry:valiant" } }, "forestry:cave_dwelling": { active: { dominant: 1b, value: 1b }, inactive: { dominant: 1b, value: 1b } }, "forestry:fertility": { active: { dominant: 1b, value: 2 }, inactive: { dominant: 1b, value: 2 } }, "forestry:flower_type": { active: { dominant: 1b, value: "forestry:flower_type_vanilla" }, inactive: { dominant: 1b, value: "forestry:flower_type_vanilla" } }, "forestry:humidity_tolerance": { active: { dominant: 1b, value: "BOTH_1" }, inactive: { dominant: 1b, value: "BOTH_1" } }, "forestry:lifespan": { active: { value: 50 }, inactive: { value: 50 } }, "forestry:pollination": { active: { dominant: 1b, value: 5 }, inactive: { dominant: 1b, value: 5 } }, "forestry:speed": { active: { dominant: 1b, value: 0.8f }, inactive: { dominant: 1b, value: 0.8f } }, "forestry:temperature_tolerance": { active: { dominant: 1b, value: "BOTH_1" }, inactive: { dominant: 1b, value: "BOTH_1" } }, "forestry:territory": { active: { value: [I; 9, 6, 9 ] }, inactive: { value: [I; 9, 6, 9 ] } }, "forestry:tolerates_rain": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } } }, karyotype: "forestry:bee_species" }, "forestry:health": 50, "forestry:max_health": 50 }, count: 1, id: "forestry:drone_bee" }
+					type: "item"
+				}
+			]
+			x: 3.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["15F1249B9F9C8271"]
+			dependency_requirement: "one_completed"
+			id: "6977BEF39C5604B7"
+			tasks: [{
+				id: "3EA0E8EC2ED846CA"
+				item: { components: { "forestry:bee_generation": 0, "forestry:bee_pristine": 1b, "forestry:genome": { genome: { "forestry:activity": { active: { value: "forestry:activity_cathemeral" }, inactive: { value: "forestry:activity_cathemeral" } }, "forestry:bee_effect": { active: { dominant: 1b, value: "forestry:bee_effect_none" }, inactive: { dominant: 1b, value: "forestry:bee_effect_none" } }, "forestry:bee_species": { active: { value: "forestry:steadfast" }, inactive: { value: "forestry:steadfast" } }, "forestry:cave_dwelling": { active: { dominant: 1b, value: 1b }, inactive: { dominant: 1b, value: 1b } }, "forestry:fertility": { active: { dominant: 1b, value: 2 }, inactive: { dominant: 1b, value: 2 } }, "forestry:flower_type": { active: { dominant: 1b, value: "forestry:flower_type_vanilla" }, inactive: { dominant: 1b, value: "forestry:flower_type_vanilla" } }, "forestry:humidity_tolerance": { active: { value: "NONE" }, inactive: { value: "NONE" } }, "forestry:lifespan": { active: { value: 40 }, inactive: { value: 40 } }, "forestry:pollination": { active: { dominant: 1b, value: 5 }, inactive: { dominant: 1b, value: 5 } }, "forestry:speed": { active: { dominant: 1b, value: 0.6f }, inactive: { dominant: 1b, value: 0.6f } }, "forestry:temperature_tolerance": { active: { value: "NONE" }, inactive: { value: "NONE" } }, "forestry:territory": { active: { value: [I; 9, 6, 9 ] }, inactive: { value: [I; 9, 6, 9 ] } }, "forestry:tolerates_rain": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } } }, karyotype: "forestry:bee_species" }, "forestry:health": 40, "forestry:max_health": 40 }, count: 1, id: "forestry:drone_bee" }
+				type: "item"
+			}]
+			x: 3.5d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"6977BEF39C5604B7"
+				"4967E513F01552DF"
+			]
+			id: "36EEACD8F8C779DD"
+			tasks: [
+				{
+					id: "411FBAA3DA234A72"
+					item: { components: { "forestry:bee_generation": 0, "forestry:bee_pristine": 1b, "forestry:genome": { genome: { "forestry:activity": { active: { value: "forestry:activity_cathemeral" }, inactive: { value: "forestry:activity_cathemeral" } }, "forestry:bee_effect": { active: { value: "forestry:bee_effect_heroic" }, inactive: { value: "forestry:bee_effect_heroic" } }, "forestry:bee_species": { active: { value: "forestry:heroic" }, inactive: { value: "forestry:heroic" } }, "forestry:cave_dwelling": { active: { dominant: 1b, value: 1b }, inactive: { dominant: 1b, value: 1b } }, "forestry:fertility": { active: { dominant: 1b, value: 2 }, inactive: { dominant: 1b, value: 2 } }, "forestry:flower_type": { active: { dominant: 1b, value: "forestry:flower_type_vanilla" }, inactive: { dominant: 1b, value: "forestry:flower_type_vanilla" } }, "forestry:humidity_tolerance": { active: { value: "NONE" }, inactive: { value: "NONE" } }, "forestry:lifespan": { active: { value: 50 }, inactive: { value: 50 } }, "forestry:pollination": { active: { dominant: 1b, value: 5 }, inactive: { dominant: 1b, value: 5 } }, "forestry:speed": { active: { dominant: 1b, value: 0.8f }, inactive: { dominant: 1b, value: 0.8f } }, "forestry:temperature_tolerance": { active: { value: "NONE" }, inactive: { value: "NONE" } }, "forestry:territory": { active: { value: [I; 9, 6, 9 ] }, inactive: { value: [I; 9, 6, 9 ] } }, "forestry:tolerates_rain": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } } }, karyotype: "forestry:bee_species" }, "forestry:health": 50, "forestry:max_health": 50 }, count: 1, id: "forestry:princess_bee" }
+					type: "item"
+				}
+				{
+					id: "4A427F96191588C9"
+					item: { components: { "forestry:bee_generation": 0, "forestry:bee_pristine": 1b, "forestry:genome": { genome: { "forestry:activity": { active: { value: "forestry:activity_cathemeral" }, inactive: { value: "forestry:activity_cathemeral" } }, "forestry:bee_effect": { active: { value: "forestry:bee_effect_heroic" }, inactive: { value: "forestry:bee_effect_heroic" } }, "forestry:bee_species": { active: { value: "forestry:heroic" }, inactive: { value: "forestry:heroic" } }, "forestry:cave_dwelling": { active: { dominant: 1b, value: 1b }, inactive: { dominant: 1b, value: 1b } }, "forestry:fertility": { active: { dominant: 1b, value: 2 }, inactive: { dominant: 1b, value: 2 } }, "forestry:flower_type": { active: { dominant: 1b, value: "forestry:flower_type_vanilla" }, inactive: { dominant: 1b, value: "forestry:flower_type_vanilla" } }, "forestry:humidity_tolerance": { active: { value: "NONE" }, inactive: { value: "NONE" } }, "forestry:lifespan": { active: { value: 50 }, inactive: { value: 50 } }, "forestry:pollination": { active: { dominant: 1b, value: 5 }, inactive: { dominant: 1b, value: 5 } }, "forestry:speed": { active: { dominant: 1b, value: 0.8f }, inactive: { dominant: 1b, value: 0.8f } }, "forestry:temperature_tolerance": { active: { value: "NONE" }, inactive: { value: "NONE" } }, "forestry:territory": { active: { value: [I; 9, 6, 9 ] }, inactive: { value: [I; 9, 6, 9 ] } }, "forestry:tolerates_rain": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } } }, karyotype: "forestry:bee_species" }, "forestry:health": 50, "forestry:max_health": 50 }, count: 1, id: "forestry:drone_bee" }
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["25FD1FE159663314"]
+			id: "504E41FAB83B168E"
+			tasks: [
+				{
+					id: "6170BDFA06021961"
+					item: { components: { "forestry:bee_generation": 0, "forestry:bee_pristine": 1b, "forestry:genome": { genome: { "forestry:activity": { active: { dominant: 1b, value: "forestry:activity_diurnal" }, inactive: { dominant: 1b, value: "forestry:activity_diurnal" } }, "forestry:bee_effect": { active: { value: "forestry:bee_effect_repulsion" }, inactive: { value: "forestry:bee_effect_repulsion" } }, "forestry:bee_species": { active: { value: "forestry:hermitic" }, inactive: { value: "forestry:hermitic" } }, "forestry:cave_dwelling": { active: { dominant: 1b, value: 1b }, inactive: { dominant: 1b, value: 1b } }, "forestry:fertility": { active: { dominant: 1b, value: 1 }, inactive: { dominant: 1b, value: 1 } }, "forestry:flower_type": { active: { dominant: 1b, value: "forestry:flower_type_wheat" }, inactive: { dominant: 1b, value: "forestry:flower_type_wheat" } }, "forestry:humidity_tolerance": { active: { dominant: 1b, value: "BOTH_1" }, inactive: { dominant: 1b, value: "BOTH_1" } }, "forestry:lifespan": { active: { value: 50 }, inactive: { value: 50 } }, "forestry:pollination": { active: { value: 35 }, inactive: { value: 35 } }, "forestry:speed": { active: { dominant: 1b, value: 0.6f }, inactive: { dominant: 1b, value: 0.6f } }, "forestry:temperature_tolerance": { active: { dominant: 1b, value: "BOTH_1" }, inactive: { dominant: 1b, value: "BOTH_1" } }, "forestry:territory": { active: { value: [I; 9, 6, 9 ] }, inactive: { value: [I; 9, 6, 9 ] } }, "forestry:tolerates_rain": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } } }, karyotype: "forestry:bee_species" }, "forestry:health": 50, "forestry:max_health": 50 }, count: 1, id: "forestry:princess_bee" }
+					type: "item"
+				}
+				{
+					id: "08CBCDDE0E4A20CD"
+					item: { components: { "forestry:bee_generation": 0, "forestry:bee_pristine": 1b, "forestry:genome": { genome: { "forestry:activity": { active: { dominant: 1b, value: "forestry:activity_diurnal" }, inactive: { dominant: 1b, value: "forestry:activity_diurnal" } }, "forestry:bee_effect": { active: { value: "forestry:bee_effect_repulsion" }, inactive: { value: "forestry:bee_effect_repulsion" } }, "forestry:bee_species": { active: { value: "forestry:hermitic" }, inactive: { value: "forestry:hermitic" } }, "forestry:cave_dwelling": { active: { dominant: 1b, value: 1b }, inactive: { dominant: 1b, value: 1b } }, "forestry:fertility": { active: { dominant: 1b, value: 1 }, inactive: { dominant: 1b, value: 1 } }, "forestry:flower_type": { active: { dominant: 1b, value: "forestry:flower_type_wheat" }, inactive: { dominant: 1b, value: "forestry:flower_type_wheat" } }, "forestry:humidity_tolerance": { active: { dominant: 1b, value: "BOTH_1" }, inactive: { dominant: 1b, value: "BOTH_1" } }, "forestry:lifespan": { active: { value: 50 }, inactive: { value: 50 } }, "forestry:pollination": { active: { value: 35 }, inactive: { value: 35 } }, "forestry:speed": { active: { dominant: 1b, value: 0.6f }, inactive: { dominant: 1b, value: 0.6f } }, "forestry:temperature_tolerance": { active: { dominant: 1b, value: "BOTH_1" }, inactive: { dominant: 1b, value: "BOTH_1" } }, "forestry:territory": { active: { value: [I; 9, 6, 9 ] }, inactive: { value: [I; 9, 6, 9 ] } }, "forestry:tolerates_rain": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } } }, karyotype: "forestry:bee_species" }, "forestry:health": 50, "forestry:max_health": 50 }, count: 1, id: "forestry:drone_bee" }
+					type: "item"
+				}
+			]
+			x: 5.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["26A51A0C8E2BF5E9"]
+			hide_dependent_lines: true
+			id: "2DBC565007912E1D"
+			tasks: [
+				{
+					id: "2F95BAF9F7684760"
+					item: { components: { "forestry:bee_generation": 0, "forestry:bee_pristine": 1b, "forestry:genome": { genome: { "forestry:activity": { active: { dominant: 1b, value: "forestry:activity_nocturnal" }, inactive: { dominant: 1b, value: "forestry:activity_nocturnal" } }, "forestry:bee_effect": { active: { dominant: 1b, value: "forestry:bee_effect_creeper" }, inactive: { dominant: 1b, value: "forestry:bee_effect_creeper" } }, "forestry:bee_species": { active: { value: "forestry:austere" }, inactive: { value: "forestry:austere" } }, "forestry:cave_dwelling": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } }, "forestry:fertility": { active: { dominant: 1b, value: 2 }, inactive: { dominant: 1b, value: 2 } }, "forestry:flower_type": { active: { value: "forestry:flower_type_cacti" }, inactive: { value: "forestry:flower_type_cacti" } }, "forestry:humidity_tolerance": { active: { dominant: 1b, value: "DOWN_1" }, inactive: { dominant: 1b, value: "DOWN_1" } }, "forestry:lifespan": { active: { value: 60 }, inactive: { value: 60 } }, "forestry:pollination": { active: { dominant: 1b, value: 5 }, inactive: { dominant: 1b, value: 5 } }, "forestry:speed": { active: { dominant: 1b, value: 0.3f }, inactive: { dominant: 1b, value: 0.3f } }, "forestry:temperature_tolerance": { active: { value: "DOWN_2" }, inactive: { value: "DOWN_2" } }, "forestry:territory": { active: { value: [I; 9, 6, 9 ] }, inactive: { value: [I; 9, 6, 9 ] } }, "forestry:tolerates_rain": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } } }, karyotype: "forestry:bee_species" }, "forestry:health": 60, "forestry:max_health": 60 }, count: 1, id: "forestry:princess_bee" }
+					type: "item"
+				}
+				{
+					id: "59B436AE0A626488"
+					item: { components: { "forestry:bee_generation": 0, "forestry:bee_pristine": 1b, "forestry:genome": { genome: { "forestry:activity": { active: { dominant: 1b, value: "forestry:activity_nocturnal" }, inactive: { dominant: 1b, value: "forestry:activity_nocturnal" } }, "forestry:bee_effect": { active: { dominant: 1b, value: "forestry:bee_effect_creeper" }, inactive: { dominant: 1b, value: "forestry:bee_effect_creeper" } }, "forestry:bee_species": { active: { value: "forestry:austere" }, inactive: { value: "forestry:austere" } }, "forestry:cave_dwelling": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } }, "forestry:fertility": { active: { dominant: 1b, value: 2 }, inactive: { dominant: 1b, value: 2 } }, "forestry:flower_type": { active: { value: "forestry:flower_type_cacti" }, inactive: { value: "forestry:flower_type_cacti" } }, "forestry:humidity_tolerance": { active: { dominant: 1b, value: "DOWN_1" }, inactive: { dominant: 1b, value: "DOWN_1" } }, "forestry:lifespan": { active: { value: 60 }, inactive: { value: 60 } }, "forestry:pollination": { active: { dominant: 1b, value: 5 }, inactive: { dominant: 1b, value: 5 } }, "forestry:speed": { active: { dominant: 1b, value: 0.3f }, inactive: { dominant: 1b, value: 0.3f } }, "forestry:temperature_tolerance": { active: { value: "DOWN_2" }, inactive: { value: "DOWN_2" } }, "forestry:territory": { active: { value: [I; 9, 6, 9 ] }, inactive: { value: [I; 9, 6, 9 ] } }, "forestry:tolerates_rain": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } } }, karyotype: "forestry:bee_species" }, "forestry:health": 60, "forestry:max_health": 60 }, count: 1, id: "forestry:drone_bee" }
+					type: "item"
+				}
+			]
+			x: 6.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["57F63B13860AEABF"]
+			id: "26A51A0C8E2BF5E9"
+			tasks: [
+				{
+					id: "7C6A83049C143002"
+					item: { components: { "forestry:bee_generation": 0, "forestry:bee_pristine": 1b, "forestry:genome": { genome: { "forestry:activity": { active: { dominant: 1b, value: "forestry:activity_nocturnal" }, inactive: { dominant: 1b, value: "forestry:activity_nocturnal" } }, "forestry:bee_effect": { active: { dominant: 1b, value: "forestry:bee_effect_none" }, inactive: { dominant: 1b, value: "forestry:bee_effect_none" } }, "forestry:bee_species": { active: { dominant: 1b, value: "forestry:frugal" }, inactive: { dominant: 1b, value: "forestry:frugal" } }, "forestry:cave_dwelling": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } }, "forestry:fertility": { active: { dominant: 1b, value: 2 }, inactive: { dominant: 1b, value: 2 } }, "forestry:flower_type": { active: { value: "forestry:flower_type_cacti" }, inactive: { value: "forestry:flower_type_cacti" } }, "forestry:humidity_tolerance": { active: { dominant: 1b, value: "DOWN_1" }, inactive: { dominant: 1b, value: "DOWN_1" } }, "forestry:lifespan": { active: { value: 50 }, inactive: { value: 50 } }, "forestry:pollination": { active: { dominant: 1b, value: 5 }, inactive: { dominant: 1b, value: 5 } }, "forestry:speed": { active: { value: 1.0f }, inactive: { value: 1.0f } }, "forestry:temperature_tolerance": { active: { dominant: 1b, value: "BOTH_1" }, inactive: { dominant: 1b, value: "BOTH_1" } }, "forestry:territory": { active: { value: [I; 9, 6, 9 ] }, inactive: { value: [I; 9, 6, 9 ] } }, "forestry:tolerates_rain": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } } }, karyotype: "forestry:bee_species" }, "forestry:health": 50, "forestry:max_health": 50 }, count: 1, id: "forestry:princess_bee" }
+					type: "item"
+				}
+				{
+					id: "26A4D6FF13B62A8B"
+					item: { components: { "forestry:bee_generation": 0, "forestry:bee_pristine": 1b, "forestry:genome": { genome: { "forestry:activity": { active: { dominant: 1b, value: "forestry:activity_nocturnal" }, inactive: { dominant: 1b, value: "forestry:activity_nocturnal" } }, "forestry:bee_effect": { active: { dominant: 1b, value: "forestry:bee_effect_none" }, inactive: { dominant: 1b, value: "forestry:bee_effect_none" } }, "forestry:bee_species": { active: { dominant: 1b, value: "forestry:frugal" }, inactive: { dominant: 1b, value: "forestry:frugal" } }, "forestry:cave_dwelling": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } }, "forestry:fertility": { active: { dominant: 1b, value: 2 }, inactive: { dominant: 1b, value: 2 } }, "forestry:flower_type": { active: { value: "forestry:flower_type_cacti" }, inactive: { value: "forestry:flower_type_cacti" } }, "forestry:humidity_tolerance": { active: { dominant: 1b, value: "DOWN_1" }, inactive: { dominant: 1b, value: "DOWN_1" } }, "forestry:lifespan": { active: { value: 50 }, inactive: { value: 50 } }, "forestry:pollination": { active: { dominant: 1b, value: 5 }, inactive: { dominant: 1b, value: 5 } }, "forestry:speed": { active: { value: 1.0f }, inactive: { value: 1.0f } }, "forestry:temperature_tolerance": { active: { dominant: 1b, value: "BOTH_1" }, inactive: { dominant: 1b, value: "BOTH_1" } }, "forestry:territory": { active: { value: [I; 9, 6, 9 ] }, inactive: { value: [I; 9, 6, 9 ] } }, "forestry:tolerates_rain": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } } }, karyotype: "forestry:bee_species" }, "forestry:health": 50, "forestry:max_health": 50 }, count: 1, id: "forestry:drone_bee" }
+					type: "item"
+				}
+			]
+			x: 6.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["62DB7C7EDCFAB402"]
+			id: "2DF999740D36D578"
+			tasks: [
+				{
+					id: "0BB86A207F1D7520"
+					item: { components: { "forestry:bee_generation": 0, "forestry:bee_pristine": 1b, "forestry:genome": { genome: { "forestry:activity": { active: { dominant: 1b, value: "forestry:activity_nocturnal" }, inactive: { dominant: 1b, value: "forestry:activity_nocturnal" } }, "forestry:bee_effect": { active: { dominant: 1b, value: "forestry:bee_effect_reanimation" }, inactive: { dominant: 1b, value: "forestry:bee_effect_reanimation" } }, "forestry:bee_species": { active: { dominant: 1b, value: "forestry:spectral" }, inactive: { dominant: 1b, value: "forestry:spectral" } }, "forestry:cave_dwelling": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } }, "forestry:fertility": { active: { dominant: 1b, value: 1 }, inactive: { dominant: 1b, value: 1 } }, "forestry:flower_type": { active: { value: "forestry:flower_type_end" }, inactive: { value: "forestry:flower_type_end" } }, "forestry:humidity_tolerance": { active: { dominant: 1b, value: "BOTH_1" }, inactive: { dominant: 1b, value: "BOTH_1" } }, "forestry:lifespan": { active: { value: 60 }, inactive: { value: 60 } }, "forestry:pollination": { active: { dominant: 1b, value: 5 }, inactive: { dominant: 1b, value: 5 } }, "forestry:speed": { active: { dominant: 1b, value: 0.6f }, inactive: { dominant: 1b, value: 0.6f } }, "forestry:temperature_tolerance": { active: { dominant: 1b, value: "UP_1" }, inactive: { dominant: 1b, value: "UP_1" } }, "forestry:territory": { active: { value: [I; 11, 8, 11 ] }, inactive: { value: [I; 11, 8, 11 ] } }, "forestry:tolerates_rain": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } } }, karyotype: "forestry:bee_species" }, "forestry:health": 60, "forestry:max_health": 60 }, count: 1, id: "forestry:princess_bee" }
+					type: "item"
+				}
+				{
+					id: "6F8D28FE8B4345EB"
+					item: { components: { "forestry:bee_generation": 0, "forestry:bee_pristine": 1b, "forestry:genome": { genome: { "forestry:activity": { active: { dominant: 1b, value: "forestry:activity_nocturnal" }, inactive: { dominant: 1b, value: "forestry:activity_nocturnal" } }, "forestry:bee_effect": { active: { dominant: 1b, value: "forestry:bee_effect_reanimation" }, inactive: { dominant: 1b, value: "forestry:bee_effect_reanimation" } }, "forestry:bee_species": { active: { dominant: 1b, value: "forestry:spectral" }, inactive: { dominant: 1b, value: "forestry:spectral" } }, "forestry:cave_dwelling": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } }, "forestry:fertility": { active: { dominant: 1b, value: 1 }, inactive: { dominant: 1b, value: 1 } }, "forestry:flower_type": { active: { value: "forestry:flower_type_end" }, inactive: { value: "forestry:flower_type_end" } }, "forestry:humidity_tolerance": { active: { dominant: 1b, value: "BOTH_1" }, inactive: { dominant: 1b, value: "BOTH_1" } }, "forestry:lifespan": { active: { value: 60 }, inactive: { value: 60 } }, "forestry:pollination": { active: { dominant: 1b, value: 5 }, inactive: { dominant: 1b, value: 5 } }, "forestry:speed": { active: { dominant: 1b, value: 0.6f }, inactive: { dominant: 1b, value: 0.6f } }, "forestry:temperature_tolerance": { active: { dominant: 1b, value: "UP_1" }, inactive: { dominant: 1b, value: "UP_1" } }, "forestry:territory": { active: { value: [I; 11, 8, 11 ] }, inactive: { value: [I; 11, 8, 11 ] } }, "forestry:tolerates_rain": { active: { dominant: 1b, value: 0b }, inactive: { dominant: 1b, value: 0b } } }, karyotype: "forestry:bee_species" }, "forestry:health": 60, "forestry:max_health": 60 }, count: 1, id: "forestry:drone_bee" }
+					type: "item"
+				}
+			]
+			x: 10.5d
+			y: 7.5d
+		}
+	]
+}

@@ -17,6 +17,7 @@
 	chapter.5E07E3741CBC3BFE.title: "Beta"
 	chapter.64FE7FCF6127CD6A.chapter_subtitle: ["Infinite Horizons Trial Chambers"]
 	chapter.64FE7FCF6127CD6A.title: "Epsilon"
+	chapter.69C4FCDC6823BBAF.title: "Forestry"
 	chapter.6AFDD6AA987C45E7.title: "Mekanism"
 	chapter.6B16A1E49845B379.chapter_subtitle: ["Create and Addons"]
 	chapter.6B16A1E49845B379.title: "Gamma"
@@ -52,6 +53,7 @@
 	quest.08AA4A1FF88BADA2.quest_subtitle: "Upgrade to the Potion Generator"
 	quest.08AA4A1FF88BADA2.title: "Brewing Power"
 	quest.0A32D1747C313758.quest_desc: ["You are going to need a lot of these..."]
+	quest.0B220E8B253FE116.title: "Tropical Bees"
 	quest.0B9FAD328B016792.quest_desc: [
 		"Obtained by right clicking an &lamethyst item&r on a &ldiamond bee&r."
 		""
@@ -63,6 +65,7 @@
 	quest.0E2601518E952F8C.title: "Seeds of the Sea"
 	quest.0F4C5B2728A47022.quest_desc: ["You've successfully set up a solid foundation for power generation, providing a reliable energy source for your Applied Energistics 2 network. With this setup, you’ll be able to support your AE2 systems, ensuring a smooth and efficient operation. Check this quest to acknowledge that you're ready to power your devices!"]
 	quest.0F4C5B2728A47022.quest_subtitle: "Ensure a Steady Energy Flow"
+	quest.107B165A075230DF.title: "Woven Silk"
 	quest.117B34F7EB4DB72A.quest_subtitle: "Cleric Trade"
 	quest.1284CA2D49C1FE72.quest_desc: [""]
 	quest.1284CA2D49C1FE72.quest_subtitle: "Smelting the Sands of the Nether"
@@ -314,6 +317,7 @@
 	quest.579D7FD06F5DC4D7.quest_desc: ["The &lMechanical Press&r is a powerful tool for pressing, compacting, and packing materials into more efficient forms. Use it to create compacted items like Iron Sheets or packed materials for crafting. Powered by rotational energy, this press will save time and effort, allowing you to streamline your material processing and improve efficiency. Set it up and press your way to progress!"]
 	quest.579D7FD06F5DC4D7.quest_subtitle: "Compacting with Power"
 	quest.579D7FD06F5DC4D7.title: "Pressing Progress"
+	quest.57F63B13860AEABF.title: "Modest Bees"
 	quest.5A382D145AA88DD9.quest_desc: [""]
 	quest.5A382D145AA88DD9.quest_subtitle: "Unearthing New Metals"
 	quest.5A382D145AA88DD9.title: "Copper Prospects"
@@ -324,6 +328,9 @@
 	quest.5CBC838755D23495.quest_desc: ["Obtained from using a stone trowel (or higher) on dirt or grass. The crushed version of this block (obtained by breaking with a hammer) has the same trowel drops as normal gravel."]
 	quest.5D769F0200A177C1.quest_desc: ["The &lMagmatic Generator&r is a significant upgrade, providing efficient power from the ever-flowing force of lava. With a generation rate of 40 FE/t and a transfer rate of 512 FE/t, it allows you to convert lava into Forge Energy (FE) efficiently. It consumes lava at a rate of 0.4 FE/t and has a substantial buffer capacity of 500,000 FE. Upgrade your Obsidian Generator to the Magmatic Generator and unlock the power of lava as a fuel source, enabling a steady stream of energy for your expanding needs."]
 	quest.5D769F0200A177C1.quest_subtitle: "Harnessing the Magma"
+	quest.60E7D7DC038AA803.title: "Meadow Bees"
+	quest.626BDDF5FA1B74AC.title: "Savanna Bees"
+	quest.62DB7C7EDCFAB402.title: "Ender Bees"
 	quest.62DBB6855DF2639C.quest_desc: [""]
 	quest.62DBB6855DF2639C.quest_subtitle: "Crafting the Basics"
 	quest.62DBB6855DF2639C.title: "Workbench Wonders"
@@ -380,6 +387,7 @@
 	quest.7D5453D77D188888.quest_subtitle: "Harnessing Fire Essence"
 	quest.7D5453D77D188888.title: "Seeds of Flame"
 	quest.7E44B2364F520C4C.quest_desc: ["The next tier up unlocks more advanced seeds."]
+	quest.7F755B8418EB5FA2.title: "Forest Bees"
 	reward_table.0C1CF05CCCD5916C.title: "Woodland Mansion"
 	reward_table.16976502880DAF4C.title: "Stronghold Altar"
 	reward_table.1B2242C9DE88E106.title: "Bastion"
@@ -496,6 +504,7 @@
 	task.4DA2C42C8ED94D99.title: "Craft a Shulker Box."
 	task.4EECDE7D1595D72F.title: "Observe a Grindstone"
 	task.5071C7B2EC85DAAC.title: "check this box"
+	task.51537F6E5605A3C5.title: "Obtain Seed Oil"
 	task.522147DE7E3ED21D.title: "Any #sophisticatedstorage:base_tier_wooden_storage"
 	task.523D0C50943B6B1F.title: "Craft Concrete Powder"
 	task.52D9230F4ED65A75.title: "Any #sophisticated:crafting_upgrades"

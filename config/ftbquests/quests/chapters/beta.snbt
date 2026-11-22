@@ -1636,5 +1636,30 @@
 			x: 8.0d
 			y: 5.0d
 		}
+		{
+			dependencies: ["170192578F1D5CA0"]
+			id: "4A74177B7ABA1FC6"
+			tasks: [{
+				id: "0BEB3389A1981E9B"
+				item: { count: 1, id: "infinite_resources:tin_ingot" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"4A74177B7ABA1FC6"
+				"5A382D145AA88DD9"
+			]
+			id: "530D2C4BCE180B0F"
+			tasks: [{
+				id: "1CC808BC5FF3FAD1"
+				item: { count: 1, id: "infinite_resources:bronze_ingot" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: 5.0d
+		}
 	]
 }
