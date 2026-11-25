@@ -3,7 +3,6 @@
 	chapter.0770A91FCAC26B5E.title: "Zeta"
 	chapter.17F179085511CF63.chapter_subtitle: ["Getting Started"]
 	chapter.17F179085511CF63.title: "Alpha"
-	chapter.18ED3119D763845F.title: "Mekanism"
 	chapter.1F10B15237CFBB52.title: "Delta"
 	chapter.2A5182EC401BA623.title: "Omega"
 	chapter.2D351E50AC1A1839.title: "Apotheosis"
@@ -11,6 +10,7 @@
 	chapter.2F34CC58AE75DDE7.title: "Sophisticated Mods"
 	chapter.3066733C71443F94.title: "Refined Storage"
 	chapter.3F59A832DFAEE407.title: "Pam's Harvestcraft"
+	chapter.4C428BDFE22FAF38.title: "Mekanism"
 	chapter.4D172D3DE635955D.title: "Ars Nouveau"
 	chapter.55AA5265FF6363C1.title: "Zeta"
 	chapter.5E07E3741CBC3BFE.chapter_subtitle: ["Nether Items and Blocks"]
@@ -461,6 +461,7 @@
 	task.2BBABE6D3F58A4FF.title: "Any #sophisticatedstorage:diamond_upgrades"
 	task.2C4D546AE253CBDD.title: "Observe an Engineer's Crafting Table."
 	task.2D769F0F763C040B.title: "Assemble the Coke Oven"
+	task.2E66B6273240BE80.title: "Craft a Personal Chest (or Barrel!)"
 	task.2E982032F0E699CF.title: "Craft Flavored Yogurt"
 	task.2EC0140CC254EA63.title: "Craft a fluid storage cell."
 	task.2F3A4F97382689CB.title: "Craft Steel Scaffolding"

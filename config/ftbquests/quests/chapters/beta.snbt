@@ -1661,5 +1661,16 @@
 			x: 7.0d
 			y: 5.0d
 		}
+		{
+			dependencies: ["170192578F1D5CA0"]
+			id: "41CC2C80B229DB30"
+			tasks: [{
+				id: "51E63FEBF9871ED1"
+				item: { count: 1, id: "infinite_resources:osmium_ingot" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 4.0d
+		}
 	]
 }
